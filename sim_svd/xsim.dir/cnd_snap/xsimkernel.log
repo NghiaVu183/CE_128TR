@@ -1,0 +1,7 @@
+Running: xsim.dir/cnd_snap/xsimk.exe -simmode gui -wdb cnd_snap.wdb -simrunnum 0 -socket 60218
+Design successfully loaded
+Design Loading Memory Usage: 79412 KB (Peak: 79412 KB)
+Design Loading CPU Usage: 1093 ms
+Simulation completed
+Simulation Memory Usage: 81228 KB (Peak: 81228 KB)
+Simulation CPU Usage: 1265 ms

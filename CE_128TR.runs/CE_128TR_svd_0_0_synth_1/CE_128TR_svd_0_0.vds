@@ -1,0 +1,2155 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Jun 24 00:29:00 2026
+# Process ID         : 15040
+# Current directory  : E:/CE_128TR/CE_128TR.runs/CE_128TR_svd_0_0_synth_1
+# Command line       : vivado.exe -log CE_128TR_svd_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CE_128TR_svd_0_0.tcl
+# Log file           : E:/CE_128TR/CE_128TR.runs/CE_128TR_svd_0_0_synth_1/CE_128TR_svd_0_0.vds
+# Journal file       : E:/CE_128TR/CE_128TR.runs/CE_128TR_svd_0_0_synth_1\vivado.jou
+# Running On         : LAPTOP-55KNS8Q0
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 17002 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 25592 MB
+# Available Virtual  : 10894 MB
+#-----------------------------------------------------------
+source CE_128TR_svd_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2024.2/data/ip'.
+Command: synth_design -top CE_128TR_svd_0_0 -part xczu19eg-ffvc1760-2-i -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu19eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu19eg'
+INFO: [Device 21-403] Loading part xczu19eg-ffvc1760-2-i
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11428
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1870.961 ; gain = 200.656
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CE_128TR_svd_0_0' [e:/CE_128TR/CE_128TR.gen/sources_1/bd/CE_128TR/ip/CE_128TR_svd_0_0/synth/CE_128TR_svd_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'svd_128x2' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/svd_128x2.v:36]
+	Parameter N_ROW bound to: 128 - type: integer 
+	Parameter N_PAR bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'gram_cmx2' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/gram_cmx2.v:23]
+	Parameter N_ROW bound to: 128 - type: integer 
+	Parameter N_PAR bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'gram_cmx2' (0#1) [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/gram_cmx2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cordic_vec' [E:/CE_128TR/CE_128TR.runs/CE_128TR_svd_0_0_synth_1/.Xil/Vivado-15040-LAPTOP-55KNS8Q0/realtime/cordic_vec_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cordic_vec' (0#1) [E:/CE_128TR/CE_128TR.runs/CE_128TR_svd_0_0_synth_1/.Xil/Vivado-15040-LAPTOP-55KNS8Q0/realtime/cordic_vec_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'eig_sym_2x2' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/eig_sym_2x2.v:42]
+INFO: [Synth 8-6157] synthesizing module 'cordic_rot' [E:/CE_128TR/CE_128TR.runs/CE_128TR_svd_0_0_synth_1/.Xil/Vivado-15040-LAPTOP-55KNS8Q0/realtime/cordic_rot_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cordic_rot' (0#1) [E:/CE_128TR/CE_128TR.runs/CE_128TR_svd_0_0_synth_1/.Xil/Vivado-15040-LAPTOP-55KNS8Q0/realtime/cordic_rot_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cordic_sqrt' [E:/CE_128TR/CE_128TR.runs/CE_128TR_svd_0_0_synth_1/.Xil/Vivado-15040-LAPTOP-55KNS8Q0/realtime/cordic_sqrt_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cordic_sqrt' (0#1) [E:/CE_128TR/CE_128TR.runs/CE_128TR_svd_0_0_synth_1/.Xil/Vivado-15040-LAPTOP-55KNS8Q0/realtime/cordic_sqrt_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'eig_sym_2x2' (0#1) [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/eig_sym_2x2.v:42]
+INFO: [Synth 8-6157] synthesizing module 'umat_calc_cmx2' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:20]
+	Parameter N_ROW bound to: 128 - type: integer 
+	Parameter N_PAR bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'recip_unit' [E:/CE_128TR/CE_128TR.runs/CE_128TR_svd_0_0_synth_1/.Xil/Vivado-15040-LAPTOP-55KNS8Q0/realtime/recip_unit_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'recip_unit' (0#1) [E:/CE_128TR/CE_128TR.runs/CE_128TR_svd_0_0_synth_1/.Xil/Vivado-15040-LAPTOP-55KNS8Q0/realtime/recip_unit_stub.v:6]
+WARNING: [Synth 8-689] width (27) of port connection 'm_axis_dout_tdata' does not match port width (48) of module 'recip_unit' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:71]
+WARNING: [Synth 8-689] width (27) of port connection 'm_axis_dout_tdata' does not match port width (48) of module 'recip_unit' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'umat_calc_cmx2' (0#1) [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'svd_128x2' (0#1) [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/svd_128x2.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'CE_128TR_svd_0_0' (0#1) [e:/CE_128TR/CE_128TR.gen/sources_1/bd/CE_128TR/ip/CE_128TR_svd_0_0/synth/CE_128TR_svd_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element base_reg was removed.  [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:135]
+WARNING: [Synth 8-6014] Unused sequential element row_reg was removed.  [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:137]
+WARNING: [Synth 8-6014] Unused sequential element re0_reg was removed.  [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:138]
+WARNING: [Synth 8-6014] Unused sequential element im0_reg was removed.  [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:139]
+WARNING: [Synth 8-6014] Unused sequential element re1_reg was removed.  [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:140]
+WARNING: [Synth 8-6014] Unused sequential element im1_reg was removed.  [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:141]
+WARNING: [Synth 8-6014] Unused sequential element p0re_c_reg was removed.  [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:144]
+WARNING: [Synth 8-6014] Unused sequential element p0im_c_reg was removed.  [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:145]
+WARNING: [Synth 8-6014] Unused sequential element p1re_c_reg was removed.  [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:147]
+WARNING: [Synth 8-6014] Unused sequential element p1im_c_reg was removed.  [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:148]
+WARNING: [Synth 8-6014] Unused sequential element p0re_q_reg was removed.  [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:150]
+WARNING: [Synth 8-6014] Unused sequential element p0im_q_reg was removed.  [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:150]
+WARNING: [Synth 8-6014] Unused sequential element p1re_q_reg was removed.  [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:151]
+WARNING: [Synth 8-6014] Unused sequential element p1im_q_reg was removed.  [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:151]
+WARNING: [Synth 8-6014] Unused sequential element u0re_c_reg was removed.  [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:154]
+WARNING: [Synth 8-6014] Unused sequential element u0im_c_reg was removed.  [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:154]
+WARNING: [Synth 8-6014] Unused sequential element u1re_c_reg was removed.  [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:155]
+WARNING: [Synth 8-6014] Unused sequential element u1im_c_reg was removed.  [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:155]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2254.590 ; gain = 584.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2254.590 ; gain = 584.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2254.590 ; gain = 584.285
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2276.465 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/CE_128TR/CE_128TR.gen/sources_1/ip/recip_unit/recip_unit/recip_unit_in_context.xdc] for cell 'inst/u_umat/u_recip0'
+Finished Parsing XDC File [e:/CE_128TR/CE_128TR.gen/sources_1/ip/recip_unit/recip_unit/recip_unit_in_context.xdc] for cell 'inst/u_umat/u_recip0'
+Parsing XDC File [e:/CE_128TR/CE_128TR.gen/sources_1/ip/recip_unit/recip_unit/recip_unit_in_context.xdc] for cell 'inst/u_umat/u_recip1'
+Finished Parsing XDC File [e:/CE_128TR/CE_128TR.gen/sources_1/ip/recip_unit/recip_unit/recip_unit_in_context.xdc] for cell 'inst/u_umat/u_recip1'
+Parsing XDC File [e:/CE_128TR/CE_128TR.gen/sources_1/ip/cordic_rot/cordic_rot/cordic_rot_in_context.xdc] for cell 'inst/u_eig/u_rot'
+Finished Parsing XDC File [e:/CE_128TR/CE_128TR.gen/sources_1/ip/cordic_rot/cordic_rot/cordic_rot_in_context.xdc] for cell 'inst/u_eig/u_rot'
+Parsing XDC File [e:/CE_128TR/CE_128TR.gen/sources_1/ip/cordic_rot/cordic_rot/cordic_rot_in_context.xdc] for cell 'inst/u_rot_phi'
+Finished Parsing XDC File [e:/CE_128TR/CE_128TR.gen/sources_1/ip/cordic_rot/cordic_rot/cordic_rot_in_context.xdc] for cell 'inst/u_rot_phi'
+Parsing XDC File [e:/CE_128TR/CE_128TR.gen/sources_1/ip/cordic_sqrt/cordic_sqrt/cordic_sqrt_in_context.xdc] for cell 'inst/u_eig/u_sqrt0'
+Finished Parsing XDC File [e:/CE_128TR/CE_128TR.gen/sources_1/ip/cordic_sqrt/cordic_sqrt/cordic_sqrt_in_context.xdc] for cell 'inst/u_eig/u_sqrt0'
+Parsing XDC File [e:/CE_128TR/CE_128TR.gen/sources_1/ip/cordic_sqrt/cordic_sqrt/cordic_sqrt_in_context.xdc] for cell 'inst/u_eig/u_sqrt1'
+Finished Parsing XDC File [e:/CE_128TR/CE_128TR.gen/sources_1/ip/cordic_sqrt/cordic_sqrt/cordic_sqrt_in_context.xdc] for cell 'inst/u_eig/u_sqrt1'
+Parsing XDC File [e:/CE_128TR/CE_128TR.gen/sources_1/ip/cordic_vec/cordic_vec/cordic_vec_in_context.xdc] for cell 'inst/u_vec_pq'
+Finished Parsing XDC File [e:/CE_128TR/CE_128TR.gen/sources_1/ip/cordic_vec/cordic_vec/cordic_vec_in_context.xdc] for cell 'inst/u_vec_pq'
+Parsing XDC File [e:/CE_128TR/CE_128TR.gen/sources_1/ip/cordic_vec/cordic_vec/cordic_vec_in_context.xdc] for cell 'inst/u_eig/u_vec'
+Finished Parsing XDC File [e:/CE_128TR/CE_128TR.gen/sources_1/ip/cordic_vec/cordic_vec/cordic_vec_in_context.xdc] for cell 'inst/u_eig/u_vec'
+Parsing XDC File [e:/CE_128TR/CE_128TR.gen/sources_1/bd/CE_128TR/ip/CE_128TR_svd_0_0/CE_128TR_svd_0_0_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2737.070 ; gain = 35.953
+Finished Parsing XDC File [e:/CE_128TR/CE_128TR.gen/sources_1/bd/CE_128TR/ip/CE_128TR_svd_0_0/CE_128TR_svd_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [E:/CE_128TR/CE_128TR.runs/CE_128TR_svd_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/CE_128TR/CE_128TR.runs/CE_128TR_svd_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2737.070 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2758.430 ; gain = 21.359
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:51 ; elapsed = 00:00:50 . Memory (MB): peak = 2758.430 ; gain = 1088.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu19eg-ffvc1760-2-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:51 ; elapsed = 00:00:50 . Memory (MB): peak = 2758.430 ; gain = 1088.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  E:/CE_128TR/CE_128TR.runs/CE_128TR_svd_0_0_synth_1/dont_touch.xdc, line 21).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_umat/u_recip0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_umat/u_recip1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_eig/u_rot. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_rot_phi. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_eig/u_sqrt0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_eig/u_sqrt1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_eig/u_vec. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_vec_pq. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:00:50 . Memory (MB): peak = 2758.430 ; gain = 1088.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:09 ; elapsed = 00:02:10 . Memory (MB): peak = 5513.328 ; gain = 3843.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   40 Bit       Adders := 2     
+	   3 Input   40 Bit       Adders := 2     
+	   2 Input   33 Bit       Adders := 32    
+	   2 Input   32 Bit       Adders := 32    
++---Registers : 
+	             8192 Bit    Registers := 5     
+	              128 Bit    Registers := 2     
+	               48 Bit    Registers := 2     
+	               40 Bit    Registers := 16    
+	               32 Bit    Registers := 8     
+	               27 Bit    Registers := 64    
+	               24 Bit    Registers := 6     
+	               16 Bit    Registers := 110   
+	                1 Bit    Registers := 12    
++---Multipliers : 
+	              21x40  Multipliers := 2     
++---Muxes : 
+	   2 Input 8192 Bit        Muxes := 66    
+	   2 Input  128 Bit        Muxes := 1     
+	   2 Input   67 Bit        Muxes := 1     
+	   2 Input   66 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 17    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1968 (col length:264)
+BRAMs: 1968 (col length: RAMB18 264 RAMB36 132)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP acc_c2, operation Mode is: A*B.
+DSP Report: operator acc_c2 is absorbed into DSP acc_c2.
+DSP Report: Generating DSP acc_c0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_c0 is absorbed into DSP acc_c0.
+DSP Report: operator acc_c16 is absorbed into DSP acc_c0.
+DSP Report: Generating DSP acc_c0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_c0 is absorbed into DSP acc_c0.
+DSP Report: operator acc_c3 is absorbed into DSP acc_c0.
+DSP Report: Generating DSP acc_c0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_c0 is absorbed into DSP acc_c0.
+DSP Report: operator acc_c4 is absorbed into DSP acc_c0.
+DSP Report: Generating DSP acc_c0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_c0 is absorbed into DSP acc_c0.
+DSP Report: operator acc_c5 is absorbed into DSP acc_c0.
+DSP Report: Generating DSP acc_c0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_c0 is absorbed into DSP acc_c0.
+DSP Report: operator acc_c6 is absorbed into DSP acc_c0.
+DSP Report: Generating DSP acc_c0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_c0 is absorbed into DSP acc_c0.
+DSP Report: operator acc_c7 is absorbed into DSP acc_c0.
+DSP Report: Generating DSP acc_c0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_c0 is absorbed into DSP acc_c0.
+DSP Report: operator acc_c8 is absorbed into DSP acc_c0.
+DSP Report: Generating DSP acc_c0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_c0 is absorbed into DSP acc_c0.
+DSP Report: operator acc_c9 is absorbed into DSP acc_c0.
+DSP Report: Generating DSP acc_c0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_c0 is absorbed into DSP acc_c0.
+DSP Report: operator acc_c10 is absorbed into DSP acc_c0.
+DSP Report: Generating DSP acc_c0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_c0 is absorbed into DSP acc_c0.
+DSP Report: operator acc_c11 is absorbed into DSP acc_c0.
+DSP Report: Generating DSP acc_c0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_c0 is absorbed into DSP acc_c0.
+DSP Report: operator acc_c12 is absorbed into DSP acc_c0.
+DSP Report: Generating DSP acc_c0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_c0 is absorbed into DSP acc_c0.
+DSP Report: operator acc_c13 is absorbed into DSP acc_c0.
+DSP Report: Generating DSP acc_c0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_c0 is absorbed into DSP acc_c0.
+DSP Report: operator acc_c14 is absorbed into DSP acc_c0.
+DSP Report: Generating DSP acc_c0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_c0 is absorbed into DSP acc_c0.
+DSP Report: operator acc_c15 is absorbed into DSP acc_c0.
+DSP Report: Generating DSP acc_c0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_c0 is absorbed into DSP acc_c0.
+DSP Report: operator acc_c16 is absorbed into DSP acc_c0.
+DSP Report: Generating DSP acc_c0, operation Mode is: PCIN+A:B.
+DSP Report: operator acc_c0 is absorbed into DSP acc_c0.
+DSP Report: Generating DSP acc_p2, operation Mode is: A*B.
+DSP Report: operator acc_p2 is absorbed into DSP acc_p2.
+DSP Report: Generating DSP acc_p0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_p0 is absorbed into DSP acc_p0.
+DSP Report: operator acc_p16 is absorbed into DSP acc_p0.
+DSP Report: Generating DSP acc_p0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_p0 is absorbed into DSP acc_p0.
+DSP Report: operator acc_p3 is absorbed into DSP acc_p0.
+DSP Report: Generating DSP acc_p0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_p0 is absorbed into DSP acc_p0.
+DSP Report: operator acc_p4 is absorbed into DSP acc_p0.
+DSP Report: Generating DSP acc_p0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_p0 is absorbed into DSP acc_p0.
+DSP Report: operator acc_p5 is absorbed into DSP acc_p0.
+DSP Report: Generating DSP acc_p0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_p0 is absorbed into DSP acc_p0.
+DSP Report: operator acc_p6 is absorbed into DSP acc_p0.
+DSP Report: Generating DSP acc_p0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_p0 is absorbed into DSP acc_p0.
+DSP Report: operator acc_p7 is absorbed into DSP acc_p0.
+DSP Report: Generating DSP acc_p0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_p0 is absorbed into DSP acc_p0.
+DSP Report: operator acc_p8 is absorbed into DSP acc_p0.
+DSP Report: Generating DSP acc_p0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_p0 is absorbed into DSP acc_p0.
+DSP Report: operator acc_p9 is absorbed into DSP acc_p0.
+DSP Report: Generating DSP acc_p0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_p0 is absorbed into DSP acc_p0.
+DSP Report: operator acc_p10 is absorbed into DSP acc_p0.
+DSP Report: Generating DSP acc_p0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_p0 is absorbed into DSP acc_p0.
+DSP Report: operator acc_p11 is absorbed into DSP acc_p0.
+DSP Report: Generating DSP acc_p0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_p0 is absorbed into DSP acc_p0.
+DSP Report: operator acc_p12 is absorbed into DSP acc_p0.
+DSP Report: Generating DSP acc_p0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_p0 is absorbed into DSP acc_p0.
+DSP Report: operator acc_p13 is absorbed into DSP acc_p0.
+DSP Report: Generating DSP acc_p0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_p0 is absorbed into DSP acc_p0.
+DSP Report: operator acc_p14 is absorbed into DSP acc_p0.
+DSP Report: Generating DSP acc_p0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_p0 is absorbed into DSP acc_p0.
+DSP Report: operator acc_p15 is absorbed into DSP acc_p0.
+DSP Report: Generating DSP acc_p0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_p0 is absorbed into DSP acc_p0.
+DSP Report: operator acc_p16 is absorbed into DSP acc_p0.
+DSP Report: Generating DSP acc_p0, operation Mode is: PCIN+A:B.
+DSP Report: operator acc_p0 is absorbed into DSP acc_p0.
+DSP Report: Generating DSP acc_q16, operation Mode is: A*B.
+DSP Report: operator acc_q16 is absorbed into DSP acc_q16.
+DSP Report: Generating DSP acc_q14, operation Mode is: A*B.
+DSP Report: operator acc_q14 is absorbed into DSP acc_q14.
+DSP Report: Generating DSP acc_q12, operation Mode is: A*B.
+DSP Report: operator acc_q12 is absorbed into DSP acc_q12.
+DSP Report: Generating DSP acc_q10, operation Mode is: A*B.
+DSP Report: operator acc_q10 is absorbed into DSP acc_q10.
+DSP Report: Generating DSP acc_q8, operation Mode is: A*B.
+DSP Report: operator acc_q8 is absorbed into DSP acc_q8.
+DSP Report: Generating DSP acc_q6, operation Mode is: A*B.
+DSP Report: operator acc_q6 is absorbed into DSP acc_q6.
+DSP Report: Generating DSP acc_q4, operation Mode is: A*B.
+DSP Report: operator acc_q4 is absorbed into DSP acc_q4.
+DSP Report: Generating DSP acc_q2, operation Mode is: A*B.
+DSP Report: operator acc_q2 is absorbed into DSP acc_q2.
+DSP Report: Generating DSP acc_q3, operation Mode is: A*B.
+DSP Report: operator acc_q3 is absorbed into DSP acc_q3.
+DSP Report: Generating DSP acc_q0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_q0 is absorbed into DSP acc_q0.
+DSP Report: operator acc_q16 is absorbed into DSP acc_q0.
+DSP Report: Generating DSP acc_q0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_q0 is absorbed into DSP acc_q0.
+DSP Report: operator acc_q5 is absorbed into DSP acc_q0.
+DSP Report: Generating DSP acc_q0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_q0 is absorbed into DSP acc_q0.
+DSP Report: operator acc_q7 is absorbed into DSP acc_q0.
+DSP Report: Generating DSP acc_q0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_q0 is absorbed into DSP acc_q0.
+DSP Report: operator acc_q9 is absorbed into DSP acc_q0.
+DSP Report: Generating DSP acc_q0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_q0 is absorbed into DSP acc_q0.
+DSP Report: operator acc_q11 is absorbed into DSP acc_q0.
+DSP Report: Generating DSP acc_q0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_q0 is absorbed into DSP acc_q0.
+DSP Report: operator acc_q13 is absorbed into DSP acc_q0.
+DSP Report: Generating DSP acc_q0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_q0 is absorbed into DSP acc_q0.
+DSP Report: operator acc_q15 is absorbed into DSP acc_q0.
+DSP Report: Generating DSP acc_a2, operation Mode is: A*B.
+DSP Report: operator acc_a2 is absorbed into DSP acc_a2.
+DSP Report: Generating DSP acc_a0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_a0 is absorbed into DSP acc_a0.
+DSP Report: operator acc_a16 is absorbed into DSP acc_a0.
+DSP Report: Generating DSP acc_a0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_a0 is absorbed into DSP acc_a0.
+DSP Report: operator acc_a3 is absorbed into DSP acc_a0.
+DSP Report: Generating DSP acc_a0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_a0 is absorbed into DSP acc_a0.
+DSP Report: operator acc_a4 is absorbed into DSP acc_a0.
+DSP Report: Generating DSP acc_a0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_a0 is absorbed into DSP acc_a0.
+DSP Report: operator acc_a5 is absorbed into DSP acc_a0.
+DSP Report: Generating DSP acc_a0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_a0 is absorbed into DSP acc_a0.
+DSP Report: operator acc_a6 is absorbed into DSP acc_a0.
+DSP Report: Generating DSP acc_a0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_a0 is absorbed into DSP acc_a0.
+DSP Report: operator acc_a7 is absorbed into DSP acc_a0.
+DSP Report: Generating DSP acc_a0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_a0 is absorbed into DSP acc_a0.
+DSP Report: operator acc_a8 is absorbed into DSP acc_a0.
+DSP Report: Generating DSP acc_a0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_a0 is absorbed into DSP acc_a0.
+DSP Report: operator acc_a9 is absorbed into DSP acc_a0.
+DSP Report: Generating DSP acc_a0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_a0 is absorbed into DSP acc_a0.
+DSP Report: operator acc_a10 is absorbed into DSP acc_a0.
+DSP Report: Generating DSP acc_a0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_a0 is absorbed into DSP acc_a0.
+DSP Report: operator acc_a11 is absorbed into DSP acc_a0.
+DSP Report: Generating DSP acc_a0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_a0 is absorbed into DSP acc_a0.
+DSP Report: operator acc_a12 is absorbed into DSP acc_a0.
+DSP Report: Generating DSP acc_a0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_a0 is absorbed into DSP acc_a0.
+DSP Report: operator acc_a13 is absorbed into DSP acc_a0.
+DSP Report: Generating DSP acc_a0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_a0 is absorbed into DSP acc_a0.
+DSP Report: operator acc_a14 is absorbed into DSP acc_a0.
+DSP Report: Generating DSP acc_a0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_a0 is absorbed into DSP acc_a0.
+DSP Report: operator acc_a15 is absorbed into DSP acc_a0.
+DSP Report: Generating DSP acc_a0, operation Mode is: PCIN+A*B.
+DSP Report: operator acc_a0 is absorbed into DSP acc_a0.
+DSP Report: operator acc_a16 is absorbed into DSP acc_a0.
+DSP Report: Generating DSP acc_a0, operation Mode is: PCIN+A:B.
+DSP Report: operator acc_a0 is absorbed into DSP acc_a0.
+INFO: [Synth 8-3886] merging instance 'acc_q_reg[39]' (FDRE) to 'acc_q0__27'
+INFO: [Synth 8-3886] merging instance 'acc_q_reg[38]' (FDRE) to 'acc_q0__6'
+INFO: [Synth 8-3886] merging instance 'acc_q_reg[37]' (FDRE) to 'acc_q0__7'
+INFO: [Synth 8-3886] merging instance 'acc_q_reg[36]' (FDRE) to 'acc_q0__8'
+INFO: [Synth 8-3886] merging instance 'acc_q_reg[35]' (FDRE) to 'acc_q0__9'
+INFO: [Synth 8-3886] merging instance 'acc_q_reg[18]' (FDRE) to 'acc_q0__26'
+INFO: [Synth 8-3886] merging instance 'acc_q_reg[19]' (FDRE) to 'acc_q0__25'
+INFO: [Synth 8-3886] merging instance 'acc_q_reg[20]' (FDRE) to 'acc_q0__24'
+INFO: [Synth 8-3886] merging instance 'acc_q_reg[21]' (FDRE) to 'acc_q0__23'
+INFO: [Synth 8-3886] merging instance 'acc_q_reg[22]' (FDRE) to 'acc_q0__22'
+INFO: [Synth 8-3886] merging instance 'acc_q_reg[23]' (FDRE) to 'acc_q0__21'
+INFO: [Synth 8-3886] merging instance 'acc_q_reg[24]' (FDRE) to 'acc_q0__20'
+INFO: [Synth 8-3886] merging instance 'acc_q_reg[25]' (FDRE) to 'acc_q0__19'
+INFO: [Synth 8-3886] merging instance 'acc_q_reg[26]' (FDRE) to 'acc_q0__18'
+INFO: [Synth 8-3886] merging instance 'acc_q_reg[27]' (FDRE) to 'acc_q0__17'
+INFO: [Synth 8-3886] merging instance 'acc_q_reg[28]' (FDRE) to 'acc_q0__16'
+INFO: [Synth 8-3886] merging instance 'acc_q_reg[29]' (FDRE) to 'acc_q0__15'
+INFO: [Synth 8-3886] merging instance 'acc_q_reg[30]' (FDRE) to 'acc_q0__14'
+INFO: [Synth 8-3886] merging instance 'acc_q_reg[31]' (FDRE) to 'acc_q0__13'
+INFO: [Synth 8-3886] merging instance 'acc_q_reg[32]' (FDRE) to 'acc_q0__12'
+INFO: [Synth 8-3886] merging instance 'acc_q_reg[33]' (FDRE) to 'acc_q0__11'
+INFO: [Synth 8-3886] merging instance 'acc_q_reg[34]' (FDRE) to 'acc_q0__10'
+WARNING: [Synth 8-3917] design gram_cmx2__GB178 has port P[5] driven by constant 1
+WARNING: [Synth 8-3917] design gram_cmx2__GB178 has port P[4] driven by constant 1
+WARNING: [Synth 8-3917] design gram_cmx2__GB178 has port P[3] driven by constant 0
+WARNING: [Synth 8-3917] design gram_cmx2__GB178 has port P[2] driven by constant 0
+WARNING: [Synth 8-3917] design gram_cmx2__GB178 has port P[1] driven by constant 0
+WARNING: [Synth 8-3917] design gram_cmx2__GB178 has port P[0] driven by constant 0
+WARNING: [Synth 8-3917] design gram_cmx2__GB178 has port O708[5] driven by constant 1
+WARNING: [Synth 8-3917] design gram_cmx2__GB178 has port O708[4] driven by constant 0
+WARNING: [Synth 8-3917] design gram_cmx2__GB178 has port O708[3] driven by constant 0
+WARNING: [Synth 8-3917] design gram_cmx2__GB178 has port O708[2] driven by constant 0
+WARNING: [Synth 8-3917] design gram_cmx2__GB178 has port O708[1] driven by constant 0
+WARNING: [Synth 8-3917] design gram_cmx2__GB178 has port O708[0] driven by constant 0
+WARNING: [Synth 8-3917] design gram_cmx2__GB178 has port O709[5] driven by constant 1
+WARNING: [Synth 8-3917] design gram_cmx2__GB178 has port O709[4] driven by constant 1
+WARNING: [Synth 8-3917] design gram_cmx2__GB178 has port O709[3] driven by constant 0
+WARNING: [Synth 8-3917] design gram_cmx2__GB178 has port O709[2] driven by constant 0
+WARNING: [Synth 8-3917] design gram_cmx2__GB178 has port O709[1] driven by constant 0
+WARNING: [Synth 8-3917] design gram_cmx2__GB178 has port O709[0] driven by constant 0
+WARNING: [Synth 8-3917] design gram_cmx2__GB178 has port O711[5] driven by constant 1
+WARNING: [Synth 8-3917] design gram_cmx2__GB178 has port O711[4] driven by constant 0
+WARNING: [Synth 8-3917] design gram_cmx2__GB178 has port O711[3] driven by constant 0
+WARNING: [Synth 8-3917] design gram_cmx2__GB178 has port O711[2] driven by constant 0
+WARNING: [Synth 8-3917] design gram_cmx2__GB178 has port O711[1] driven by constant 0
+WARNING: [Synth 8-3917] design gram_cmx2__GB178 has port O711[0] driven by constant 0
+INFO: [Synth 8-4471] merging register 'inv1_r_reg[26:0]' into 'inv1_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'inv1_r_reg[26:0]' into 'inv1_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'inv1_r_reg[26:0]' into 'inv1_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'v11_im_reg[15:0]' into 'v11_im_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v11_re_reg[15:0]' into 'v11_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v01_re_reg[15:0]' into 'v01_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'inv0_r_reg[26:0]' into 'inv0_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'v10_re_reg[15:0]' into 'v10_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v00_re_reg[15:0]' into 'v00_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v10_im_reg[15:0]' into 'v10_im_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'inv0_r_reg[26:0]' into 'inv0_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'inv0_r_reg[26:0]' into 'inv0_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'inv0_r_reg[26:0]' into 'inv0_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'inv0_r_reg[26:0]' into 'inv0_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'v10_im_reg[15:0]' into 'v10_im_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v10_re_reg[15:0]' into 'v10_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v00_re_reg[15:0]' into 'v00_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v10_re_reg[15:0]' into 'v10_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v10_im_reg[15:0]' into 'v10_im_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'inv0_r_reg[26:0]' into 'inv0_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'inv0_r_reg[26:0]' into 'inv0_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'v01_re_reg[15:0]' into 'v01_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v11_re_reg[15:0]' into 'v11_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v11_im_reg[15:0]' into 'v11_im_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'inv1_r_reg[26:0]' into 'inv1_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'inv1_r_reg[26:0]' into 'inv1_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'v00_re_reg[15:0]' into 'v00_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v01_re_reg[15:0]' into 'v01_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v11_re_reg[15:0]' into 'v11_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v11_im_reg[15:0]' into 'v11_im_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'inv1_r_reg[26:0]' into 'inv1_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'inv1_r_reg[26:0]' into 'inv1_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'inv0_r_reg[26:0]' into 'inv0_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'inv0_r_reg[26:0]' into 'inv0_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'v10_im_reg[15:0]' into 'v10_im_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v10_re_reg[15:0]' into 'v10_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v00_re_reg[15:0]' into 'v00_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v00_re_reg[15:0]' into 'v00_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v00_re_reg[15:0]' into 'v00_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v10_re_reg[15:0]' into 'v10_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v10_im_reg[15:0]' into 'v10_im_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'inv0_r_reg[26:0]' into 'inv0_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'inv0_r_reg[26:0]' into 'inv0_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'v01_re_reg[15:0]' into 'v01_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v11_re_reg[15:0]' into 'v11_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v11_im_reg[15:0]' into 'v11_im_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'inv1_r_reg[26:0]' into 'inv1_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'inv1_r_reg[26:0]' into 'inv1_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'v01_re_reg[15:0]' into 'v01_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v11_re_reg[15:0]' into 'v11_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v10_re_reg[15:0]' into 'v10_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v11_im_reg[15:0]' into 'v11_im_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'inv1_r_reg[26:0]' into 'inv1_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'inv1_r_reg[26:0]' into 'inv1_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'v11_im_reg[15:0]' into 'v11_im_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v11_re_reg[15:0]' into 'v11_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v10_im_reg[15:0]' into 'v10_im_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v10_re_reg[15:0]' into 'v10_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v01_re_reg[15:0]' into 'v01_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v00_re_reg[15:0]' into 'v00_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'inv1_r_reg[26:0]' into 'inv1_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'inv1_r_reg[26:0]' into 'inv1_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'v11_im_reg[15:0]' into 'v11_im_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v11_re_reg[15:0]' into 'v11_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v01_re_reg[15:0]' into 'v01_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'inv1_r_reg[26:0]' into 'inv1_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'inv1_r_reg[26:0]' into 'inv1_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'v11_im_reg[15:0]' into 'v11_im_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v11_re_reg[15:0]' into 'v11_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v01_re_reg[15:0]' into 'v01_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v00_re_reg[15:0]' into 'v00_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v10_im_reg[15:0]' into 'v10_im_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'inv0_r_reg[26:0]' into 'inv0_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'inv0_r_reg[26:0]' into 'inv0_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'inv0_r_reg[26:0]' into 'inv0_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'inv0_r_reg[26:0]' into 'inv0_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'v10_re_reg[15:0]' into 'v10_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v10_im_reg[15:0]' into 'v10_im_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'inv0_r_reg[26:0]' into 'inv0_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'inv0_r_reg[26:0]' into 'inv0_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'v00_re_reg[15:0]' into 'v00_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v10_re_reg[15:0]' into 'v10_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v10_im_reg[15:0]' into 'v10_im_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'inv0_r_reg[26:0]' into 'inv0_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'inv0_r_reg[26:0]' into 'inv0_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'v10_im_reg[15:0]' into 'v10_im_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v01_re_reg[15:0]' into 'v01_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v11_re_reg[15:0]' into 'v11_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v11_im_reg[15:0]' into 'v11_im_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'inv1_r_reg[26:0]' into 'inv1_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'inv1_r_reg[26:0]' into 'inv1_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'v00_re_reg[15:0]' into 'v00_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v01_re_reg[15:0]' into 'v01_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v11_re_reg[15:0]' into 'v11_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v11_im_reg[15:0]' into 'v11_im_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'inv1_r_reg[26:0]' into 'inv1_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'inv1_r_reg[26:0]' into 'inv1_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Synth 8-4471] merging register 'v10_re_reg[15:0]' into 'v10_re_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'v10_im_reg[15:0]' into 'v10_im_reg[15:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:104]
+INFO: [Synth 8-4471] merging register 'inv0_r_reg[26:0]' into 'inv0_r_reg[26:0]' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v:101]
+INFO: [Common 17-14] Message 'Synth 8-4471' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-4471' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+DSP Report: Generating DSP mulV_return0, operation Mode is: A*B.
+DSP Report: operator mulV_return0 is absorbed into DSP mulV_return0.
+DSP Report: Generating DSP u_out_pk33, operation Mode is: A*B2.
+DSP Report: register v11_re_reg is absorbed into DSP u_out_pk33.
+DSP Report: operator u_out_pk33 is absorbed into DSP u_out_pk33.
+DSP Report: Generating DSP u_out_pk32, operation Mode is: PCIN+A*B2.
+DSP Report: register v01_re_reg is absorbed into DSP u_out_pk32.
+DSP Report: operator u_out_pk32 is absorbed into DSP u_out_pk32.
+DSP Report: operator u_out_pk34 is absorbed into DSP u_out_pk32.
+DSP Report: Generating DSP mulV_return0, operation Mode is: A*B.
+DSP Report: operator mulV_return0 is absorbed into DSP mulV_return0.
+DSP Report: Generating DSP u_out_pk32, operation Mode is: PCIN+A*B2.
+DSP Report: register v11_im_reg is absorbed into DSP u_out_pk32.
+DSP Report: operator u_out_pk32 is absorbed into DSP u_out_pk32.
+DSP Report: operator u_out_pk34 is absorbed into DSP u_out_pk32.
+DSP Report: Generating DSP u_out_pk30, operation Mode is: A2*B.
+DSP Report: register inv1_r_reg is absorbed into DSP u_out_pk30.
+DSP Report: operator u_out_pk30 is absorbed into DSP u_out_pk30.
+DSP Report: operator u_out_pk30 is absorbed into DSP u_out_pk30.
+DSP Report: Generating DSP u_out_pk30, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register inv1_r_reg is absorbed into DSP u_out_pk30.
+DSP Report: operator u_out_pk30 is absorbed into DSP u_out_pk30.
+DSP Report: operator u_out_pk30 is absorbed into DSP u_out_pk30.
+DSP Report: Generating DSP u_out_pk35, operation Mode is: A*B2.
+DSP Report: register v11_re_reg is absorbed into DSP u_out_pk35.
+DSP Report: operator u_out_pk35 is absorbed into DSP u_out_pk35.
+DSP Report: Generating DSP u_out_pk33, operation Mode is: PCIN+A*B2.
+DSP Report: register v01_re_reg is absorbed into DSP u_out_pk33.
+DSP Report: operator u_out_pk33 is absorbed into DSP u_out_pk33.
+DSP Report: operator u_out_pk35 is absorbed into DSP u_out_pk33.
+DSP Report: Generating DSP u_out_pk33, operation Mode is: PCIN-A*B2.
+DSP Report: register v11_im_reg is absorbed into DSP u_out_pk33.
+DSP Report: operator u_out_pk33 is absorbed into DSP u_out_pk33.
+DSP Report: operator u_out_pk34 is absorbed into DSP u_out_pk33.
+DSP Report: Generating DSP u_out_pk31, operation Mode is: A2*B.
+DSP Report: register inv1_r_reg is absorbed into DSP u_out_pk31.
+DSP Report: operator u_out_pk31 is absorbed into DSP u_out_pk31.
+DSP Report: operator u_out_pk31 is absorbed into DSP u_out_pk31.
+DSP Report: Generating DSP u_out_pk31, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register inv1_r_reg is absorbed into DSP u_out_pk31.
+DSP Report: operator u_out_pk31 is absorbed into DSP u_out_pk31.
+DSP Report: operator u_out_pk31 is absorbed into DSP u_out_pk31.
+DSP Report: Generating DSP mulV_return0, operation Mode is: A*B.
+DSP Report: operator mulV_return0 is absorbed into DSP mulV_return0.
+DSP Report: Generating DSP u_out_pk35, operation Mode is: A*B2.
+DSP Report: register v10_re_reg is absorbed into DSP u_out_pk35.
+DSP Report: operator u_out_pk35 is absorbed into DSP u_out_pk35.
+DSP Report: Generating DSP u_out_pk34, operation Mode is: PCIN+A*B2.
+DSP Report: register v00_re_reg is absorbed into DSP u_out_pk34.
+DSP Report: operator u_out_pk34 is absorbed into DSP u_out_pk34.
+DSP Report: operator u_out_pk36 is absorbed into DSP u_out_pk34.
+DSP Report: Generating DSP mulV_return0, operation Mode is: A*B.
+DSP Report: operator mulV_return0 is absorbed into DSP mulV_return0.
+DSP Report: Generating DSP u_out_pk34, operation Mode is: PCIN+A*B2.
+DSP Report: register v10_im_reg is absorbed into DSP u_out_pk34.
+DSP Report: operator u_out_pk34 is absorbed into DSP u_out_pk34.
+DSP Report: operator u_out_pk36 is absorbed into DSP u_out_pk34.
+DSP Report: Generating DSP u_out_pk32, operation Mode is: A2*B.
+DSP Report: register inv0_r_reg is absorbed into DSP u_out_pk32.
+DSP Report: operator u_out_pk32 is absorbed into DSP u_out_pk32.
+DSP Report: operator u_out_pk32 is absorbed into DSP u_out_pk32.
+DSP Report: Generating DSP u_out_pk32, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register inv0_r_reg is absorbed into DSP u_out_pk32.
+DSP Report: operator u_out_pk32 is absorbed into DSP u_out_pk32.
+DSP Report: operator u_out_pk32 is absorbed into DSP u_out_pk32.
+DSP Report: Generating DSP u_out_pk33, operation Mode is: A*B2.
+DSP Report: register v10_re_reg is absorbed into DSP u_out_pk33.
+DSP Report: operator u_out_pk33 is absorbed into DSP u_out_pk33.
+DSP Report: Generating DSP u_out_pk31, operation Mode is: PCIN+A*B2.
+DSP Report: register v00_re_reg is absorbed into DSP u_out_pk31.
+DSP Report: operator u_out_pk31 is absorbed into DSP u_out_pk31.
+DSP Report: operator u_out_pk33 is absorbed into DSP u_out_pk31.
+DSP Report: Generating DSP u_out_pk31, operation Mode is: PCIN-A*B2.
+DSP Report: register v10_im_reg is absorbed into DSP u_out_pk31.
+DSP Report: operator u_out_pk31 is absorbed into DSP u_out_pk31.
+DSP Report: operator u_out_pk32 is absorbed into DSP u_out_pk31.
+DSP Report: Generating DSP u_out_pk29, operation Mode is: A2*B.
+DSP Report: register inv0_r_reg is absorbed into DSP u_out_pk29.
+DSP Report: operator u_out_pk29 is absorbed into DSP u_out_pk29.
+DSP Report: operator u_out_pk29 is absorbed into DSP u_out_pk29.
+DSP Report: Generating DSP u_out_pk29, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register inv0_r_reg is absorbed into DSP u_out_pk29.
+DSP Report: operator u_out_pk29 is absorbed into DSP u_out_pk29.
+DSP Report: operator u_out_pk29 is absorbed into DSP u_out_pk29.
+DSP Report: Generating DSP u_out_pk37, operation Mode is: A*B2.
+DSP Report: register v10_re_reg is absorbed into DSP u_out_pk37.
+DSP Report: operator u_out_pk37 is absorbed into DSP u_out_pk37.
+DSP Report: Generating DSP u_out_pk35, operation Mode is: PCIN+A*B2.
+DSP Report: register v00_re_reg is absorbed into DSP u_out_pk35.
+DSP Report: operator u_out_pk35 is absorbed into DSP u_out_pk35.
+DSP Report: operator u_out_pk37 is absorbed into DSP u_out_pk35.
+DSP Report: Generating DSP u_out_pk35, operation Mode is: PCIN-A*B2.
+DSP Report: register v10_im_reg is absorbed into DSP u_out_pk35.
+DSP Report: operator u_out_pk35 is absorbed into DSP u_out_pk35.
+DSP Report: operator u_out_pk36 is absorbed into DSP u_out_pk35.
+DSP Report: Generating DSP u_out_pk33, operation Mode is: A2*B.
+DSP Report: register inv0_r_reg is absorbed into DSP u_out_pk33.
+DSP Report: operator u_out_pk33 is absorbed into DSP u_out_pk33.
+DSP Report: operator u_out_pk33 is absorbed into DSP u_out_pk33.
+DSP Report: Generating DSP u_out_pk33, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register inv0_r_reg is absorbed into DSP u_out_pk33.
+DSP Report: operator u_out_pk33 is absorbed into DSP u_out_pk33.
+DSP Report: operator u_out_pk33 is absorbed into DSP u_out_pk33.
+DSP Report: Generating DSP u_out_pk31, operation Mode is: A*B2.
+DSP Report: register v10_re_reg is absorbed into DSP u_out_pk31.
+DSP Report: operator u_out_pk31 is absorbed into DSP u_out_pk31.
+DSP Report: Generating DSP u_out_pk30, operation Mode is: PCIN+A*B2.
+DSP Report: register v00_re_reg is absorbed into DSP u_out_pk30.
+DSP Report: operator u_out_pk30 is absorbed into DSP u_out_pk30.
+DSP Report: operator u_out_pk32 is absorbed into DSP u_out_pk30.
+DSP Report: Generating DSP u_out_pk30, operation Mode is: PCIN+A*B2.
+DSP Report: register v10_im_reg is absorbed into DSP u_out_pk30.
+DSP Report: operator u_out_pk30 is absorbed into DSP u_out_pk30.
+DSP Report: operator u_out_pk32 is absorbed into DSP u_out_pk30.
+DSP Report: Generating DSP u_out_pk28, operation Mode is: A2*B.
+DSP Report: register inv0_r_reg is absorbed into DSP u_out_pk28.
+DSP Report: operator u_out_pk28 is absorbed into DSP u_out_pk28.
+DSP Report: operator u_out_pk28 is absorbed into DSP u_out_pk28.
+DSP Report: Generating DSP u_out_pk28, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register inv0_r_reg is absorbed into DSP u_out_pk28.
+DSP Report: operator u_out_pk28 is absorbed into DSP u_out_pk28.
+DSP Report: operator u_out_pk28 is absorbed into DSP u_out_pk28.
+DSP Report: Generating DSP u_out_pk31, operation Mode is: A*B2.
+DSP Report: register v11_re_reg is absorbed into DSP u_out_pk31.
+DSP Report: operator u_out_pk31 is absorbed into DSP u_out_pk31.
+DSP Report: Generating DSP u_out_pk29, operation Mode is: PCIN+A*B2.
+DSP Report: register v01_re_reg is absorbed into DSP u_out_pk29.
+DSP Report: operator u_out_pk29 is absorbed into DSP u_out_pk29.
+DSP Report: operator u_out_pk31 is absorbed into DSP u_out_pk29.
+DSP Report: Generating DSP u_out_pk29, operation Mode is: PCIN-A*B2.
+DSP Report: register v11_im_reg is absorbed into DSP u_out_pk29.
+DSP Report: operator u_out_pk29 is absorbed into DSP u_out_pk29.
+DSP Report: operator u_out_pk30 is absorbed into DSP u_out_pk29.
+DSP Report: Generating DSP u_out_pk27, operation Mode is: A2*B.
+DSP Report: register inv1_r_reg is absorbed into DSP u_out_pk27.
+DSP Report: operator u_out_pk27 is absorbed into DSP u_out_pk27.
+DSP Report: operator u_out_pk27 is absorbed into DSP u_out_pk27.
+DSP Report: Generating DSP u_out_pk27, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register inv1_r_reg is absorbed into DSP u_out_pk27.
+DSP Report: operator u_out_pk27 is absorbed into DSP u_out_pk27.
+DSP Report: operator u_out_pk27 is absorbed into DSP u_out_pk27.
+DSP Report: Generating DSP u_out_pk29, operation Mode is: A*B2.
+DSP Report: register v11_re_reg is absorbed into DSP u_out_pk29.
+DSP Report: operator u_out_pk29 is absorbed into DSP u_out_pk29.
+DSP Report: Generating DSP u_out_pk28, operation Mode is: PCIN+A*B2.
+DSP Report: register v01_re_reg is absorbed into DSP u_out_pk28.
+DSP Report: operator u_out_pk28 is absorbed into DSP u_out_pk28.
+DSP Report: operator u_out_pk30 is absorbed into DSP u_out_pk28.
+DSP Report: Generating DSP u_out_pk28, operation Mode is: PCIN+A*B2.
+DSP Report: register v11_im_reg is absorbed into DSP u_out_pk28.
+DSP Report: operator u_out_pk28 is absorbed into DSP u_out_pk28.
+DSP Report: operator u_out_pk30 is absorbed into DSP u_out_pk28.
+DSP Report: Generating DSP u_out_pk26, operation Mode is: A2*B.
+DSP Report: register inv1_r_reg is absorbed into DSP u_out_pk26.
+DSP Report: operator u_out_pk26 is absorbed into DSP u_out_pk26.
+DSP Report: operator u_out_pk26 is absorbed into DSP u_out_pk26.
+DSP Report: Generating DSP u_out_pk26, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register inv1_r_reg is absorbed into DSP u_out_pk26.
+DSP Report: operator u_out_pk26 is absorbed into DSP u_out_pk26.
+DSP Report: operator u_out_pk26 is absorbed into DSP u_out_pk26.
+DSP Report: Generating DSP u_out_pk11, operation Mode is: A*B2.
+DSP Report: register v10_re_reg is absorbed into DSP u_out_pk11.
+DSP Report: operator u_out_pk11 is absorbed into DSP u_out_pk11.
+DSP Report: Generating DSP u_out_pk10, operation Mode is: PCIN+A*B2.
+DSP Report: register v00_re_reg is absorbed into DSP u_out_pk10.
+DSP Report: operator u_out_pk10 is absorbed into DSP u_out_pk10.
+DSP Report: operator u_out_pk12 is absorbed into DSP u_out_pk10.
+DSP Report: Generating DSP u_out_pk10, operation Mode is: PCIN+A*B2.
+DSP Report: register v10_im_reg is absorbed into DSP u_out_pk10.
+DSP Report: operator u_out_pk10 is absorbed into DSP u_out_pk10.
+DSP Report: operator u_out_pk12 is absorbed into DSP u_out_pk10.
+DSP Report: Generating DSP u_out_pk8, operation Mode is: A2*B.
+DSP Report: register inv0_r_reg is absorbed into DSP u_out_pk8.
+DSP Report: operator u_out_pk8 is absorbed into DSP u_out_pk8.
+DSP Report: operator u_out_pk8 is absorbed into DSP u_out_pk8.
+DSP Report: Generating DSP u_out_pk8, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register inv0_r_reg is absorbed into DSP u_out_pk8.
+DSP Report: operator u_out_pk8 is absorbed into DSP u_out_pk8.
+DSP Report: operator u_out_pk8 is absorbed into DSP u_out_pk8.
+DSP Report: Generating DSP u_out_pk23, operation Mode is: A*B2.
+DSP Report: register v10_re_reg is absorbed into DSP u_out_pk23.
+DSP Report: operator u_out_pk23 is absorbed into DSP u_out_pk23.
+DSP Report: Generating DSP u_out_pk22, operation Mode is: PCIN+A*B2.
+DSP Report: register v00_re_reg is absorbed into DSP u_out_pk22.
+DSP Report: operator u_out_pk22 is absorbed into DSP u_out_pk22.
+DSP Report: operator u_out_pk24 is absorbed into DSP u_out_pk22.
+DSP Report: Generating DSP u_out_pk22, operation Mode is: PCIN+A*B2.
+DSP Report: register v10_im_reg is absorbed into DSP u_out_pk22.
+DSP Report: operator u_out_pk22 is absorbed into DSP u_out_pk22.
+DSP Report: operator u_out_pk24 is absorbed into DSP u_out_pk22.
+DSP Report: Generating DSP u_out_pk20, operation Mode is: A2*B.
+DSP Report: register inv0_r_reg is absorbed into DSP u_out_pk20.
+DSP Report: operator u_out_pk20 is absorbed into DSP u_out_pk20.
+DSP Report: operator u_out_pk20 is absorbed into DSP u_out_pk20.
+DSP Report: Generating DSP u_out_pk20, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register inv0_r_reg is absorbed into DSP u_out_pk20.
+DSP Report: operator u_out_pk20 is absorbed into DSP u_out_pk20.
+DSP Report: operator u_out_pk20 is absorbed into DSP u_out_pk20.
+DSP Report: Generating DSP u_out_pk23, operation Mode is: A*B2.
+DSP Report: register v11_re_reg is absorbed into DSP u_out_pk23.
+DSP Report: operator u_out_pk23 is absorbed into DSP u_out_pk23.
+DSP Report: Generating DSP u_out_pk21, operation Mode is: PCIN+A*B2.
+DSP Report: register v01_re_reg is absorbed into DSP u_out_pk21.
+DSP Report: operator u_out_pk21 is absorbed into DSP u_out_pk21.
+DSP Report: operator u_out_pk23 is absorbed into DSP u_out_pk21.
+DSP Report: Generating DSP u_out_pk21, operation Mode is: PCIN-A*B2.
+DSP Report: register v11_im_reg is absorbed into DSP u_out_pk21.
+DSP Report: operator u_out_pk21 is absorbed into DSP u_out_pk21.
+DSP Report: operator u_out_pk22 is absorbed into DSP u_out_pk21.
+DSP Report: Generating DSP u_out_pk19, operation Mode is: A2*B.
+DSP Report: register inv1_r_reg is absorbed into DSP u_out_pk19.
+DSP Report: operator u_out_pk19 is absorbed into DSP u_out_pk19.
+DSP Report: operator u_out_pk19 is absorbed into DSP u_out_pk19.
+DSP Report: Generating DSP u_out_pk19, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register inv1_r_reg is absorbed into DSP u_out_pk19.
+DSP Report: operator u_out_pk19 is absorbed into DSP u_out_pk19.
+DSP Report: operator u_out_pk19 is absorbed into DSP u_out_pk19.
+DSP Report: Generating DSP u_out_pk21, operation Mode is: A*B2.
+DSP Report: register v11_re_reg is absorbed into DSP u_out_pk21.
+DSP Report: operator u_out_pk21 is absorbed into DSP u_out_pk21.
+DSP Report: Generating DSP u_out_pk20, operation Mode is: PCIN+A*B2.
+DSP Report: register v01_re_reg is absorbed into DSP u_out_pk20.
+DSP Report: operator u_out_pk20 is absorbed into DSP u_out_pk20.
+DSP Report: operator u_out_pk22 is absorbed into DSP u_out_pk20.
+DSP Report: Generating DSP u_out_pk20, operation Mode is: PCIN+A*B2.
+DSP Report: register v11_im_reg is absorbed into DSP u_out_pk20.
+DSP Report: operator u_out_pk20 is absorbed into DSP u_out_pk20.
+DSP Report: operator u_out_pk22 is absorbed into DSP u_out_pk20.
+DSP Report: Generating DSP u_out_pk18, operation Mode is: A2*B.
+DSP Report: register inv1_r_reg is absorbed into DSP u_out_pk18.
+DSP Report: operator u_out_pk18 is absorbed into DSP u_out_pk18.
+DSP Report: operator u_out_pk18 is absorbed into DSP u_out_pk18.
+DSP Report: Generating DSP u_out_pk18, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register inv1_r_reg is absorbed into DSP u_out_pk18.
+DSP Report: operator u_out_pk18 is absorbed into DSP u_out_pk18.
+DSP Report: operator u_out_pk18 is absorbed into DSP u_out_pk18.
+DSP Report: Generating DSP u_out_pk5, operation Mode is: A*B2.
+DSP Report: register v11_re_reg is absorbed into DSP u_out_pk5.
+DSP Report: operator u_out_pk5 is absorbed into DSP u_out_pk5.
+DSP Report: Generating DSP u_out_pk4, operation Mode is: PCIN+A*B2.
+DSP Report: register v01_re_reg is absorbed into DSP u_out_pk4.
+DSP Report: operator u_out_pk4 is absorbed into DSP u_out_pk4.
+DSP Report: operator u_out_pk6 is absorbed into DSP u_out_pk4.
+DSP Report: Generating DSP u_out_pk4, operation Mode is: PCIN+A*B2.
+DSP Report: register v11_im_reg is absorbed into DSP u_out_pk4.
+DSP Report: operator u_out_pk4 is absorbed into DSP u_out_pk4.
+DSP Report: operator u_out_pk6 is absorbed into DSP u_out_pk4.
+DSP Report: Generating DSP u_out_pk2, operation Mode is: A2*B.
+DSP Report: register inv1_r_reg is absorbed into DSP u_out_pk2.
+DSP Report: operator u_out_pk2 is absorbed into DSP u_out_pk2.
+DSP Report: operator u_out_pk2 is absorbed into DSP u_out_pk2.
+DSP Report: Generating DSP u_out_pk2, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register inv1_r_reg is absorbed into DSP u_out_pk2.
+DSP Report: operator u_out_pk2 is absorbed into DSP u_out_pk2.
+DSP Report: operator u_out_pk2 is absorbed into DSP u_out_pk2.
+DSP Report: Generating DSP u_out_pk7, operation Mode is: A*B2.
+DSP Report: register v11_re_reg is absorbed into DSP u_out_pk7.
+DSP Report: operator u_out_pk7 is absorbed into DSP u_out_pk7.
+DSP Report: Generating DSP u_out_pk5, operation Mode is: PCIN+A*B2.
+DSP Report: register v01_re_reg is absorbed into DSP u_out_pk5.
+DSP Report: operator u_out_pk5 is absorbed into DSP u_out_pk5.
+DSP Report: operator u_out_pk7 is absorbed into DSP u_out_pk5.
+DSP Report: Generating DSP u_out_pk5, operation Mode is: PCIN-A*B2.
+DSP Report: register v11_im_reg is absorbed into DSP u_out_pk5.
+DSP Report: operator u_out_pk5 is absorbed into DSP u_out_pk5.
+DSP Report: operator u_out_pk6 is absorbed into DSP u_out_pk5.
+DSP Report: Generating DSP u_out_pk3, operation Mode is: A2*B.
+DSP Report: register inv1_r_reg is absorbed into DSP u_out_pk3.
+DSP Report: operator u_out_pk3 is absorbed into DSP u_out_pk3.
+DSP Report: operator u_out_pk3 is absorbed into DSP u_out_pk3.
+DSP Report: Generating DSP u_out_pk3, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register inv1_r_reg is absorbed into DSP u_out_pk3.
+DSP Report: operator u_out_pk3 is absorbed into DSP u_out_pk3.
+DSP Report: operator u_out_pk3 is absorbed into DSP u_out_pk3.
+DSP Report: Generating DSP u_out_pk29, operation Mode is: A*B2.
+DSP Report: register v10_re_reg is absorbed into DSP u_out_pk29.
+DSP Report: operator u_out_pk29 is absorbed into DSP u_out_pk29.
+DSP Report: Generating DSP u_out_pk27, operation Mode is: PCIN+A*B2.
+DSP Report: register v00_re_reg is absorbed into DSP u_out_pk27.
+DSP Report: operator u_out_pk27 is absorbed into DSP u_out_pk27.
+DSP Report: operator u_out_pk29 is absorbed into DSP u_out_pk27.
+DSP Report: Generating DSP u_out_pk27, operation Mode is: PCIN-A*B2.
+DSP Report: register v10_im_reg is absorbed into DSP u_out_pk27.
+DSP Report: operator u_out_pk27 is absorbed into DSP u_out_pk27.
+DSP Report: operator u_out_pk28 is absorbed into DSP u_out_pk27.
+DSP Report: Generating DSP u_out_pk25, operation Mode is: A2*B.
+DSP Report: register inv0_r_reg is absorbed into DSP u_out_pk25.
+DSP Report: operator u_out_pk25 is absorbed into DSP u_out_pk25.
+DSP Report: operator u_out_pk25 is absorbed into DSP u_out_pk25.
+DSP Report: Generating DSP u_out_pk25, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register inv0_r_reg is absorbed into DSP u_out_pk25.
+DSP Report: operator u_out_pk25 is absorbed into DSP u_out_pk25.
+DSP Report: operator u_out_pk25 is absorbed into DSP u_out_pk25.
+DSP Report: Generating DSP u_out_pk25, operation Mode is: A*B2.
+DSP Report: register v10_re_reg is absorbed into DSP u_out_pk25.
+DSP Report: operator u_out_pk25 is absorbed into DSP u_out_pk25.
+DSP Report: Generating DSP u_out_pk23, operation Mode is: PCIN+A*B2.
+DSP Report: register v00_re_reg is absorbed into DSP u_out_pk23.
+DSP Report: operator u_out_pk23 is absorbed into DSP u_out_pk23.
+DSP Report: operator u_out_pk25 is absorbed into DSP u_out_pk23.
+DSP Report: Generating DSP u_out_pk23, operation Mode is: PCIN-A*B2.
+DSP Report: register v10_im_reg is absorbed into DSP u_out_pk23.
+DSP Report: operator u_out_pk23 is absorbed into DSP u_out_pk23.
+DSP Report: operator u_out_pk24 is absorbed into DSP u_out_pk23.
+DSP Report: Generating DSP u_out_pk21, operation Mode is: A2*B.
+DSP Report: register inv0_r_reg is absorbed into DSP u_out_pk21.
+DSP Report: operator u_out_pk21 is absorbed into DSP u_out_pk21.
+DSP Report: operator u_out_pk21 is absorbed into DSP u_out_pk21.
+DSP Report: Generating DSP u_out_pk21, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register inv0_r_reg is absorbed into DSP u_out_pk21.
+DSP Report: operator u_out_pk21 is absorbed into DSP u_out_pk21.
+DSP Report: operator u_out_pk21 is absorbed into DSP u_out_pk21.
+DSP Report: Generating DSP u_out_pk21, operation Mode is: A*B2.
+DSP Report: register v10_re_reg is absorbed into DSP u_out_pk21.
+DSP Report: operator u_out_pk21 is absorbed into DSP u_out_pk21.
+DSP Report: Generating DSP u_out_pk19, operation Mode is: PCIN+A*B2.
+DSP Report: register v00_re_reg is absorbed into DSP u_out_pk19.
+DSP Report: operator u_out_pk19 is absorbed into DSP u_out_pk19.
+DSP Report: operator u_out_pk21 is absorbed into DSP u_out_pk19.
+DSP Report: Generating DSP u_out_pk19, operation Mode is: PCIN-A*B2.
+DSP Report: register v10_im_reg is absorbed into DSP u_out_pk19.
+DSP Report: operator u_out_pk19 is absorbed into DSP u_out_pk19.
+DSP Report: operator u_out_pk20 is absorbed into DSP u_out_pk19.
+DSP Report: Generating DSP u_out_pk17, operation Mode is: A2*B.
+DSP Report: register inv0_r_reg is absorbed into DSP u_out_pk17.
+DSP Report: operator u_out_pk17 is absorbed into DSP u_out_pk17.
+DSP Report: operator u_out_pk17 is absorbed into DSP u_out_pk17.
+DSP Report: Generating DSP u_out_pk17, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register inv0_r_reg is absorbed into DSP u_out_pk17.
+DSP Report: operator u_out_pk17 is absorbed into DSP u_out_pk17.
+DSP Report: operator u_out_pk17 is absorbed into DSP u_out_pk17.
+DSP Report: Generating DSP u_out_pk27, operation Mode is: A*B2.
+DSP Report: register v10_re_reg is absorbed into DSP u_out_pk27.
+DSP Report: operator u_out_pk27 is absorbed into DSP u_out_pk27.
+DSP Report: Generating DSP u_out_pk26, operation Mode is: PCIN+A*B2.
+DSP Report: register v00_re_reg is absorbed into DSP u_out_pk26.
+DSP Report: operator u_out_pk26 is absorbed into DSP u_out_pk26.
+DSP Report: operator u_out_pk28 is absorbed into DSP u_out_pk26.
+DSP Report: Generating DSP u_out_pk26, operation Mode is: PCIN+A*B2.
+DSP Report: register v10_im_reg is absorbed into DSP u_out_pk26.
+DSP Report: operator u_out_pk26 is absorbed into DSP u_out_pk26.
+DSP Report: operator u_out_pk28 is absorbed into DSP u_out_pk26.
+DSP Report: Generating DSP u_out_pk24, operation Mode is: A2*B.
+DSP Report: register inv0_r_reg is absorbed into DSP u_out_pk24.
+DSP Report: operator u_out_pk24 is absorbed into DSP u_out_pk24.
+DSP Report: operator u_out_pk24 is absorbed into DSP u_out_pk24.
+DSP Report: Generating DSP u_out_pk24, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register inv0_r_reg is absorbed into DSP u_out_pk24.
+DSP Report: operator u_out_pk24 is absorbed into DSP u_out_pk24.
+DSP Report: operator u_out_pk24 is absorbed into DSP u_out_pk24.
+DSP Report: Generating DSP u_out_pk27, operation Mode is: A*B2.
+DSP Report: register v11_re_reg is absorbed into DSP u_out_pk27.
+DSP Report: operator u_out_pk27 is absorbed into DSP u_out_pk27.
+DSP Report: Generating DSP u_out_pk25, operation Mode is: PCIN+A*B2.
+DSP Report: register v01_re_reg is absorbed into DSP u_out_pk25.
+DSP Report: operator u_out_pk25 is absorbed into DSP u_out_pk25.
+DSP Report: operator u_out_pk27 is absorbed into DSP u_out_pk25.
+DSP Report: Generating DSP u_out_pk25, operation Mode is: PCIN-A*B2.
+DSP Report: register v11_im_reg is absorbed into DSP u_out_pk25.
+DSP Report: operator u_out_pk25 is absorbed into DSP u_out_pk25.
+DSP Report: operator u_out_pk26 is absorbed into DSP u_out_pk25.
+DSP Report: Generating DSP u_out_pk23, operation Mode is: A2*B.
+DSP Report: register inv1_r_reg is absorbed into DSP u_out_pk23.
+DSP Report: operator u_out_pk23 is absorbed into DSP u_out_pk23.
+DSP Report: operator u_out_pk23 is absorbed into DSP u_out_pk23.
+DSP Report: Generating DSP u_out_pk23, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register inv1_r_reg is absorbed into DSP u_out_pk23.
+DSP Report: operator u_out_pk23 is absorbed into DSP u_out_pk23.
+DSP Report: operator u_out_pk23 is absorbed into DSP u_out_pk23.
+DSP Report: Generating DSP u_out_pk25, operation Mode is: A*B2.
+DSP Report: register v11_re_reg is absorbed into DSP u_out_pk25.
+DSP Report: operator u_out_pk25 is absorbed into DSP u_out_pk25.
+DSP Report: Generating DSP u_out_pk24, operation Mode is: PCIN+A*B2.
+DSP Report: register v01_re_reg is absorbed into DSP u_out_pk24.
+DSP Report: operator u_out_pk24 is absorbed into DSP u_out_pk24.
+DSP Report: operator u_out_pk26 is absorbed into DSP u_out_pk24.
+DSP Report: Generating DSP u_out_pk24, operation Mode is: PCIN+A*B2.
+DSP Report: register v11_im_reg is absorbed into DSP u_out_pk24.
+DSP Report: operator u_out_pk24 is absorbed into DSP u_out_pk24.
+DSP Report: operator u_out_pk26 is absorbed into DSP u_out_pk24.
+DSP Report: Generating DSP u_out_pk22, operation Mode is: A2*B.
+DSP Report: register inv1_r_reg is absorbed into DSP u_out_pk22.
+DSP Report: operator u_out_pk22 is absorbed into DSP u_out_pk22.
+DSP Report: operator u_out_pk22 is absorbed into DSP u_out_pk22.
+DSP Report: Generating DSP u_out_pk22, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register inv1_r_reg is absorbed into DSP u_out_pk22.
+DSP Report: operator u_out_pk22 is absorbed into DSP u_out_pk22.
+DSP Report: operator u_out_pk22 is absorbed into DSP u_out_pk22.
+DSP Report: Generating DSP u_out_pk19, operation Mode is: A*B2.
+DSP Report: register v10_re_reg is absorbed into DSP u_out_pk19.
+DSP Report: operator u_out_pk19 is absorbed into DSP u_out_pk19.
+DSP Report: Generating DSP u_out_pk18, operation Mode is: PCIN+A*B2.
+DSP Report: register v00_re_reg is absorbed into DSP u_out_pk18.
+DSP Report: operator u_out_pk18 is absorbed into DSP u_out_pk18.
+DSP Report: operator u_out_pk20 is absorbed into DSP u_out_pk18.
+DSP Report: Generating DSP u_out_pk18, operation Mode is: PCIN+A*B2.
+DSP Report: register v10_im_reg is absorbed into DSP u_out_pk18.
+DSP Report: operator u_out_pk18 is absorbed into DSP u_out_pk18.
+DSP Report: operator u_out_pk20 is absorbed into DSP u_out_pk18.
+DSP Report: Generating DSP u_out_pk16, operation Mode is: A2*B.
+DSP Report: register inv0_r_reg is absorbed into DSP u_out_pk16.
+DSP Report: operator u_out_pk16 is absorbed into DSP u_out_pk16.
+DSP Report: operator u_out_pk16 is absorbed into DSP u_out_pk16.
+DSP Report: Generating DSP u_out_pk16, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register inv0_r_reg is absorbed into DSP u_out_pk16.
+DSP Report: operator u_out_pk16 is absorbed into DSP u_out_pk16.
+DSP Report: operator u_out_pk16 is absorbed into DSP u_out_pk16.
+DSP Report: Generating DSP u_out_pk19, operation Mode is: A*B2.
+DSP Report: register v11_re_reg is absorbed into DSP u_out_pk19.
+DSP Report: operator u_out_pk19 is absorbed into DSP u_out_pk19.
+DSP Report: Generating DSP u_out_pk17, operation Mode is: PCIN+A*B2.
+DSP Report: register v01_re_reg is absorbed into DSP u_out_pk17.
+DSP Report: operator u_out_pk17 is absorbed into DSP u_out_pk17.
+DSP Report: operator u_out_pk19 is absorbed into DSP u_out_pk17.
+DSP Report: Generating DSP u_out_pk17, operation Mode is: PCIN-A*B2.
+DSP Report: register v11_im_reg is absorbed into DSP u_out_pk17.
+DSP Report: operator u_out_pk17 is absorbed into DSP u_out_pk17.
+DSP Report: operator u_out_pk18 is absorbed into DSP u_out_pk17.
+DSP Report: Generating DSP u_out_pk15, operation Mode is: A2*B.
+DSP Report: register inv1_r_reg is absorbed into DSP u_out_pk15.
+DSP Report: operator u_out_pk15 is absorbed into DSP u_out_pk15.
+DSP Report: operator u_out_pk15 is absorbed into DSP u_out_pk15.
+DSP Report: Generating DSP u_out_pk15, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register inv1_r_reg is absorbed into DSP u_out_pk15.
+DSP Report: operator u_out_pk15 is absorbed into DSP u_out_pk15.
+DSP Report: operator u_out_pk15 is absorbed into DSP u_out_pk15.
+DSP Report: Generating DSP u_out_pk17, operation Mode is: A*B2.
+DSP Report: register v11_re_reg is absorbed into DSP u_out_pk17.
+DSP Report: operator u_out_pk17 is absorbed into DSP u_out_pk17.
+DSP Report: Generating DSP u_out_pk16, operation Mode is: PCIN+A*B2.
+DSP Report: register v01_re_reg is absorbed into DSP u_out_pk16.
+DSP Report: operator u_out_pk16 is absorbed into DSP u_out_pk16.
+DSP Report: operator u_out_pk18 is absorbed into DSP u_out_pk16.
+DSP Report: Generating DSP u_out_pk16, operation Mode is: PCIN+A*B2.
+DSP Report: register v11_im_reg is absorbed into DSP u_out_pk16.
+DSP Report: operator u_out_pk16 is absorbed into DSP u_out_pk16.
+DSP Report: operator u_out_pk18 is absorbed into DSP u_out_pk16.
+DSP Report: Generating DSP u_out_pk14, operation Mode is: A2*B.
+DSP Report: register inv1_r_reg is absorbed into DSP u_out_pk14.
+DSP Report: operator u_out_pk14 is absorbed into DSP u_out_pk14.
+DSP Report: operator u_out_pk14 is absorbed into DSP u_out_pk14.
+DSP Report: Generating DSP u_out_pk14, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register inv1_r_reg is absorbed into DSP u_out_pk14.
+DSP Report: operator u_out_pk14 is absorbed into DSP u_out_pk14.
+DSP Report: operator u_out_pk14 is absorbed into DSP u_out_pk14.
+DSP Report: Generating DSP u_out_pk7, operation Mode is: A*B2.
+DSP Report: register v10_re_reg is absorbed into DSP u_out_pk7.
+DSP Report: operator u_out_pk7 is absorbed into DSP u_out_pk7.
+DSP Report: Generating DSP u_out_pk6, operation Mode is: PCIN+A*B2.
+DSP Report: register v00_re_reg is absorbed into DSP u_out_pk6.
+DSP Report: operator u_out_pk6 is absorbed into DSP u_out_pk6.
+DSP Report: operator u_out_pk8 is absorbed into DSP u_out_pk6.
+DSP Report: Generating DSP u_out_pk6, operation Mode is: PCIN+A*B2.
+DSP Report: register v10_im_reg is absorbed into DSP u_out_pk6.
+DSP Report: operator u_out_pk6 is absorbed into DSP u_out_pk6.
+DSP Report: operator u_out_pk8 is absorbed into DSP u_out_pk6.
+DSP Report: Generating DSP u_out_pk4, operation Mode is: A2*B.
+DSP Report: register inv0_r_reg is absorbed into DSP u_out_pk4.
+DSP Report: operator u_out_pk4 is absorbed into DSP u_out_pk4.
+DSP Report: operator u_out_pk4 is absorbed into DSP u_out_pk4.
+DSP Report: Generating DSP u_out_pk4, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register inv0_r_reg is absorbed into DSP u_out_pk4.
+DSP Report: operator u_out_pk4 is absorbed into DSP u_out_pk4.
+DSP Report: operator u_out_pk4 is absorbed into DSP u_out_pk4.
+DSP Report: Generating DSP u_out_pk9, operation Mode is: A*B2.
+DSP Report: register v10_re_reg is absorbed into DSP u_out_pk9.
+DSP Report: operator u_out_pk9 is absorbed into DSP u_out_pk9.
+DSP Report: Generating DSP u_out_pk7, operation Mode is: PCIN+A*B2.
+DSP Report: register v00_re_reg is absorbed into DSP u_out_pk7.
+DSP Report: operator u_out_pk7 is absorbed into DSP u_out_pk7.
+DSP Report: operator u_out_pk9 is absorbed into DSP u_out_pk7.
+DSP Report: Generating DSP u_out_pk7, operation Mode is: PCIN-A*B2.
+DSP Report: register v10_im_reg is absorbed into DSP u_out_pk7.
+DSP Report: operator u_out_pk7 is absorbed into DSP u_out_pk7.
+DSP Report: operator u_out_pk8 is absorbed into DSP u_out_pk7.
+DSP Report: Generating DSP u_out_pk5, operation Mode is: A2*B.
+DSP Report: register inv0_r_reg is absorbed into DSP u_out_pk5.
+DSP Report: operator u_out_pk5 is absorbed into DSP u_out_pk5.
+DSP Report: operator u_out_pk5 is absorbed into DSP u_out_pk5.
+DSP Report: Generating DSP u_out_pk5, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register inv0_r_reg is absorbed into DSP u_out_pk5.
+DSP Report: operator u_out_pk5 is absorbed into DSP u_out_pk5.
+DSP Report: operator u_out_pk5 is absorbed into DSP u_out_pk5.
+DSP Report: Generating DSP u_out_pk9, operation Mode is: A*B2.
+DSP Report: register v11_re_reg is absorbed into DSP u_out_pk9.
+DSP Report: operator u_out_pk9 is absorbed into DSP u_out_pk9.
+DSP Report: Generating DSP u_out_pk8, operation Mode is: PCIN+A*B2.
+DSP Report: register v01_re_reg is absorbed into DSP u_out_pk8.
+DSP Report: operator u_out_pk8 is absorbed into DSP u_out_pk8.
+DSP Report: operator u_out_pk10 is absorbed into DSP u_out_pk8.
+DSP Report: Generating DSP u_out_pk8, operation Mode is: PCIN+A*B2.
+DSP Report: register v11_im_reg is absorbed into DSP u_out_pk8.
+DSP Report: operator u_out_pk8 is absorbed into DSP u_out_pk8.
+DSP Report: operator u_out_pk10 is absorbed into DSP u_out_pk8.
+DSP Report: Generating DSP u_out_pk6, operation Mode is: A2*B.
+DSP Report: register inv1_r_reg is absorbed into DSP u_out_pk6.
+DSP Report: operator u_out_pk6 is absorbed into DSP u_out_pk6.
+DSP Report: operator u_out_pk6 is absorbed into DSP u_out_pk6.
+DSP Report: Generating DSP u_out_pk6, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register inv1_r_reg is absorbed into DSP u_out_pk6.
+DSP Report: operator u_out_pk6 is absorbed into DSP u_out_pk6.
+DSP Report: operator u_out_pk6 is absorbed into DSP u_out_pk6.
+DSP Report: Generating DSP u_out_pk11, operation Mode is: A*B2.
+DSP Report: register v11_re_reg is absorbed into DSP u_out_pk11.
+DSP Report: operator u_out_pk11 is absorbed into DSP u_out_pk11.
+DSP Report: Generating DSP u_out_pk9, operation Mode is: PCIN+A*B2.
+DSP Report: register v01_re_reg is absorbed into DSP u_out_pk9.
+DSP Report: operator u_out_pk9 is absorbed into DSP u_out_pk9.
+DSP Report: operator u_out_pk11 is absorbed into DSP u_out_pk9.
+DSP Report: Generating DSP u_out_pk9, operation Mode is: PCIN-A*B2.
+DSP Report: register v11_im_reg is absorbed into DSP u_out_pk9.
+DSP Report: operator u_out_pk9 is absorbed into DSP u_out_pk9.
+DSP Report: operator u_out_pk10 is absorbed into DSP u_out_pk9.
+DSP Report: Generating DSP u_out_pk7, operation Mode is: A2*B.
+DSP Report: register inv1_r_reg is absorbed into DSP u_out_pk7.
+DSP Report: operator u_out_pk7 is absorbed into DSP u_out_pk7.
+DSP Report: operator u_out_pk7 is absorbed into DSP u_out_pk7.
+DSP Report: Generating DSP u_out_pk7, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register inv1_r_reg is absorbed into DSP u_out_pk7.
+DSP Report: operator u_out_pk7 is absorbed into DSP u_out_pk7.
+DSP Report: operator u_out_pk7 is absorbed into DSP u_out_pk7.
+DSP Report: Generating DSP u_out_pk13, operation Mode is: A*B2.
+DSP Report: register v10_re_reg is absorbed into DSP u_out_pk13.
+DSP Report: operator u_out_pk13 is absorbed into DSP u_out_pk13.
+DSP Report: Generating DSP u_out_pk11, operation Mode is: PCIN+A*B2.
+DSP Report: register v00_re_reg is absorbed into DSP u_out_pk11.
+DSP Report: operator u_out_pk11 is absorbed into DSP u_out_pk11.
+DSP Report: operator u_out_pk13 is absorbed into DSP u_out_pk11.
+DSP Report: Generating DSP u_out_pk11, operation Mode is: PCIN-A*B2.
+DSP Report: register v10_im_reg is absorbed into DSP u_out_pk11.
+DSP Report: operator u_out_pk11 is absorbed into DSP u_out_pk11.
+DSP Report: operator u_out_pk12 is absorbed into DSP u_out_pk11.
+DSP Report: Generating DSP u_out_pk9, operation Mode is: A2*B.
+DSP Report: register inv0_r_reg is absorbed into DSP u_out_pk9.
+DSP Report: operator u_out_pk9 is absorbed into DSP u_out_pk9.
+DSP Report: operator u_out_pk9 is absorbed into DSP u_out_pk9.
+DSP Report: Generating DSP u_out_pk9, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register inv0_r_reg is absorbed into DSP u_out_pk9.
+DSP Report: operator u_out_pk9 is absorbed into DSP u_out_pk9.
+DSP Report: operator u_out_pk9 is absorbed into DSP u_out_pk9.
+DSP Report: Generating DSP u_out_pk13, operation Mode is: A*B2.
+DSP Report: register v11_re_reg is absorbed into DSP u_out_pk13.
+DSP Report: operator u_out_pk13 is absorbed into DSP u_out_pk13.
+DSP Report: Generating DSP u_out_pk12, operation Mode is: PCIN+A*B2.
+DSP Report: register v01_re_reg is absorbed into DSP u_out_pk12.
+DSP Report: operator u_out_pk12 is absorbed into DSP u_out_pk12.
+DSP Report: operator u_out_pk14 is absorbed into DSP u_out_pk12.
+DSP Report: Generating DSP u_out_pk12, operation Mode is: PCIN+A*B2.
+DSP Report: register v11_im_reg is absorbed into DSP u_out_pk12.
+DSP Report: operator u_out_pk12 is absorbed into DSP u_out_pk12.
+DSP Report: operator u_out_pk14 is absorbed into DSP u_out_pk12.
+DSP Report: Generating DSP u_out_pk10, operation Mode is: A2*B.
+DSP Report: register inv1_r_reg is absorbed into DSP u_out_pk10.
+DSP Report: operator u_out_pk10 is absorbed into DSP u_out_pk10.
+DSP Report: operator u_out_pk10 is absorbed into DSP u_out_pk10.
+DSP Report: Generating DSP u_out_pk10, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register inv1_r_reg is absorbed into DSP u_out_pk10.
+DSP Report: operator u_out_pk10 is absorbed into DSP u_out_pk10.
+DSP Report: operator u_out_pk10 is absorbed into DSP u_out_pk10.
+DSP Report: Generating DSP u_out_pk15, operation Mode is: A*B2.
+DSP Report: register v11_re_reg is absorbed into DSP u_out_pk15.
+DSP Report: operator u_out_pk15 is absorbed into DSP u_out_pk15.
+DSP Report: Generating DSP u_out_pk13, operation Mode is: PCIN+A*B2.
+DSP Report: register v01_re_reg is absorbed into DSP u_out_pk13.
+DSP Report: operator u_out_pk13 is absorbed into DSP u_out_pk13.
+DSP Report: operator u_out_pk15 is absorbed into DSP u_out_pk13.
+DSP Report: Generating DSP u_out_pk13, operation Mode is: PCIN-A*B2.
+DSP Report: register v11_im_reg is absorbed into DSP u_out_pk13.
+DSP Report: operator u_out_pk13 is absorbed into DSP u_out_pk13.
+DSP Report: operator u_out_pk14 is absorbed into DSP u_out_pk13.
+DSP Report: Generating DSP u_out_pk11, operation Mode is: A2*B.
+DSP Report: register inv1_r_reg is absorbed into DSP u_out_pk11.
+DSP Report: operator u_out_pk11 is absorbed into DSP u_out_pk11.
+DSP Report: operator u_out_pk11 is absorbed into DSP u_out_pk11.
+DSP Report: Generating DSP u_out_pk11, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register inv1_r_reg is absorbed into DSP u_out_pk11.
+DSP Report: operator u_out_pk11 is absorbed into DSP u_out_pk11.
+DSP Report: operator u_out_pk11 is absorbed into DSP u_out_pk11.
+DSP Report: Generating DSP u_out_pk15, operation Mode is: A*B2.
+DSP Report: register v10_re_reg is absorbed into DSP u_out_pk15.
+DSP Report: operator u_out_pk15 is absorbed into DSP u_out_pk15.
+DSP Report: Generating DSP u_out_pk14, operation Mode is: PCIN+A*B2.
+DSP Report: register v00_re_reg is absorbed into DSP u_out_pk14.
+DSP Report: operator u_out_pk14 is absorbed into DSP u_out_pk14.
+DSP Report: operator u_out_pk16 is absorbed into DSP u_out_pk14.
+DSP Report: Generating DSP u_out_pk14, operation Mode is: PCIN+A*B2.
+DSP Report: register v10_im_reg is absorbed into DSP u_out_pk14.
+DSP Report: operator u_out_pk14 is absorbed into DSP u_out_pk14.
+DSP Report: operator u_out_pk16 is absorbed into DSP u_out_pk14.
+DSP Report: Generating DSP u_out_pk12, operation Mode is: A2*B.
+DSP Report: register inv0_r_reg is absorbed into DSP u_out_pk12.
+DSP Report: operator u_out_pk12 is absorbed into DSP u_out_pk12.
+DSP Report: operator u_out_pk12 is absorbed into DSP u_out_pk12.
+DSP Report: Generating DSP u_out_pk12, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register inv0_r_reg is absorbed into DSP u_out_pk12.
+DSP Report: operator u_out_pk12 is absorbed into DSP u_out_pk12.
+DSP Report: operator u_out_pk12 is absorbed into DSP u_out_pk12.
+DSP Report: Generating DSP u_out_pk17, operation Mode is: A*B2.
+DSP Report: register v10_re_reg is absorbed into DSP u_out_pk17.
+DSP Report: operator u_out_pk17 is absorbed into DSP u_out_pk17.
+DSP Report: Generating DSP u_out_pk15, operation Mode is: PCIN+A*B2.
+DSP Report: register v00_re_reg is absorbed into DSP u_out_pk15.
+DSP Report: operator u_out_pk15 is absorbed into DSP u_out_pk15.
+DSP Report: operator u_out_pk17 is absorbed into DSP u_out_pk15.
+DSP Report: Generating DSP u_out_pk15, operation Mode is: PCIN-A*B2.
+DSP Report: register v10_im_reg is absorbed into DSP u_out_pk15.
+DSP Report: operator u_out_pk15 is absorbed into DSP u_out_pk15.
+DSP Report: operator u_out_pk16 is absorbed into DSP u_out_pk15.
+DSP Report: Generating DSP u_out_pk13, operation Mode is: A2*B.
+DSP Report: register inv0_r_reg is absorbed into DSP u_out_pk13.
+DSP Report: operator u_out_pk13 is absorbed into DSP u_out_pk13.
+DSP Report: operator u_out_pk13 is absorbed into DSP u_out_pk13.
+DSP Report: Generating DSP u_out_pk13, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register inv0_r_reg is absorbed into DSP u_out_pk13.
+DSP Report: operator u_out_pk13 is absorbed into DSP u_out_pk13.
+DSP Report: operator u_out_pk13 is absorbed into DSP u_out_pk13.
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port P[5] driven by constant 1
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port P[4] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port P[3] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port P[2] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port P[1] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port P[0] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1313[5] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1313[4] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1313[3] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1313[2] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1313[1] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1313[0] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1320[5] driven by constant 1
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1320[4] driven by constant 1
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1320[3] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1320[2] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1320[1] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1320[0] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1324[5] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1324[4] driven by constant 1
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1324[3] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1324[2] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1324[1] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1324[0] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1339[8] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1339[7] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1339[6] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1339[5] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1339[4] driven by constant 1
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1339[3] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1339[2] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1339[1] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1339[0] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1342[5] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1342[4] driven by constant 1
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1342[3] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1342[2] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1342[1] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1342[0] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1351[8] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1351[7] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1351[6] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1351[5] driven by constant 1
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1351[4] driven by constant 1
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1351[3] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1351[2] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1351[1] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1351[0] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1366[8] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1366[7] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1366[6] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1366[5] driven by constant 1
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1366[4] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1366[3] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1366[2] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1366[1] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1366[0] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1376[8] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1376[7] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1376[6] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1376[5] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1376[4] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1376[3] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1376[2] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1376[1] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1376[0] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1381[5] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1381[4] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1381[3] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1381[2] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1381[1] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1381[0] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1387[5] driven by constant 1
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1387[4] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1387[3] driven by constant 0
+WARNING: [Synth 8-3917] design umat_calc_cmx2__GB6 has port O1387[2] driven by constant 0
+INFO: [Common 17-14] Message 'Synth 8-3917' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3917' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'v_out_pk_reg[16]' (FDRE) to 'v_out_pk_reg[17]'
+INFO: [Synth 8-3886] merging instance 'v_out_pk_reg[17]' (FDRE) to 'v_out_pk_reg[18]'
+INFO: [Synth 8-3886] merging instance 'v_out_pk_reg[18]' (FDRE) to 'v_out_pk_reg[19]'
+INFO: [Synth 8-3886] merging instance 'v_out_pk_reg[19]' (FDRE) to 'v_out_pk_reg[20]'
+INFO: [Synth 8-3886] merging instance 'v_out_pk_reg[20]' (FDRE) to 'v_out_pk_reg[21]'
+INFO: [Synth 8-3886] merging instance 'v_out_pk_reg[21]' (FDRE) to 'v_out_pk_reg[22]'
+INFO: [Synth 8-3886] merging instance 'v_out_pk_reg[22]' (FDRE) to 'v_out_pk_reg[23]'
+INFO: [Synth 8-3886] merging instance 'v_out_pk_reg[23]' (FDRE) to 'v_out_pk_reg[24]'
+INFO: [Synth 8-3886] merging instance 'v_out_pk_reg[24]' (FDRE) to 'v_out_pk_reg[25]'
+INFO: [Synth 8-3886] merging instance 'v_out_pk_reg[25]' (FDRE) to 'v_out_pk_reg[26]'
+INFO: [Synth 8-3886] merging instance 'v_out_pk_reg[26]' (FDRE) to 'v_out_pk_reg[27]'
+INFO: [Synth 8-3886] merging instance 'v_out_pk_reg[27]' (FDRE) to 'v_out_pk_reg[28]'
+INFO: [Synth 8-3886] merging instance 'v_out_pk_reg[28]' (FDRE) to 'v_out_pk_reg[29]'
+INFO: [Synth 8-3886] merging instance 'v_out_pk_reg[29]' (FDRE) to 'v_out_pk_reg[30]'
+INFO: [Synth 8-3886] merging instance 'v_out_pk_reg[30]' (FDRE) to 'v_out_pk_reg[31]'
+INFO: [Synth 8-3886] merging instance 'v_out_pk_reg[31]' (FDRE) to 'v_out_pk_reg[48]'
+INFO: [Synth 8-3886] merging instance 'v_out_pk_reg[48]' (FDRE) to 'v_out_pk_reg[49]'
+INFO: [Synth 8-3886] merging instance 'v_out_pk_reg[49]' (FDRE) to 'v_out_pk_reg[50]'
+INFO: [Synth 8-3886] merging instance 'v_out_pk_reg[50]' (FDRE) to 'v_out_pk_reg[51]'
+INFO: [Synth 8-3886] merging instance 'v_out_pk_reg[51]' (FDRE) to 'v_out_pk_reg[52]'
+INFO: [Synth 8-3886] merging instance 'v_out_pk_reg[52]' (FDRE) to 'v_out_pk_reg[53]'
+INFO: [Synth 8-3886] merging instance 'v_out_pk_reg[53]' (FDRE) to 'v_out_pk_reg[54]'
+INFO: [Synth 8-3886] merging instance 'v_out_pk_reg[54]' (FDRE) to 'v_out_pk_reg[55]'
+INFO: [Synth 8-3886] merging instance 'v_out_pk_reg[55]' (FDRE) to 'v_out_pk_reg[56]'
+INFO: [Synth 8-3886] merging instance 'v_out_pk_reg[56]' (FDRE) to 'v_out_pk_reg[57]'
+INFO: [Synth 8-3886] merging instance 'v_out_pk_reg[57]' (FDRE) to 'v_out_pk_reg[58]'
+INFO: [Synth 8-3886] merging instance 'v_out_pk_reg[58]' (FDRE) to 'v_out_pk_reg[59]'
+INFO: [Synth 8-3886] merging instance 'v_out_pk_reg[59]' (FDRE) to 'v_out_pk_reg[60]'
+INFO: [Synth 8-3886] merging instance 'v_out_pk_reg[60]' (FDRE) to 'v_out_pk_reg[61]'
+INFO: [Synth 8-3886] merging instance 'v_out_pk_reg[61]' (FDRE) to 'v_out_pk_reg[62]'
+INFO: [Synth 8-3886] merging instance 'v_out_pk_reg[62]' (FDRE) to 'v_out_pk_reg[63]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\v_out_pk_reg[63] )
+INFO: [Synth 8-12192] Not enough pipeline registers after wide multiplier. Pipeline registers present is 0. Recommended levels of pipeline registers is 3. [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/eig_sym_2x2.v:106]
+INFO: [Synth 8-12192] Not enough pipeline registers after wide multiplier. Pipeline registers present is 1. Recommended levels of pipeline registers is 3. [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/svd_128x2.v:89]
+WARNING: [Synth 8-6014] Unused sequential element u_eig/b_s1_reg was removed.  [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/eig_sym_2x2.v:71]
+DSP Report: Generating DSP u_eig/mag_scaled, operation Mode is: (A:0xdbd8c)*B.
+DSP Report: operator u_eig/mag_scaled is absorbed into DSP u_eig/mag_scaled.
+DSP Report: operator u_eig/mag_scaled is absorbed into DSP u_eig/mag_scaled.
+DSP Report: Generating DSP u_eig/mag_scaled, operation Mode is: (A:0xdbd8c)*B.
+DSP Report: operator u_eig/mag_scaled is absorbed into DSP u_eig/mag_scaled.
+DSP Report: operator u_eig/mag_scaled is absorbed into DSP u_eig/mag_scaled.
+DSP Report: Generating DSP u_eig/mag_scaled, operation Mode is: (PCIN>>17)+(A:0xdbd8c)*B.
+DSP Report: operator u_eig/mag_scaled is absorbed into DSP u_eig/mag_scaled.
+DSP Report: operator u_eig/mag_scaled is absorbed into DSP u_eig/mag_scaled.
+DSP Report: Generating DSP u_eig/b_s1_reg, operation Mode is: ((A:0xdbd8c)*B)'.
+DSP Report: register u_eig/b_s1_reg is absorbed into DSP u_eig/b_s1_reg.
+DSP Report: operator r_scaled is absorbed into DSP u_eig/b_s1_reg.
+DSP Report: operator r_scaled is absorbed into DSP u_eig/b_s1_reg.
+DSP Report: Generating DSP r_scaled, operation Mode is: (A:0xdbd8c)*B.
+DSP Report: operator r_scaled is absorbed into DSP r_scaled.
+DSP Report: operator r_scaled is absorbed into DSP r_scaled.
+DSP Report: Generating DSP u_eig/b_s1_reg, operation Mode is: (PCIN>>17)+(A:0xdbd8c)*B.
+DSP Report: register u_eig/b_s1_reg is absorbed into DSP u_eig/b_s1_reg.
+DSP Report: operator r_scaled is absorbed into DSP u_eig/b_s1_reg.
+DSP Report: operator r_scaled is absorbed into DSP u_eig/b_s1_reg.
+INFO: [Synth 8-3886] merging instance 'u_eig/t_s1_reg[39]' (FDR) to 'u_eig/t_s1_reg[38]'
+INFO: [Synth 8-3886] merging instance 'u_eig/t_hold_reg[39]' (FDRE) to 'u_eig/t_hold_reg[38]'
+INFO: [Synth 8-3886] merging instance 'u_eig/d_s1_reg[38]' (FDR) to 'u_eig/d_s1_reg[39]'
+INFO: [Synth 8-3886] merging instance 'u_eig/theta_s3_reg[14]' (FDR) to 'u_eig/theta_s3_reg[15]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:17:06 ; elapsed = 00:17:14 . Memory (MB): peak = 5999.152 ; gain = 4328.848
+---------------------------------------------------------------------------------
+ Sort Area is gram_cmx2__GB12 acc_a2_f : 0 0 : 1937 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_a2_f : 0 1 : 2058 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_a2_f : 0 2 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_a2_f : 0 3 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_a2_f : 0 4 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_a2_f : 0 5 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_a2_f : 0 6 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_a2_f : 0 7 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_a2_f : 0 8 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_a2_f : 0 9 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_a2_f : 0 10 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_a2_f : 0 11 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_a2_f : 0 12 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_a2_f : 0 13 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_a2_f : 0 14 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_a2_f : 0 15 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_a2_f : 0 16 : 119 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_c2_0 : 0 0 : 1937 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_c2_0 : 0 1 : 2058 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_c2_0 : 0 2 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_c2_0 : 0 3 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_c2_0 : 0 4 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_c2_0 : 0 5 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_c2_0 : 0 6 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_c2_0 : 0 7 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_c2_0 : 0 8 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_c2_0 : 0 9 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_c2_0 : 0 10 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_c2_0 : 0 11 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_c2_0 : 0 12 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_c2_0 : 0 13 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_c2_0 : 0 14 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_c2_0 : 0 15 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_c2_0 : 0 16 : 119 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_p2_5 : 0 0 : 1937 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_p2_5 : 0 1 : 2058 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_p2_5 : 0 2 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_p2_5 : 0 3 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_p2_5 : 0 4 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_p2_5 : 0 5 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_p2_5 : 0 6 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_p2_5 : 0 7 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_p2_5 : 0 8 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_p2_5 : 0 9 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_p2_5 : 0 10 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_p2_5 : 0 11 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_p2_5 : 0 12 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_p2_5 : 0 13 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_p2_5 : 0 14 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_p2_5 : 0 15 : 2066 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_p2_5 : 0 16 : 119 33038 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_q3_6 : 0 0 : 1937 16391 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_q3_6 : 0 1 : 2058 16391 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_q3_6 : 0 2 : 2066 16391 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_q3_6 : 0 3 : 2066 16391 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_q3_6 : 0 4 : 2066 16391 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_q3_6 : 0 5 : 2066 16391 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_q3_6 : 0 6 : 2066 16391 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_q3_6 : 0 7 : 2066 16391 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk11_3f : 0 0 : 1953 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk11_3f : 0 1 : 2053 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk11_3f : 0 2 : 2180 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk13_41 : 0 0 : 1953 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk13_41 : 0 1 : 2053 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk13_41 : 0 2 : 2180 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk15_45 : 0 0 : 1953 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk15_45 : 0 1 : 2053 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk15_45 : 0 2 : 2180 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk17_49 : 0 0 : 1953 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk17_49 : 0 1 : 2053 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk17_49 : 0 2 : 2180 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk19_35 : 0 0 : 1953 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk19_35 : 0 1 : 2053 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk19_35 : 0 2 : 2180 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk21_2b : 0 0 : 1953 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk21_2b : 0 1 : 2053 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk21_2b : 0 2 : 2180 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk23_1f : 0 0 : 1953 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk23_1f : 0 1 : 2053 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk23_1f : 0 2 : 2180 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk25_29 : 0 0 : 1953 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk25_29 : 0 1 : 2053 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk25_29 : 0 2 : 2180 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk27_2f : 0 0 : 1953 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk27_2f : 0 1 : 2053 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk27_2f : 0 2 : 2180 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk29_27 : 0 0 : 1953 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk29_27 : 0 1 : 2053 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk29_27 : 0 2 : 2180 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk31_17 : 0 0 : 1953 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk31_17 : 0 1 : 2053 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk31_17 : 0 2 : 2180 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk33_11 : 0 0 : 1953 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk33_11 : 0 1 : 2053 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk33_11 : 0 2 : 2180 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk35_a : 0 0 : 1953 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk35_a : 0 1 : 2053 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk35_a : 0 2 : 2180 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk37_13 : 0 0 : 1953 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk37_13 : 0 1 : 2053 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk37_13 : 0 2 : 2180 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk7_25 : 0 0 : 1953 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk7_25 : 0 1 : 2053 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk7_25 : 0 2 : 2180 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk9_3b : 0 0 : 1953 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk9_3b : 0 1 : 2053 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk9_3b : 0 2 : 2180 6186 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk11_1b : 0 0 : 1953 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk11_1b : 0 1 : 2053 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk11_1b : 0 2 : 2054 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk13_43 : 0 0 : 1953 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk13_43 : 0 1 : 2053 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk13_43 : 0 2 : 2054 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk15_47 : 0 0 : 1953 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk15_47 : 0 1 : 2053 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk15_47 : 0 2 : 2054 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk17_37 : 0 0 : 1953 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk17_37 : 0 1 : 2053 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk17_37 : 0 2 : 2054 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk19_33 : 0 0 : 1953 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk19_33 : 0 1 : 2053 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk19_33 : 0 2 : 2054 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk21_21 : 0 0 : 1953 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk21_21 : 0 1 : 2053 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk21_21 : 0 2 : 2054 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk23_1d : 0 0 : 1953 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk23_1d : 0 1 : 2053 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk23_1d : 0 2 : 2054 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk25_31 : 0 0 : 1953 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk25_31 : 0 1 : 2053 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk25_31 : 0 2 : 2054 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk27_2d : 0 0 : 1953 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk27_2d : 0 1 : 2053 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk27_2d : 0 2 : 2054 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk29_19 : 0 0 : 1953 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk29_19 : 0 1 : 2053 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk29_19 : 0 2 : 2054 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk31_15 : 0 0 : 1953 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk31_15 : 0 1 : 2053 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk31_15 : 0 2 : 2054 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk33_3 : 0 0 : 1953 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk33_3 : 0 1 : 2053 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk33_3 : 0 2 : 2054 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk35_f : 0 0 : 1953 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk35_f : 0 1 : 2053 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk35_f : 0 2 : 2054 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk5_23 : 0 0 : 1953 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk5_23 : 0 1 : 2053 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk5_23 : 0 2 : 2054 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk7_39 : 0 0 : 1953 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk7_39 : 0 1 : 2053 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk7_39 : 0 2 : 2054 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk9_3d : 0 0 : 1953 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk9_3d : 0 1 : 2053 6060 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk9_3d : 0 2 : 2054 6060 : Used 1 time 0
+ Sort Area is svd_128x2__GC0 r_scaled_5 : 0 0 : 2420 4907 : Used 1 time 0
+ Sort Area is svd_128x2__GC0 r_scaled_5 : 0 1 : 2487 4907 : Used 1 time 0
+ Sort Area is svd_128x2__GC0 u_eig/mag_scaled_0 : 0 0 : 2420 4859 : Used 1 time 0
+ Sort Area is svd_128x2__GC0 u_eig/mag_scaled_0 : 0 1 : 2439 4859 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk10_44 : 0 0 : 3645 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk10_44 : 0 1 : 918 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk11_46 : 0 0 : 3645 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk11_46 : 0 1 : 918 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk12_48 : 0 0 : 3645 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk12_48 : 0 1 : 918 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk13_4a : 0 0 : 3645 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk13_4a : 0 1 : 918 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk14_38 : 0 0 : 3645 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk14_38 : 0 1 : 918 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk15_36 : 0 0 : 3645 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk15_36 : 0 1 : 918 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk16_34 : 0 0 : 3645 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk16_34 : 0 1 : 918 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk17_2c : 0 0 : 3645 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk17_2c : 0 1 : 918 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk18_22 : 0 0 : 3645 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk18_22 : 0 1 : 918 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk19_20 : 0 0 : 3645 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk19_20 : 0 1 : 918 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk20_1e : 0 0 : 3645 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk20_1e : 0 1 : 918 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk21_2a : 0 0 : 3645 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk21_2a : 0 1 : 918 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk22_32 : 0 0 : 3645 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk22_32 : 0 1 : 918 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk23_30 : 0 0 : 3645 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk23_30 : 0 1 : 918 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk24_2e : 0 0 : 3645 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk24_2e : 0 1 : 918 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk25_28 : 0 0 : 3645 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk25_28 : 0 1 : 918 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk26_1a : 0 0 : 3645 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk26_1a : 0 1 : 918 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk27_18 : 0 0 : 3645 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk27_18 : 0 1 : 918 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk28_16 : 0 0 : 3645 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk28_16 : 0 1 : 918 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk29_12 : 0 0 : 3645 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk29_12 : 0 1 : 918 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk2_24 : 0 0 : 3645 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk2_24 : 0 1 : 918 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk30_7 : 0 0 : 3645 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk30_7 : 0 1 : 918 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk31_c : 0 0 : 3645 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk31_c : 0 1 : 918 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk32_10 : 0 0 : 3645 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk32_10 : 0 1 : 918 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk33_14 : 0 0 : 3645 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk33_14 : 0 1 : 918 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk3_26 : 0 0 : 3645 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk3_26 : 0 1 : 918 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk4_3a : 0 0 : 3645 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk4_3a : 0 1 : 918 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk5_3c : 0 0 : 3645 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk5_3c : 0 1 : 918 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk6_3e : 0 0 : 3645 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk6_3e : 0 1 : 918 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk7_40 : 0 0 : 3645 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk7_40 : 0 1 : 918 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk8_1c : 0 0 : 3645 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk8_1c : 0 1 : 918 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk9_42 : 0 0 : 3645 4563 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 u_out_pk9_42 : 0 1 : 918 4563 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_q10_b : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_q12_c : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_q14_d : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_q16_e : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_q2_7 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_q4_8 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_q6_9 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is gram_cmx2__GB12 acc_q8_a : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 mulV_return0_0 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 mulV_return0_2 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 mulV_return0_d : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is umat_calc_cmx2__GB6 mulV_return0_e : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is svd_128x2__GC0 u_eig/b_s1_reg_7 : 0 0 : 737 737 : Used 1 time 0
+ Sort Area is svd_128x2__GC0 u_eig/mag_scaled_3 : 0 0 : 689 689 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++----------------+--------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping              | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+--------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|gram_cmx2       | A*B                      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2__GB12 | PCIN+A:B                 | 22     | 18     | -      | -      | -1     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | A*B                      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2__GB12 | PCIN+A:B                 | 22     | 18     | -      | -      | -1     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | A*B                      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | A*B                      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | A*B                      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | A*B                      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | A*B                      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | A*B                      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | A*B                      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | A*B                      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | A*B                      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | A*B                      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2       | PCIN+A*B                 | 16     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2__GB12 | PCIN+A:B                 | 22     | 18     | -      | -      | -1     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A*B                      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A*B2                     | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A*B                      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A2*B                     | 27     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | (PCIN>>17)+A2*B          | 21     | 7      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A*B2                     | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN-A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A2*B                     | 27     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | (PCIN>>17)+A2*B          | 21     | 7      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A*B                      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A*B2                     | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A*B                      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A2*B                     | 27     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | (PCIN>>17)+A2*B          | 21     | 7      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A*B2                     | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN-A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A2*B                     | 27     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | (PCIN>>17)+A2*B          | 21     | 7      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A*B2                     | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN-A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A2*B                     | 27     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | (PCIN>>17)+A2*B          | 21     | 7      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A*B2                     | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A2*B                     | 27     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | (PCIN>>17)+A2*B          | 21     | 7      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A*B2                     | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN-A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A2*B                     | 27     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | (PCIN>>17)+A2*B          | 21     | 7      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A*B2                     | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A2*B                     | 27     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | (PCIN>>17)+A2*B          | 21     | 7      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A*B2                     | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A2*B                     | 27     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | (PCIN>>17)+A2*B          | 21     | 7      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A*B2                     | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A2*B                     | 27     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | (PCIN>>17)+A2*B          | 21     | 7      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A*B2                     | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN-A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A2*B                     | 27     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | (PCIN>>17)+A2*B          | 21     | 7      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A*B2                     | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A2*B                     | 27     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | (PCIN>>17)+A2*B          | 21     | 7      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A*B2                     | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A2*B                     | 27     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | (PCIN>>17)+A2*B          | 21     | 7      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A*B2                     | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN-A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A2*B                     | 27     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | (PCIN>>17)+A2*B          | 21     | 7      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A*B2                     | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN-A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A2*B                     | 27     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | (PCIN>>17)+A2*B          | 21     | 7      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A*B2                     | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN-A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A2*B                     | 27     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | (PCIN>>17)+A2*B          | 21     | 7      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A*B2                     | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN-A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A2*B                     | 27     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | (PCIN>>17)+A2*B          | 21     | 7      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A*B2                     | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A2*B                     | 27     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | (PCIN>>17)+A2*B          | 21     | 7      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A*B2                     | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN-A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A2*B                     | 27     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | (PCIN>>17)+A2*B          | 21     | 7      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A*B2                     | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A2*B                     | 27     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | (PCIN>>17)+A2*B          | 21     | 7      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A*B2                     | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A2*B                     | 27     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | (PCIN>>17)+A2*B          | 21     | 7      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A*B2                     | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN-A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A2*B                     | 27     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | (PCIN>>17)+A2*B          | 21     | 7      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A*B2                     | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A2*B                     | 27     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | (PCIN>>17)+A2*B          | 21     | 7      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A*B2                     | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A2*B                     | 27     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | (PCIN>>17)+A2*B          | 21     | 7      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A*B2                     | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN-A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A2*B                     | 27     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | (PCIN>>17)+A2*B          | 21     | 7      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A*B2                     | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A2*B                     | 27     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | (PCIN>>17)+A2*B          | 21     | 7      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A*B2                     | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN-A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A2*B                     | 27     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | (PCIN>>17)+A2*B          | 21     | 7      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A*B2                     | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN-A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A2*B                     | 27     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | (PCIN>>17)+A2*B          | 21     | 7      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A*B2                     | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A2*B                     | 27     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | (PCIN>>17)+A2*B          | 21     | 7      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A*B2                     | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN-A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A2*B                     | 27     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | (PCIN>>17)+A2*B          | 21     | 7      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A*B2                     | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A2*B                     | 27     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | (PCIN>>17)+A2*B          | 21     | 7      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A*B2                     | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN+A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | PCIN-A*B2                | 16     | 16     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | A2*B                     | 27     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2  | (PCIN>>17)+A2*B          | 21     | 7      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|svd_128x2__GC0  | (A:0xdbd8c)*B            | 21     | 6      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|svd_128x2__GC0  | (A:0xdbd8c)*B            | 21     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|svd_128x2__GC0  | (PCIN>>17)+(A:0xdbd8c)*B | 21     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|svd_128x2__GC0  | ((A:0xdbd8c)*B)'         | 21     | 6      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|svd_128x2__GC0  | (A:0xdbd8c)*B            | 21     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|svd_128x2__GC0  | (PCIN>>17)+(A:0xdbd8c)*B | 21     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++----------------+--------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:17:52 ; elapsed = 00:18:01 . Memory (MB): peak = 5999.152 ; gain = 4328.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:23:55 ; elapsed = 00:24:07 . Memory (MB): peak = 5999.152 ; gain = 4328.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:25:35 ; elapsed = 00:26:09 . Memory (MB): peak = 5999.152 ; gain = 4328.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:25:57 ; elapsed = 00:26:32 . Memory (MB): peak = 5999.152 ; gain = 4328.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:25:58 ; elapsed = 00:26:32 . Memory (MB): peak = 5999.152 ; gain = 4328.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:26:07 ; elapsed = 00:26:41 . Memory (MB): peak = 5999.152 ; gain = 4328.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:26:07 ; elapsed = 00:26:41 . Memory (MB): peak = 5999.152 ; gain = 4328.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:26:10 ; elapsed = 00:26:44 . Memory (MB): peak = 5999.152 ; gain = 4328.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:26:10 ; elapsed = 00:26:44 . Memory (MB): peak = 5999.152 ; gain = 4328.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++---------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name    | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|gram_cmx2      | A*B             | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | A*B             | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+C'+A*B     | 30     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | A*B             | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+C'+A*B     | 30     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | A*B             | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | A*B             | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | A*B             | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | A*B             | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | A*B             | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | A*B             | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | A*B             | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | A*B             | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | A*B             | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+A*B        | 30     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gram_cmx2      | PCIN+C'+A*B     | 30     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|svd_128x2__GC0 | A*B             | 20     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|svd_128x2__GC0 | A*B             | 20     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|svd_128x2__GC0 | A*B             | 20     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|svd_128x2__GC0 | PCIN>>17+A*B    | 0      | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|svd_128x2__GC0 | (A*B)'          | 20     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|svd_128x2__GC0 | (PCIN>>17+A*B)' | 0      | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|umat_calc_cmx2 | A'*B'           | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A*B'            | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B'       | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A'*B'           | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B'       | 30     | 18     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A'*B            | 30     | 17     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN>>17+A'*B   | 30     | 18     | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A*B'            | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B'       | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN-(A*B')     | 30     | 18     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A'*B            | 30     | 17     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN>>17+A'*B   | 30     | 18     | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A'*B'           | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A*B'            | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B''      | 30     | 18     | -      | -      | 0      | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A'*B'           | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B'       | 30     | 18     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A'*B            | 30     | 17     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN>>17+A'*B   | 30     | 18     | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A*B'            | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B''      | 30     | 18     | -      | -      | 0      | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN-(A*B')     | 30     | 18     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A'*B            | 30     | 17     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN>>17+A'*B   | 30     | 18     | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A*B'            | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B''      | 30     | 18     | -      | -      | 0      | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN-(A*B')     | 30     | 18     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A'*B            | 30     | 17     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN>>17+A'*B   | 30     | 18     | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A*B'            | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B''      | 30     | 18     | -      | -      | 0      | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B'       | 30     | 18     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A'*B            | 30     | 17     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN>>17+A'*B   | 30     | 18     | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A*B'            | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B'       | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN-(A*B')     | 30     | 18     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A'*B            | 30     | 17     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN>>17+A'*B   | 30     | 18     | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A*B'            | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B'       | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B'       | 30     | 18     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A'*B            | 30     | 17     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN>>17+A'*B   | 30     | 18     | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A*B'            | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B''      | 30     | 18     | -      | -      | 0      | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B'       | 30     | 18     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A'*B            | 30     | 17     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN>>17+A'*B   | 30     | 18     | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A*B'            | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B''      | 30     | 18     | -      | -      | 0      | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B'       | 30     | 18     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A'*B            | 30     | 17     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN>>17+A'*B   | 30     | 18     | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A*B'            | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B'       | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN-(A*B')     | 30     | 18     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A'*B            | 30     | 17     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN>>17+A'*B   | 30     | 18     | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A*B'            | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B'       | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B'       | 30     | 18     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A'*B            | 30     | 17     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN>>17+A'*B   | 30     | 18     | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A*B'            | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B'       | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B'       | 30     | 18     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A'*B            | 30     | 17     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN>>17+A'*B   | 30     | 18     | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A*B'            | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B'       | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN-(A*B')     | 30     | 18     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A'*B            | 30     | 17     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN>>17+A'*B   | 30     | 18     | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A*B'            | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B''      | 30     | 18     | -      | -      | 0      | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN-(A*B')     | 30     | 18     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A'*B            | 30     | 17     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN>>17+A'*B   | 30     | 18     | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A*B'            | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B''      | 30     | 18     | -      | -      | 0      | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN-(A*B')     | 30     | 18     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A'*B            | 30     | 17     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN>>17+A'*B   | 30     | 18     | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A*B'            | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B''      | 30     | 18     | -      | -      | 0      | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN-(A*B')     | 30     | 18     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A'*B            | 30     | 17     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN>>17+A'*B   | 30     | 18     | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A*B'            | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B''      | 30     | 18     | -      | -      | 0      | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B'       | 30     | 18     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A'*B            | 30     | 17     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN>>17+A'*B   | 30     | 18     | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A*B'            | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B'       | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN-(A*B')     | 30     | 18     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A'*B            | 30     | 17     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN>>17+A'*B   | 30     | 18     | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A*B'            | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B'       | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B'       | 30     | 18     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A'*B            | 30     | 17     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN>>17+A'*B   | 30     | 18     | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A*B'            | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B''      | 30     | 18     | -      | -      | 0      | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B'       | 30     | 18     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A'*B            | 30     | 17     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN>>17+A'*B   | 30     | 18     | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A*B'            | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B'       | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN-(A*B')     | 30     | 18     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A'*B            | 30     | 17     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN>>17+A'*B   | 30     | 18     | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A*B'            | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B'       | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B'       | 30     | 18     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A'*B            | 30     | 17     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN>>17+A'*B   | 30     | 18     | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A*B'            | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B''      | 30     | 18     | -      | -      | 0      | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B'       | 30     | 18     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A'*B            | 30     | 17     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN>>17+A'*B   | 30     | 18     | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A*B'            | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B''      | 30     | 18     | -      | -      | 0      | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN-(A*B')     | 30     | 18     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A'*B            | 30     | 17     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN>>17+A'*B   | 30     | 18     | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A*B'            | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B'       | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B'       | 30     | 18     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A'*B            | 30     | 17     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN>>17+A'*B   | 30     | 18     | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A*B'            | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B'       | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN-(A*B')     | 30     | 18     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A'*B            | 30     | 17     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN>>17+A'*B   | 30     | 18     | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A*B'            | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B''      | 30     | 18     | -      | -      | 0      | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN-(A*B')     | 30     | 18     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A'*B            | 30     | 17     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN>>17+A'*B   | 30     | 18     | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A*B'            | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B'       | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B'       | 30     | 18     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A'*B            | 30     | 17     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN>>17+A'*B   | 30     | 18     | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A*B'            | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B'       | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN-(A*B')     | 30     | 18     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A'*B            | 30     | 17     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN>>17+A'*B   | 30     | 18     | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A*B'            | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B''      | 30     | 18     | -      | -      | 0      | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B'       | 30     | 18     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A'*B            | 30     | 17     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN>>17+A'*B   | 30     | 18     | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A*B'            | 30     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN+A*B''      | 30     | 18     | -      | -      | 0      | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN-(A*B')     | 30     | 18     | -      | -      | 33     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | A'*B            | 30     | 17     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|umat_calc_cmx2 | PCIN>>17+A'*B   | 30     | 18     | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
++---------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |cordic_vec    |         2|
+|2     |cordic_rot    |         2|
+|3     |cordic_sqrt   |         2|
+|4     |recip_unit    |         2|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |cordic_rot      |     2|
+|3     |cordic_sqrt     |     2|
+|5     |cordic_vec      |     2|
+|7     |recip_unit      |     2|
+|9     |CARRY8          |   144|
+|10    |DSP_ALU         |   234|
+|11    |DSP_A_B_DATA    |   234|
+|17    |DSP_C_DATA      |   234|
+|19    |DSP_MULTIPLIER  |   234|
+|20    |DSP_M_DATA      |   234|
+|21    |DSP_OUTPUT      |   234|
+|23    |DSP_PREADD      |   234|
+|24    |DSP_PREADD_DATA |   234|
+|25    |LUT1            |   535|
+|26    |LUT2            |  1480|
+|27    |LUT3            |  1695|
+|28    |LUT4            |  3479|
+|29    |LUT5            |  1614|
+|30    |LUT6            |  8010|
+|31    |MUXF7           |  1605|
+|32    |MUXF8           |   784|
+|33    |FDRE            | 42168|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:26:10 ; elapsed = 00:26:45 . Memory (MB): peak = 5999.152 ; gain = 4328.848
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 130 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:25:31 ; elapsed = 00:26:23 . Memory (MB): peak = 5999.152 ; gain = 3825.008
+Synthesis Optimization Complete : Time (s): cpu = 00:26:12 ; elapsed = 00:26:52 . Memory (MB): peak = 5999.152 ; gain = 4328.848
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.753 . Memory (MB): peak = 5999.152 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2767 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 5999.152 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 234 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 234 instances
+
+Synth Design complete | Checksum: e9a7ed7a
+INFO: [Common 17-83] Releasing license: Synthesis
+201 Infos, 121 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:26:38 ; elapsed = 00:27:24 . Memory (MB): peak = 5999.152 ; gain = 5559.680
+INFO: [Coretcl 2-1174] Renamed 10 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 5999.152 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/CE_128TR/CE_128TR.runs/CE_128TR_svd_0_0_synth_1/CE_128TR_svd_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file CE_128TR_svd_0_0_utilization_synth.rpt -pb CE_128TR_svd_0_0_utilization_synth.pb
+write_vhdl: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 5999.152 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 24 00:56:46 2026...

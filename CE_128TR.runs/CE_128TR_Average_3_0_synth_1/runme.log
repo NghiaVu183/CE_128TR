@@ -1,0 +1,598 @@
+
+*** Running vivado
+    with args -log CE_128TR_Average_3_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source CE_128TR_Average_3_0.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Tue Jun 23 23:22:15 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source CE_128TR_Average_3_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 381.965 ; gain = 87.836
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2024.2/data/ip'.
+Command: synth_design -top CE_128TR_Average_3_0 -part xczu19eg-ffvc1760-2-i -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu19eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu19eg'
+INFO: [Device 21-403] Loading part xczu19eg-ffvc1760-2-i
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9920
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1870.430 ; gain = 201.270
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CE_128TR_Average_3_0' [e:/CE_128TR/CE_128TR.gen/sources_1/bd/CE_128TR/ip/CE_128TR_Average_3_0/synth/CE_128TR_Average_3_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'Average' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:1]
+	Parameter PARA bound to: 16 - type: integer 
+	Parameter PORT bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/SubAverage.v:1]
+	Parameter PORT bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'SsubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/SsubAverage.v:1]
+	Parameter DATA_W bound to: 16 - type: integer 
+	Parameter DIV_W bound to: 16 - type: integer 
+	Parameter FRAC_BITS bound to: 24 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SsubAverage' (0#1) [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/SsubAverage.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'SubAverage' (0#1) [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/SubAverage.v:1]
+WARNING: [Synth 8-689] width (1) of port connection 's_aveg_valid' does not match port width (2) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:142]
+WARNING: [Synth 8-689] width (32) of port connection 's_aveg_data' does not match port width (64) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:143]
+WARNING: [Synth 8-689] width (1) of port connection 's_aveg_valid' does not match port width (2) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:142]
+WARNING: [Synth 8-689] width (32) of port connection 's_aveg_data' does not match port width (64) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:143]
+WARNING: [Synth 8-689] width (1) of port connection 's_aveg_valid' does not match port width (2) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:159]
+WARNING: [Synth 8-689] width (32) of port connection 's_aveg_data' does not match port width (64) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:160]
+WARNING: [Synth 8-689] width (1) of port connection 's_aveg_valid' does not match port width (2) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:159]
+WARNING: [Synth 8-689] width (32) of port connection 's_aveg_data' does not match port width (64) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:160]
+WARNING: [Synth 8-689] width (1) of port connection 's_aveg_valid' does not match port width (2) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:177]
+WARNING: [Synth 8-689] width (32) of port connection 's_aveg_data' does not match port width (64) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:178]
+WARNING: [Synth 8-689] width (1) of port connection 's_aveg_valid' does not match port width (2) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:177]
+WARNING: [Synth 8-689] width (32) of port connection 's_aveg_data' does not match port width (64) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:178]
+WARNING: [Synth 8-689] width (1) of port connection 's_aveg_valid' does not match port width (2) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:194]
+WARNING: [Synth 8-689] width (32) of port connection 's_aveg_data' does not match port width (64) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:195]
+WARNING: [Synth 8-689] width (1) of port connection 's_aveg_valid' does not match port width (2) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:194]
+WARNING: [Synth 8-689] width (32) of port connection 's_aveg_data' does not match port width (64) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:195]
+WARNING: [Synth 8-689] width (1) of port connection 's_aveg_valid' does not match port width (2) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:211]
+WARNING: [Synth 8-689] width (32) of port connection 's_aveg_data' does not match port width (64) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:212]
+WARNING: [Synth 8-689] width (1) of port connection 's_aveg_valid' does not match port width (2) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:211]
+WARNING: [Synth 8-689] width (32) of port connection 's_aveg_data' does not match port width (64) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:212]
+WARNING: [Synth 8-689] width (1) of port connection 's_aveg_valid' does not match port width (2) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:228]
+WARNING: [Synth 8-689] width (32) of port connection 's_aveg_data' does not match port width (64) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:229]
+WARNING: [Synth 8-689] width (1) of port connection 's_aveg_valid' does not match port width (2) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:228]
+WARNING: [Synth 8-689] width (32) of port connection 's_aveg_data' does not match port width (64) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:229]
+WARNING: [Synth 8-689] width (1) of port connection 's_aveg_valid' does not match port width (2) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:245]
+WARNING: [Synth 8-689] width (32) of port connection 's_aveg_data' does not match port width (64) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:246]
+WARNING: [Synth 8-689] width (1) of port connection 's_aveg_valid' does not match port width (2) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:245]
+WARNING: [Synth 8-689] width (32) of port connection 's_aveg_data' does not match port width (64) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:246]
+WARNING: [Synth 8-689] width (1) of port connection 's_aveg_valid' does not match port width (2) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:262]
+WARNING: [Synth 8-689] width (32) of port connection 's_aveg_data' does not match port width (64) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:263]
+WARNING: [Synth 8-689] width (1) of port connection 's_aveg_valid' does not match port width (2) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:262]
+WARNING: [Synth 8-689] width (32) of port connection 's_aveg_data' does not match port width (64) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:263]
+WARNING: [Synth 8-689] width (1) of port connection 's_aveg_valid' does not match port width (2) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:279]
+WARNING: [Synth 8-689] width (32) of port connection 's_aveg_data' does not match port width (64) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:280]
+WARNING: [Synth 8-689] width (1) of port connection 's_aveg_valid' does not match port width (2) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:279]
+WARNING: [Synth 8-689] width (32) of port connection 's_aveg_data' does not match port width (64) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:280]
+WARNING: [Synth 8-689] width (1) of port connection 's_aveg_valid' does not match port width (2) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:296]
+WARNING: [Synth 8-689] width (32) of port connection 's_aveg_data' does not match port width (64) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:297]
+WARNING: [Synth 8-689] width (1) of port connection 's_aveg_valid' does not match port width (2) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:296]
+WARNING: [Synth 8-689] width (32) of port connection 's_aveg_data' does not match port width (64) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:297]
+WARNING: [Synth 8-689] width (1) of port connection 's_aveg_valid' does not match port width (2) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:313]
+WARNING: [Synth 8-689] width (32) of port connection 's_aveg_data' does not match port width (64) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:314]
+WARNING: [Synth 8-689] width (1) of port connection 's_aveg_valid' does not match port width (2) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:313]
+WARNING: [Synth 8-689] width (32) of port connection 's_aveg_data' does not match port width (64) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:314]
+WARNING: [Synth 8-689] width (1) of port connection 's_aveg_valid' does not match port width (2) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:330]
+WARNING: [Synth 8-689] width (32) of port connection 's_aveg_data' does not match port width (64) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:331]
+WARNING: [Synth 8-689] width (1) of port connection 's_aveg_valid' does not match port width (2) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:330]
+WARNING: [Synth 8-689] width (32) of port connection 's_aveg_data' does not match port width (64) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:331]
+WARNING: [Synth 8-689] width (1) of port connection 's_aveg_valid' does not match port width (2) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:347]
+WARNING: [Synth 8-689] width (32) of port connection 's_aveg_data' does not match port width (64) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:348]
+WARNING: [Synth 8-689] width (1) of port connection 's_aveg_valid' does not match port width (2) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:347]
+WARNING: [Synth 8-689] width (32) of port connection 's_aveg_data' does not match port width (64) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:348]
+WARNING: [Synth 8-689] width (1) of port connection 's_aveg_valid' does not match port width (2) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:364]
+WARNING: [Synth 8-689] width (32) of port connection 's_aveg_data' does not match port width (64) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:365]
+WARNING: [Synth 8-689] width (1) of port connection 's_aveg_valid' does not match port width (2) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:364]
+WARNING: [Synth 8-689] width (32) of port connection 's_aveg_data' does not match port width (64) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:365]
+WARNING: [Synth 8-689] width (1) of port connection 's_aveg_valid' does not match port width (2) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:381]
+WARNING: [Synth 8-689] width (32) of port connection 's_aveg_data' does not match port width (64) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:382]
+WARNING: [Synth 8-689] width (1) of port connection 's_aveg_valid' does not match port width (2) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:381]
+WARNING: [Synth 8-689] width (32) of port connection 's_aveg_data' does not match port width (64) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:382]
+WARNING: [Synth 8-689] width (1) of port connection 's_aveg_valid' does not match port width (2) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:398]
+WARNING: [Synth 8-689] width (32) of port connection 's_aveg_data' does not match port width (64) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:399]
+WARNING: [Synth 8-689] width (1) of port connection 's_aveg_valid' does not match port width (2) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:398]
+WARNING: [Synth 8-689] width (32) of port connection 's_aveg_data' does not match port width (64) of module 'SubAverage' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:399]
+INFO: [Synth 8-6155] done synthesizing module 'Average' (0#1) [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Average.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'CE_128TR_Average_3_0' (0#1) [e:/CE_128TR/CE_128TR.gen/sources_1/bd/CE_128TR/ip/CE_128TR_Average_3_0/synth/CE_128TR_Average_3_0.v:53]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1984.320 ; gain = 315.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1984.320 ; gain = 315.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1984.320 ; gain = 315.160
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.688 . Memory (MB): peak = 1984.320 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2089.094 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2107.230 ; gain = 18.137
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 2107.230 ; gain = 438.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu19eg-ffvc1760-2-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 2107.230 ; gain = 438.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 2107.230 ; gain = 438.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 2107.230 ; gain = 438.070
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/RX0[0].rx' (SubAverage) to 'inst/RX0[1].rx'
+INFO: [Synth 8-223] decloning instance 'inst/RX1[0].rx' (SubAverage) to 'inst/RX1[1].rx'
+INFO: [Synth 8-223] decloning instance 'inst/RX2[0].rx' (SubAverage) to 'inst/RX2[1].rx'
+INFO: [Synth 8-223] decloning instance 'inst/RX3[0].rx' (SubAverage) to 'inst/RX3[1].rx'
+INFO: [Synth 8-223] decloning instance 'inst/RX4[0].rx' (SubAverage) to 'inst/RX4[1].rx'
+INFO: [Synth 8-223] decloning instance 'inst/RX5[0].rx' (SubAverage) to 'inst/RX5[1].rx'
+INFO: [Synth 8-223] decloning instance 'inst/RX6[0].rx' (SubAverage) to 'inst/RX6[1].rx'
+INFO: [Synth 8-223] decloning instance 'inst/RX7[0].rx' (SubAverage) to 'inst/RX7[1].rx'
+INFO: [Synth 8-223] decloning instance 'inst/RX8[0].rx' (SubAverage) to 'inst/RX8[1].rx'
+INFO: [Synth 8-223] decloning instance 'inst/RX9[0].rx' (SubAverage) to 'inst/RX9[1].rx'
+INFO: [Synth 8-223] decloning instance 'inst/RX10[0].rx' (SubAverage) to 'inst/RX10[1].rx'
+INFO: [Synth 8-223] decloning instance 'inst/RX11[0].rx' (SubAverage) to 'inst/RX11[1].rx'
+INFO: [Synth 8-223] decloning instance 'inst/RX12[0].rx' (SubAverage) to 'inst/RX12[1].rx'
+INFO: [Synth 8-223] decloning instance 'inst/RX13[0].rx' (SubAverage) to 'inst/RX13[1].rx'
+INFO: [Synth 8-223] decloning instance 'inst/RX14[0].rx' (SubAverage) to 'inst/RX14[1].rx'
+INFO: [Synth 8-223] decloning instance 'inst/RX15[0].rx' (SubAverage) to 'inst/RX15[1].rx'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   51 Bit       Adders := 64    
+	   2 Input   25 Bit       Adders := 64    
+	   2 Input   17 Bit       Adders := 32    
+	   2 Input   16 Bit       Adders := 32    
+	   3 Input   16 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
++---Registers : 
+	               48 Bit    Registers := 64    
+	               32 Bit    Registers := 32    
+	               25 Bit    Registers := 1     
+	               18 Bit    Registers := 64    
+	               16 Bit    Registers := 64    
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 66    
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 128   
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 32    
+	   2 Input   21 Bit        Muxes := 1     
+	   4 Input   21 Bit        Muxes := 1     
+	   2 Input   20 Bit        Muxes := 1     
+	   4 Input   20 Bit        Muxes := 1     
+	   2 Input   19 Bit        Muxes := 1     
+	   4 Input   19 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 128   
+	   2 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	   4 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   4 Input    6 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 226   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1968 (col length:264)
+BRAMs: 1968 (col length: RAMB18 264 RAMB36 132)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP P[0].po/mult_real0, operation Mode is: A2*B2.
+DSP Report: register P[0].po/mult_real0 is absorbed into DSP P[0].po/mult_real0.
+DSP Report: register P[0].po/mult_real0 is absorbed into DSP P[0].po/mult_real0.
+DSP Report: operator P[0].po/mult_real0 is absorbed into DSP P[0].po/mult_real0.
+DSP Report: operator P[0].po/mult_real0 is absorbed into DSP P[0].po/mult_real0.
+DSP Report: Generating DSP P[0].po/mult_real_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register P[0].po/sum_real_r_reg is absorbed into DSP P[0].po/mult_real_reg.
+DSP Report: register P[0].po/mult_real0 is absorbed into DSP P[0].po/mult_real_reg.
+DSP Report: register P[0].po/mult_real_reg is absorbed into DSP P[0].po/mult_real_reg.
+DSP Report: operator P[0].po/mult_real0 is absorbed into DSP P[0].po/mult_real_reg.
+DSP Report: operator P[0].po/mult_real0 is absorbed into DSP P[0].po/mult_real_reg.
+DSP Report: Generating DSP P[0].po/mult_imag0, operation Mode is: A2*B2.
+DSP Report: register P[0].po/mult_imag0 is absorbed into DSP P[0].po/mult_imag0.
+DSP Report: register P[0].po/mult_real0 is absorbed into DSP P[0].po/mult_imag0.
+DSP Report: operator P[0].po/mult_imag0 is absorbed into DSP P[0].po/mult_imag0.
+DSP Report: operator P[0].po/mult_imag0 is absorbed into DSP P[0].po/mult_imag0.
+DSP Report: Generating DSP P[0].po/mult_imag_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register P[0].po/sum_imag_r_reg is absorbed into DSP P[0].po/mult_imag_reg.
+DSP Report: register P[0].po/mult_real0 is absorbed into DSP P[0].po/mult_imag_reg.
+DSP Report: register P[0].po/mult_imag_reg is absorbed into DSP P[0].po/mult_imag_reg.
+DSP Report: operator P[0].po/mult_imag0 is absorbed into DSP P[0].po/mult_imag_reg.
+DSP Report: operator P[0].po/mult_imag0 is absorbed into DSP P[0].po/mult_imag_reg.
+DSP Report: Generating DSP P[1].po/mult_real0, operation Mode is: A2*B2.
+DSP Report: register P[1].po/mult_real0 is absorbed into DSP P[1].po/mult_real0.
+DSP Report: register P[1].po/mult_real0 is absorbed into DSP P[1].po/mult_real0.
+DSP Report: operator P[1].po/mult_real0 is absorbed into DSP P[1].po/mult_real0.
+DSP Report: operator P[1].po/mult_real0 is absorbed into DSP P[1].po/mult_real0.
+DSP Report: Generating DSP P[1].po/mult_real_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register P[1].po/sum_real_r_reg is absorbed into DSP P[1].po/mult_real_reg.
+DSP Report: register P[1].po/mult_real0 is absorbed into DSP P[1].po/mult_real_reg.
+DSP Report: register P[1].po/mult_real_reg is absorbed into DSP P[1].po/mult_real_reg.
+DSP Report: operator P[1].po/mult_real0 is absorbed into DSP P[1].po/mult_real_reg.
+DSP Report: operator P[1].po/mult_real0 is absorbed into DSP P[1].po/mult_real_reg.
+DSP Report: Generating DSP P[1].po/mult_imag0, operation Mode is: A2*B2.
+DSP Report: register P[1].po/mult_imag0 is absorbed into DSP P[1].po/mult_imag0.
+DSP Report: register P[1].po/mult_real0 is absorbed into DSP P[1].po/mult_imag0.
+DSP Report: operator P[1].po/mult_imag0 is absorbed into DSP P[1].po/mult_imag0.
+DSP Report: operator P[1].po/mult_imag0 is absorbed into DSP P[1].po/mult_imag0.
+DSP Report: Generating DSP P[1].po/mult_imag_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register P[1].po/sum_imag_r_reg is absorbed into DSP P[1].po/mult_imag_reg.
+DSP Report: register P[1].po/mult_real0 is absorbed into DSP P[1].po/mult_imag_reg.
+DSP Report: register P[1].po/mult_imag_reg is absorbed into DSP P[1].po/mult_imag_reg.
+DSP Report: operator P[1].po/mult_imag0 is absorbed into DSP P[1].po/mult_imag_reg.
+DSP Report: operator P[1].po/mult_imag0 is absorbed into DSP P[1].po/mult_imag_reg.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[47]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[46]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[45]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[44]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[43]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[42]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[41]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[40]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[39]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[38]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[37]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[36]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[35]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[34]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[33]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[32]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[31]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[30]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[29]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[28]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[27]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[26]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[25]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[24]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[23]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[22]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[21]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[20]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[19]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[18]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[17]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[16]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[15]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[14]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[13]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[12]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[11]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[10]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[9]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[8]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[7]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[6]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[5]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[4]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[3]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[2]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[1]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_real_reg[0]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[47]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[46]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[45]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[44]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[43]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[42]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[41]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[40]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[39]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[38]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[37]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[36]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[35]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[34]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[33]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[32]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[31]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[30]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[29]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[28]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[27]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[26]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[25]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[24]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[23]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[22]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[21]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[20]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[19]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[18]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[17]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[16]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[15]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[14]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[13]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[12]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[11]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[10]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[9]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[8]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[7]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[6]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[5]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[4]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[3]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[2]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[1]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[0].po/mult_imag_reg[0]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[1].po/mult_real_reg[47]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[1].po/mult_real_reg[46]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[1].po/mult_real_reg[45]) is unused and will be removed from module SubAverage.
+WARNING: [Synth 8-3332] Sequential element (P[1].po/mult_real_reg[44]) is unused and will be removed from module SubAverage.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 2107.230 ; gain = 438.070
+---------------------------------------------------------------------------------
+ Sort Area is SubAverage P[0].po/mult_imag0_0 : 0 0 : 3596 5111 : Used 16 time 0
+ Sort Area is SubAverage P[0].po/mult_imag0_0 : 0 1 : 1515 5111 : Used 16 time 0
+ Sort Area is SubAverage P[0].po/mult_real0_3 : 0 0 : 3596 5111 : Used 16 time 0
+ Sort Area is SubAverage P[0].po/mult_real0_3 : 0 1 : 1515 5111 : Used 16 time 0
+ Sort Area is SubAverage P[1].po/mult_imag0_4 : 0 0 : 3596 5111 : Used 16 time 0
+ Sort Area is SubAverage P[1].po/mult_imag0_4 : 0 1 : 1515 5111 : Used 16 time 0
+ Sort Area is SubAverage P[1].po/mult_real0_5 : 0 0 : 3596 5111 : Used 16 time 0
+ Sort Area is SubAverage P[1].po/mult_real0_5 : 0 1 : 1515 5111 : Used 16 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|SubAverage  | A2*B2            | 26     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SsubAverage | (PCIN>>17)+A2*B2 | 26     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SubAverage  | A2*B2            | 26     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SsubAverage | (PCIN>>17)+A2*B2 | 26     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SubAverage  | A2*B2            | 26     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SsubAverage | (PCIN>>17)+A2*B2 | 26     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SubAverage  | A2*B2            | 26     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SsubAverage | (PCIN>>17)+A2*B2 | 26     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:17 ; elapsed = 00:01:26 . Memory (MB): peak = 2781.332 ; gain = 1112.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:26 . Memory (MB): peak = 2781.332 ; gain = 1112.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:20 ; elapsed = 00:01:28 . Memory (MB): peak = 2819.574 ; gain = 1150.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:31 ; elapsed = 00:01:41 . Memory (MB): peak = 3012.918 ; gain = 1343.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:31 ; elapsed = 00:01:41 . Memory (MB): peak = 3012.918 ; gain = 1343.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:33 ; elapsed = 00:01:43 . Memory (MB): peak = 3012.918 ; gain = 1343.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:33 ; elapsed = 00:01:43 . Memory (MB): peak = 3012.918 ; gain = 1343.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:33 ; elapsed = 00:01:43 . Memory (MB): peak = 3012.918 ; gain = 1343.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:33 ; elapsed = 00:01:43 . Memory (MB): peak = 3012.918 ; gain = 1343.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping           | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|SubAverage  | A'*B'                 | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SsubAverage | (PCIN>>17+RND+A'*B')' | 21     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SubAverage  | A'*B'                 | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SsubAverage | (PCIN>>17+RND+A'*B')' | 21     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SubAverage  | A'*B'                 | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SsubAverage | (PCIN>>17+RND+A'*B')' | 21     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SubAverage  | A'*B'                 | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SsubAverage | (PCIN>>17+RND+A'*B')' | 21     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SubAverage  | A'*B'                 | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SsubAverage | (PCIN>>17+RND+A'*B')' | 21     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SubAverage  | A'*B'                 | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SsubAverage | (PCIN>>17+RND+A'*B')' | 21     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SubAverage  | A'*B'                 | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SsubAverage | (PCIN>>17+RND+A'*B')' | 21     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SubAverage  | A'*B'                 | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SsubAverage | (PCIN>>17+RND+A'*B')' | 21     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SubAverage  | A'*B'                 | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SsubAverage | (PCIN>>17+RND+A'*B')' | 21     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SubAverage  | A'*B'                 | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SsubAverage | (PCIN>>17+RND+A'*B')' | 21     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SubAverage  | A'*B'                 | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SsubAverage | (PCIN>>17+RND+A'*B')' | 21     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SubAverage  | A'*B'                 | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SsubAverage | (PCIN>>17+RND+A'*B')' | 21     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SubAverage  | A'*B'                 | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SsubAverage | (PCIN>>17+RND+A'*B')' | 21     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SubAverage  | A'*B'                 | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SsubAverage | (PCIN>>17+RND+A'*B')' | 21     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SubAverage  | A'*B'                 | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SsubAverage | (PCIN>>17+RND+A'*B')' | 21     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SubAverage  | A'*B'                 | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SsubAverage | (PCIN>>17+RND+A'*B')' | 21     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SubAverage  | A'*B'                 | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SsubAverage | (PCIN>>17+RND+A'*B')' | 21     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SubAverage  | A'*B'                 | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SsubAverage | (PCIN>>17+RND+A'*B')' | 21     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SubAverage  | A'*B'                 | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SsubAverage | (PCIN>>17+RND+A'*B')' | 21     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SubAverage  | A'*B'                 | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SsubAverage | (PCIN>>17+RND+A'*B')' | 21     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SubAverage  | A'*B'                 | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SsubAverage | (PCIN>>17+RND+A'*B')' | 21     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SubAverage  | A'*B'                 | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SsubAverage | (PCIN>>17+RND+A'*B')' | 21     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SubAverage  | A'*B'                 | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SsubAverage | (PCIN>>17+RND+A'*B')' | 21     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SubAverage  | A'*B'                 | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SsubAverage | (PCIN>>17+RND+A'*B')' | 21     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SubAverage  | A'*B'                 | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SsubAverage | (PCIN>>17+RND+A'*B')' | 21     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SubAverage  | A'*B'                 | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SsubAverage | (PCIN>>17+RND+A'*B')' | 21     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SubAverage  | A'*B'                 | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SsubAverage | (PCIN>>17+RND+A'*B')' | 21     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SubAverage  | A'*B'                 | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SsubAverage | (PCIN>>17+RND+A'*B')' | 21     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SubAverage  | A'*B'                 | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SsubAverage | (PCIN>>17+RND+A'*B')' | 21     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SubAverage  | A'*B'                 | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SsubAverage | (PCIN>>17+RND+A'*B')' | 21     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SubAverage  | A'*B'                 | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SsubAverage | (PCIN>>17+RND+A'*B')' | 21     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SubAverage  | A'*B'                 | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SsubAverage | (PCIN>>17+RND+A'*B')' | 21     | 18     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 0    | 1    | 
++------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |CARRY8          |   502|
+|2     |DSP_ALU         |    64|
+|4     |DSP_A_B_DATA    |    64|
+|5     |DSP_C_DATA      |    64|
+|6     |DSP_MULTIPLIER  |    64|
+|7     |DSP_M_DATA      |    64|
+|8     |DSP_OUTPUT      |    64|
+|10    |DSP_PREADD      |    64|
+|11    |DSP_PREADD_DATA |    64|
+|12    |LUT1            |   887|
+|13    |LUT2            |  2341|
+|14    |LUT3            |   518|
+|15    |LUT4            |   122|
+|16    |LUT5            |    56|
+|17    |LUT6            |   137|
+|18    |FDRE            |  1189|
+|19    |FDSE            |   480|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:33 ; elapsed = 00:01:43 . Memory (MB): peak = 3012.918 ; gain = 1343.758
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 193 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:06 ; elapsed = 00:01:32 . Memory (MB): peak = 3012.918 ; gain = 1220.848
+Synthesis Optimization Complete : Time (s): cpu = 00:01:35 ; elapsed = 00:01:44 . Memory (MB): peak = 3012.918 ; gain = 1343.758
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.230 . Memory (MB): peak = 3012.918 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 566 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3012.918 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 64 instances
+
+Synth Design complete | Checksum: 839ae9cf
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 165 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:00 ; elapsed = 00:02:18 . Memory (MB): peak = 3012.918 ; gain = 2569.297
+INFO: [Coretcl 2-1174] Renamed 33 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 3012.918 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/CE_128TR/CE_128TR.runs/CE_128TR_Average_3_0_synth_1/CE_128TR_Average_3_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file CE_128TR_Average_3_0_utilization_synth.rpt -pb CE_128TR_Average_3_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 23 23:24:53 2026...

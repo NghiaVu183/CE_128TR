@@ -1,0 +1,3 @@
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "xsim.ini".
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/CE_128TR/sim_svd/tb_div.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_div

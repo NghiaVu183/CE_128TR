@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="CE_128TR_Demap_0_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_Demap_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CE_128TR_Demap_1_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_Demap_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CE_128TR_Demap_2_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_Demap_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CE_128TR_Correlation_1_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_Correlation_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="ls_0_synth_1"/>
+	</Run>
+	<Run Id="CE_128TR_Correlation_4_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_Correlation_4_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="ls_0_synth_1"/>
+	</Run>
+	<Run Id="CE_128TR_LowPAPR1_0_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_LowPAPR1_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="sin_cos_lp_synth_1"/>
+		<Parent Id="div_31_synth_1"/>
+	</Run>
+	<Run Id="CE_128TR_Correlation_0_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_Correlation_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="ls_0_synth_1"/>
+	</Run>
+	<Run Id="CE_128TR_Correlation_5_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_Correlation_5_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="ls_0_synth_1"/>
+	</Run>
+	<Run Id="CE_128TR_Correlation_6_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_Correlation_6_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="ls_0_synth_1"/>
+	</Run>
+	<Run Id="CE_128TR_Average_2_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_Average_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CE_128TR_Demap_3_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_Demap_3_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CE_128TR_Demap_6_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_Demap_6_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CE_128TR_Demap_5_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_Demap_5_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CE_128TR_Demap_7_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_Demap_7_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CE_128TR_Correlation_2_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_Correlation_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="ls_0_synth_1"/>
+	</Run>
+	<Run Id="CE_128TR_Correlation_7_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_Correlation_7_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="ls_0_synth_1"/>
+	</Run>
+	<Run Id="CE_128TR_Correlation_3_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_Correlation_3_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="ls_0_synth_1"/>
+	</Run>
+	<Run Id="CE_128TR_Average_1_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_Average_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CE_128TR_Demap_4_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_Demap_4_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CE_128TR_Average_5_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_Average_5_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="sin_cos_lp_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/sin_cos_lp_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CE_128TR_Average_7_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_Average_7_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CE_128TR_Average_0_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_Average_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CE_128TR_MuxPDU_0_3_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_MuxPDU_0_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_delay_tdata_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/fifo_delay_tdata_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CE_128TR_Average_6_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_Average_6_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CE_128TR_Average_4_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_Average_4_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CE_128TR_Average_3_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_Average_3_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cmpy_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/cmpy_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cordic_sqrt_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/cordic_sqrt_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="div_31_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/div_31_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="recip_unit_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/recip_unit_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ls_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/ls_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="div_gen_frac_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/div_gen_frac_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cordic_rot_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/cordic_rot_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cordic_vec_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/cordic_vec_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CE_128TR_EstNoise_0_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_EstNoise_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="fifo_delay_tdata_synth_1"/>
+		<Parent Id="cmpy_0_synth_1"/>
+	</Run>
+	<Run Id="CE_128TR_NoiseAverage_2_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_NoiseAverage_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CE_128TR_NoiseAverage_3_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_NoiseAverage_3_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CE_128TR_EstNoise_5_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_EstNoise_5_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="fifo_delay_tdata_synth_1"/>
+		<Parent Id="cmpy_0_synth_1"/>
+	</Run>
+	<Run Id="CE_128TR_EstNoise_7_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_EstNoise_7_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="fifo_delay_tdata_synth_1"/>
+		<Parent Id="cmpy_0_synth_1"/>
+	</Run>
+	<Run Id="CE_128TR_EstNoise_4_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_EstNoise_4_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="fifo_delay_tdata_synth_1"/>
+		<Parent Id="cmpy_0_synth_1"/>
+	</Run>
+	<Run Id="CE_128TR_EstNoise_3_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_EstNoise_3_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="fifo_delay_tdata_synth_1"/>
+		<Parent Id="cmpy_0_synth_1"/>
+	</Run>
+	<Run Id="CE_128TR_NoiseAverage_1_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_NoiseAverage_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CE_128TR_EstNoise_2_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_EstNoise_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="fifo_delay_tdata_synth_1"/>
+		<Parent Id="cmpy_0_synth_1"/>
+	</Run>
+	<Run Id="CE_128TR_EstNoise_6_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_EstNoise_6_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="fifo_delay_tdata_synth_1"/>
+		<Parent Id="cmpy_0_synth_1"/>
+	</Run>
+	<Run Id="CE_128TR_NoiseAverage_4_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_NoiseAverage_4_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CE_128TR_NoiseAverage_5_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_NoiseAverage_5_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CE_128TR_NoiseAverage_6_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_NoiseAverage_6_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CE_128TR_EstNoise_1_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_EstNoise_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="fifo_delay_tdata_synth_1"/>
+		<Parent Id="cmpy_0_synth_1"/>
+	</Run>
+	<Run Id="CE_128TR_NoiseAverage_0_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_NoiseAverage_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CE_128TR_NoiseAverage_7_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_NoiseAverage_7_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CE_128TR_svd_pack_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_svd_pack_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CE_128TR_ChannelNorm_0_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_ChannelNorm_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="div_gen_frac_synth_1"/>
+	</Run>
+	<Run Id="CE_128TR_svd_fc_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_svd_fc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CE_128TR_svd_0_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_svd_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="cordic_sqrt_synth_1"/>
+		<Parent Id="recip_unit_synth_1"/>
+		<Parent Id="cordic_rot_synth_1"/>
+		<Parent Id="cordic_vec_synth_1"/>
+	</Run>
+	<Run Id="CE_128TR_ChannelNorm_2_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_ChannelNorm_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="div_gen_frac_synth_1"/>
+	</Run>
+	<Run Id="CE_128TR_ChannelNorm_3_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_ChannelNorm_3_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="div_gen_frac_synth_1"/>
+	</Run>
+	<Run Id="CE_128TR_csi_0_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_csi_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CE_128TR_ChannelNorm_5_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_ChannelNorm_5_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="div_gen_frac_synth_1"/>
+	</Run>
+	<Run Id="CE_128TR_ChannelNorm_1_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_ChannelNorm_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="div_gen_frac_synth_1"/>
+	</Run>
+	<Run Id="CE_128TR_ChannelNorm_6_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_ChannelNorm_6_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="div_gen_frac_synth_1"/>
+	</Run>
+	<Run Id="CE_128TR_ChannelNorm_7_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_ChannelNorm_7_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="div_gen_frac_synth_1"/>
+	</Run>
+	<Run Id="CE_128TR_ChannelNorm_4_0_synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/CE_128TR_ChannelNorm_4_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="div_gen_frac_synth_1"/>
+	</Run>
+	<Run Id="synth_1" LaunchDir="E:/CE_128TR/CE_128TR.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="CE_128TR_Demap_0_0_synth_1"/>
+		<Parent Id="CE_128TR_Demap_1_0_synth_1"/>
+		<Parent Id="CE_128TR_Demap_2_0_synth_1"/>
+		<Parent Id="CE_128TR_Correlation_1_0_synth_1"/>
+		<Parent Id="CE_128TR_Correlation_4_0_synth_1"/>
+		<Parent Id="CE_128TR_LowPAPR1_0_0_synth_1"/>
+		<Parent Id="CE_128TR_Correlation_0_0_synth_1"/>
+		<Parent Id="CE_128TR_Correlation_5_0_synth_1"/>
+		<Parent Id="CE_128TR_Correlation_6_0_synth_1"/>
+		<Parent Id="CE_128TR_Average_2_0_synth_1"/>
+		<Parent Id="CE_128TR_Demap_3_0_synth_1"/>
+		<Parent Id="CE_128TR_Demap_6_0_synth_1"/>
+		<Parent Id="CE_128TR_Demap_5_0_synth_1"/>
+		<Parent Id="CE_128TR_Demap_7_0_synth_1"/>
+		<Parent Id="CE_128TR_Correlation_2_0_synth_1"/>
+		<Parent Id="CE_128TR_Correlation_7_0_synth_1"/>
+		<Parent Id="CE_128TR_Correlation_3_0_synth_1"/>
+		<Parent Id="CE_128TR_Average_1_0_synth_1"/>
+		<Parent Id="CE_128TR_Demap_4_0_synth_1"/>
+		<Parent Id="CE_128TR_Average_5_0_synth_1"/>
+		<Parent Id="sin_cos_lp_synth_1"/>
+		<Parent Id="CE_128TR_Average_7_0_synth_1"/>
+		<Parent Id="CE_128TR_Average_0_0_synth_1"/>
+		<Parent Id="CE_128TR_MuxPDU_0_3_synth_1"/>
+		<Parent Id="fifo_delay_tdata_synth_1"/>
+		<Parent Id="CE_128TR_Average_6_0_synth_1"/>
+		<Parent Id="CE_128TR_Average_4_0_synth_1"/>
+		<Parent Id="CE_128TR_Average_3_0_synth_1"/>
+		<Parent Id="cmpy_0_synth_1"/>
+		<Parent Id="cordic_sqrt_synth_1"/>
+		<Parent Id="div_31_synth_1"/>
+		<Parent Id="recip_unit_synth_1"/>
+		<Parent Id="ls_0_synth_1"/>
+		<Parent Id="div_gen_frac_synth_1"/>
+		<Parent Id="cordic_rot_synth_1"/>
+		<Parent Id="cordic_vec_synth_1"/>
+		<Parent Id="CE_128TR_EstNoise_0_0_synth_1"/>
+		<Parent Id="CE_128TR_NoiseAverage_2_0_synth_1"/>
+		<Parent Id="CE_128TR_NoiseAverage_3_0_synth_1"/>
+		<Parent Id="CE_128TR_EstNoise_5_0_synth_1"/>
+		<Parent Id="CE_128TR_EstNoise_7_0_synth_1"/>
+		<Parent Id="CE_128TR_EstNoise_4_0_synth_1"/>
+		<Parent Id="CE_128TR_EstNoise_3_0_synth_1"/>
+		<Parent Id="CE_128TR_NoiseAverage_1_0_synth_1"/>
+		<Parent Id="CE_128TR_EstNoise_2_0_synth_1"/>
+		<Parent Id="CE_128TR_EstNoise_6_0_synth_1"/>
+		<Parent Id="CE_128TR_NoiseAverage_4_0_synth_1"/>
+		<Parent Id="CE_128TR_NoiseAverage_5_0_synth_1"/>
+		<Parent Id="CE_128TR_NoiseAverage_6_0_synth_1"/>
+		<Parent Id="CE_128TR_EstNoise_1_0_synth_1"/>
+		<Parent Id="CE_128TR_NoiseAverage_0_0_synth_1"/>
+		<Parent Id="CE_128TR_NoiseAverage_7_0_synth_1"/>
+		<Parent Id="CE_128TR_svd_pack_0_synth_1"/>
+		<Parent Id="CE_128TR_ChannelNorm_0_0_synth_1"/>
+		<Parent Id="CE_128TR_svd_fc_0_synth_1"/>
+		<Parent Id="CE_128TR_svd_0_0_synth_1"/>
+		<Parent Id="CE_128TR_ChannelNorm_2_0_synth_1"/>
+		<Parent Id="CE_128TR_ChannelNorm_3_0_synth_1"/>
+		<Parent Id="CE_128TR_csi_0_0_synth_1"/>
+		<Parent Id="CE_128TR_ChannelNorm_5_0_synth_1"/>
+		<Parent Id="CE_128TR_ChannelNorm_1_0_synth_1"/>
+		<Parent Id="CE_128TR_ChannelNorm_6_0_synth_1"/>
+		<Parent Id="CE_128TR_ChannelNorm_7_0_synth_1"/>
+		<Parent Id="CE_128TR_ChannelNorm_4_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+		<Parameter Name="general.shortenLongPath" Val="true" Type="bool"/>
+	</Parameters>
+	<ProductInfo Name="vivado"/>
+</Runs>
+

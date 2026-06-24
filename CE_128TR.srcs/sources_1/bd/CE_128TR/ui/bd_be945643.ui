@@ -1,0 +1,84 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.812878",
+   "Default View_TopLeft":"-707,1192",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x -40 -y 940 -defaultsOSRD
+preplace port port-id_rstn -pg 1 -lvl 0 -x -40 -y 1430 -defaultsOSRD
+preplace port port-id_fft_valid -pg 1 -lvl 0 -x -40 -y 970 -defaultsOSRD
+preplace port port-id_rden -pg 1 -lvl 0 -x -40 -y 1170 -defaultsOSRD
+preplace port port-id_demap_done_0 -pg 1 -lvl 2 -x 430 -y 400 -defaultsOSRD
+preplace port port-id_demap_done_1 -pg 1 -lvl 2 -x 430 -y 140 -defaultsOSRD
+preplace port port-id_demap_done_2 -pg 1 -lvl 2 -x 430 -y 660 -defaultsOSRD
+preplace port port-id_demap_done_3 -pg 1 -lvl 2 -x 430 -y 920 -defaultsOSRD
+preplace port port-id_demap_done_4 -pg 1 -lvl 2 -x 430 -y 1180 -defaultsOSRD
+preplace port port-id_demap_done_5 -pg 1 -lvl 2 -x 430 -y 1440 -defaultsOSRD
+preplace port port-id_demap_done_6 -pg 1 -lvl 2 -x 430 -y 1700 -defaultsOSRD
+preplace port port-id_demap_done_7 -pg 1 -lvl 2 -x 430 -y 1960 -defaultsOSRD
+preplace portBus fft_data_0 -pg 1 -lvl 0 -x -40 -y 370 -defaultsOSRD
+preplace portBus fft_data_1 -pg 1 -lvl 0 -x -40 -y 110 -defaultsOSRD
+preplace portBus fft_data_2 -pg 1 -lvl 0 -x -40 -y 630 -defaultsOSRD
+preplace portBus fft_data_3 -pg 1 -lvl 0 -x -40 -y 850 -defaultsOSRD
+preplace portBus fft_data_4 -pg 1 -lvl 0 -x -40 -y 1140 -defaultsOSRD
+preplace portBus fft_data_5 -pg 1 -lvl 0 -x -40 -y 1400 -defaultsOSRD
+preplace portBus fft_data_6 -pg 1 -lvl 0 -x -40 -y 1670 -defaultsOSRD
+preplace portBus fft_data_7 -pg 1 -lvl 0 -x -40 -y 1910 -defaultsOSRD
+preplace portBus symbIdx -pg 1 -lvl 0 -x -40 -y 1940 -defaultsOSRD
+preplace portBus NumSRSSymbols -pg 1 -lvl 0 -x -40 -y 880 -defaultsOSRD
+preplace portBus SymbolStart -pg 1 -lvl 0 -x -40 -y 910 -defaultsOSRD
+preplace portBus rdaddr -pg 1 -lvl 0 -x -40 -y 1970 -defaultsOSRD
+preplace portBus dout_0 -pg 1 -lvl 2 -x 430 -y 370 -defaultsOSRD
+preplace portBus dout_1 -pg 1 -lvl 2 -x 430 -y 110 -defaultsOSRD
+preplace portBus dout_2 -pg 1 -lvl 2 -x 430 -y 630 -defaultsOSRD
+preplace portBus dout_3 -pg 1 -lvl 2 -x 430 -y 890 -defaultsOSRD
+preplace portBus dout_4 -pg 1 -lvl 2 -x 430 -y 1150 -defaultsOSRD
+preplace portBus dout_5 -pg 1 -lvl 2 -x 430 -y 1410 -defaultsOSRD
+preplace portBus dout_6 -pg 1 -lvl 2 -x 430 -y 1670 -defaultsOSRD
+preplace portBus dout_7 -pg 1 -lvl 2 -x 430 -y 1930 -defaultsOSRD
+preplace inst Demap_0 -pg 1 -lvl 1 -x 240 -y 390 -defaultsOSRD
+preplace inst Demap_1 -pg 1 -lvl 1 -x 240 -y 130 -defaultsOSRD
+preplace inst Demap_2 -pg 1 -lvl 1 -x 240 -y 650 -defaultsOSRD
+preplace inst Demap_3 -pg 1 -lvl 1 -x 240 -y 910 -defaultsOSRD
+preplace inst Demap_4 -pg 1 -lvl 1 -x 240 -y 1170 -defaultsOSRD
+preplace inst Demap_5 -pg 1 -lvl 1 -x 240 -y 1430 -defaultsOSRD
+preplace inst Demap_6 -pg 1 -lvl 1 -x 240 -y 1690 -defaultsOSRD
+preplace inst Demap_7 -pg 1 -lvl 1 -x 240 -y 1950 -defaultsOSRD
+preplace netloc Correlation_0_comm_addr 1 0 1 30 210n
+preplace netloc Correlation_0_comm_rden 1 0 1 20 190n
+preplace netloc Demap_0_demap_done 1 1 1 NJ 400
+preplace netloc Demap_0_dout 1 1 1 400J 370n
+preplace netloc Demap_1_demap_done 1 1 1 NJ 140
+preplace netloc Demap_1_dout 1 1 1 400J 110n
+preplace netloc Demap_2_demap_done 1 1 1 NJ 660
+preplace netloc Demap_2_dout 1 1 1 400J 630n
+preplace netloc Demap_3_demap_done 1 1 1 NJ 920
+preplace netloc Demap_3_dout 1 1 1 400J 890n
+preplace netloc Demap_4_demap_done 1 1 1 NJ 1180
+preplace netloc Demap_4_dout 1 1 1 400J 1150n
+preplace netloc Demap_5_demap_done 1 1 1 NJ 1440
+preplace netloc Demap_5_dout 1 1 1 400J 1410n
+preplace netloc Demap_6_demap_done 1 1 1 NJ 1700
+preplace netloc Demap_6_dout 1 1 1 400J 1670n
+preplace netloc Demap_7_demap_done 1 1 1 NJ 1960
+preplace netloc Demap_7_dout 1 1 1 400J 1930n
+preplace netloc MuxPDU_0_srs_NrOfSymbols 1 0 1 60 150n
+preplace netloc MuxPDU_0_srs_StartPos 1 0 1 -10 170n
+preplace netloc clk_0_1 1 0 1 80 50n
+preplace netloc fft_data_0_1 1 0 1 NJ 370
+preplace netloc fft_data_1_1 1 0 1 NJ 110
+preplace netloc fft_data_2_1 1 0 1 NJ 630
+preplace netloc fft_data_3_1 1 0 1 10J 850n
+preplace netloc fft_data_4_1 1 0 1 70J 1140n
+preplace netloc fft_data_5_1 1 0 1 10J 1400n
+preplace netloc fft_data_6_1 1 0 1 NJ 1670
+preplace netloc fft_data_7_1 1 0 1 -20J 1910n
+preplace netloc fft_valid_0_1 1 0 1 0 90n
+preplace netloc rstn_0_1 1 0 1 40 70n
+preplace netloc symbIdx_0_1 1 0 1 50 130n
+levelinfo -pg 1 -40 240 430
+pagesize -pg 1 -db -bbox -sgen -230 -10 590 2090
+"
+}
+0

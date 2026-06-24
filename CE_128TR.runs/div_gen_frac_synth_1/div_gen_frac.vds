@@ -1,0 +1,359 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Jun 23 23:27:20 2026
+# Process ID         : 17824
+# Current directory  : E:/CE_128TR/CE_128TR.runs/div_gen_frac_synth_1
+# Command line       : vivado.exe -log div_gen_frac.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source div_gen_frac.tcl
+# Log file           : E:/CE_128TR/CE_128TR.runs/div_gen_frac_synth_1/div_gen_frac.vds
+# Journal file       : E:/CE_128TR/CE_128TR.runs/div_gen_frac_synth_1\vivado.jou
+# Running On         : LAPTOP-55KNS8Q0
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 17002 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 25592 MB
+# Available Virtual  : 4472 MB
+#-----------------------------------------------------------
+source div_gen_frac.tcl -notrace
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: div_gen_frac
+Command: synth_design -top div_gen_frac -part xczu19eg-ffvc1760-2-i -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu19eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu19eg'
+INFO: [Device 21-403] Loading part xczu19eg-ffvc1760-2-i
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1804
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1868.195 ; gain = 200.035
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'div_gen_frac' [e:/CE_128TR/CE_128TR.gen/sources_1/ip/div_gen_frac/synth/div_gen_frac.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynquplus - type: string 
+	Parameter C_HAS_ARESETN bound to: 1 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 36 - type: integer 
+	Parameter ALGORITHM_TYPE bound to: 1 - type: integer 
+	Parameter DIVISOR_WIDTH bound to: 33 - type: integer 
+	Parameter DIVIDEND_WIDTH bound to: 16 - type: integer 
+	Parameter SIGNED_B bound to: 1 - type: integer 
+	Parameter DIVCLK_SEL bound to: 1 - type: integer 
+	Parameter FRACTIONAL_B bound to: 1 - type: integer 
+	Parameter FRACTIONAL_WIDTH bound to: 16 - type: integer 
+	Parameter C_HAS_DIV_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_HAS_S_AXIS_DIVISOR_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_S_AXIS_DIVISOR_TLAST bound to: 0 - type: integer 
+	Parameter C_S_AXIS_DIVISOR_TDATA_WIDTH bound to: 40 - type: integer 
+	Parameter C_S_AXIS_DIVISOR_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_S_AXIS_DIVIDEND_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_S_AXIS_DIVIDEND_TLAST bound to: 0 - type: integer 
+	Parameter C_S_AXIS_DIVIDEND_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_S_AXIS_DIVIDEND_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXIS_DOUT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXIS_DOUT_TUSER_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'div_gen_v5_1_23' declared at 'e:/CE_128TR/CE_128TR.gen/sources_1/ip/div_gen_frac/hdl/div_gen_v5_1_vh_rfs.vhd:12886' bound to instance 'U0' of component 'div_gen_v5_1_23' [e:/CE_128TR/CE_128TR.gen/sources_1/ip/div_gen_frac/synth/div_gen_frac.vhd:152]
+INFO: [Synth 8-256] done synthesizing module 'div_gen_frac' (0#1) [e:/CE_128TR/CE_128TR.gen/sources_1/ip/div_gen_frac/synth/div_gen_frac.vhd:72]
+WARNING: [Synth 8-7129] Port ce in module c_twos_comp_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclr in module c_twos_comp_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aset in module c_twos_comp_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ainit in module c_twos_comp_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sset in module c_twos_comp_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sinit in module c_twos_comp_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module c_twos_comp_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclr in module c_twos_comp_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aset in module c_twos_comp_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ainit in module c_twos_comp_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sset in module c_twos_comp_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sinit in module c_twos_comp_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized69 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized69 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized69 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized105 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized105 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized105 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized103 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized103 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized103 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port c_out in module c_addsub_lut6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module c_addsub_lut6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bypass in module c_addsub_lut6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclr in module c_addsub_lut6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aset in module c_addsub_lut6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ainit in module c_addsub_lut6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sclr in module c_addsub_lut6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sinit in module c_addsub_lut6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in in module c_addsub_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_signed in module c_addsub_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_signed in module c_addsub_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized101 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized101 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized101 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized99 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized99 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized99 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized97 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized97 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized97 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized95 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized95 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized95 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized93 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized93 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized93 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized91 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized91 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized91 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized89 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized89 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized89 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized87 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized87 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized87 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized85 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized85 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized85 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized83 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized83 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized83 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized81 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized81 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized81 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized79 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized79 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized79 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized77 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized77 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized77 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized73 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized73 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized73 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized71 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized71 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized71 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized67 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized67 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized67 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized65 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized65 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized65 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized63 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized63 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized63 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized61 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized61 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2058.816 ; gain = 390.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2058.816 ; gain = 390.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2058.816 ; gain = 390.656
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.168 . Memory (MB): peak = 2058.816 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2176 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/CE_128TR/CE_128TR.gen/sources_1/ip/div_gen_frac/div_gen_frac_ooc.xdc] for cell 'U0'
+create_clock: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2170.895 ; gain = 0.012
+Finished Parsing XDC File [e:/CE_128TR/CE_128TR.gen/sources_1/ip/div_gen_frac/div_gen_frac_ooc.xdc] for cell 'U0'
+Parsing XDC File [E:/CE_128TR/CE_128TR.runs/div_gen_frac_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/CE_128TR/CE_128TR.runs/div_gen_frac_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2170.895 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.160 . Memory (MB): peak = 2171.152 ; gain = 0.258
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 2171.152 ; gain = 502.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu19eg-ffvc1760-2-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 2171.152 ; gain = 502.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  E:/CE_128TR/CE_128TR.runs/div_gen_frac_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 2171.152 ; gain = 502.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 2171.152 ; gain = 502.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1968 (col length:264)
+BRAMs: 1968 (col length: RAMB18 264 RAMB36 132)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:01:01 . Memory (MB): peak = 2171.152 ; gain = 502.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:19 ; elapsed = 00:01:25 . Memory (MB): peak = 2776.910 ; gain = 1108.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:20 ; elapsed = 00:01:26 . Memory (MB): peak = 2792.855 ; gain = 1124.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:22 ; elapsed = 00:01:28 . Memory (MB): peak = 2805.180 ; gain = 1137.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:30 ; elapsed = 00:01:35 . Memory (MB): peak = 3013.035 ; gain = 1344.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:30 ; elapsed = 00:01:36 . Memory (MB): peak = 3013.035 ; gain = 1344.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:31 ; elapsed = 00:01:37 . Memory (MB): peak = 3013.035 ; gain = 1344.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:31 ; elapsed = 00:01:37 . Memory (MB): peak = 3013.035 ; gain = 1344.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:31 ; elapsed = 00:01:37 . Memory (MB): peak = 3013.035 ; gain = 1344.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:31 ; elapsed = 00:01:37 . Memory (MB): peak = 3013.035 ; gain = 1344.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY8  |    11|
+|2     |LUT1    |   100|
+|3     |LUT2    |   130|
+|4     |LUT3    |  1038|
+|5     |MUXCY   |  1088|
+|6     |SRLC32E |     4|
+|7     |XORCY   |  1088|
+|8     |FDRE    |  1349|
+|9     |FDSE    |  1682|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:31 ; elapsed = 00:01:37 . Memory (MB): peak = 3013.035 ; gain = 1344.875
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 20 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:53 ; elapsed = 00:01:23 . Memory (MB): peak = 3013.035 ; gain = 1232.539
+Synthesis Optimization Complete : Time (s): cpu = 00:01:32 ; elapsed = 00:01:38 . Memory (MB): peak = 3013.035 ; gain = 1344.875
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.188 . Memory (MB): peak = 3013.035 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2187 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 3013.035 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 160 instances were transformed.
+  (CARRY4) => CARRY8: 160 instances
+
+Synth Design complete | Checksum: e5c19749
+INFO: [Common 17-83] Releasing license: Synthesis
+23 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:09 ; elapsed = 00:02:18 . Memory (MB): peak = 3013.035 ; gain = 2574.500
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 3013.035 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/CE_128TR/CE_128TR.runs/div_gen_frac_synth_1/div_gen_frac.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP div_gen_frac, cache-ID = 6b907126b440f241
+INFO: [Coretcl 2-1174] Renamed 290 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 3013.035 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/CE_128TR/CE_128TR.runs/div_gen_frac_synth_1/div_gen_frac.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file div_gen_frac_utilization_synth.rpt -pb div_gen_frac_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 23 23:30:03 2026...

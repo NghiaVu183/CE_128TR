@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xczu19eg-ffvc1760-2-i" LaunchTime="1782235735" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/svd_128x2.dcp">
+  <File Type="PA-TCL" Name="CE_128TR_wrapper.tcl"/>
+  <File Type="REPORTS-TCL" Name="CE_128TR_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="CE_128TR_wrapper.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="CE_128TR_wrapper_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="CE_128TR_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="CE_128TR_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="CE_128TR_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="CE_128TR_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="CE_128TR_wrapper_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/new/baseSeq.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SRS_claude_v3/SRS_v1.srcs/sources_1/imports/new/baseSeq.v"/>
+        <Attr Name="ImportTime" Val="1781793987"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/bw_config.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SRS_claude_v3/SRS_v1.srcs/sources_1/new/bw_config.v"/>
+        <Attr Name="ImportTime" Val="1781793988"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/portSymbolCyclicShift.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SRS_claude_v3/SRS_v1.srcs/sources_1/imports/new/portSymbolCyclicShift.v"/>
+        <Attr Name="ImportTime" Val="1781793987"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/q_param.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SRS_claude_v3/SRS_v1.srcs/sources_1/new/q_param.v"/>
+        <Attr Name="ImportTime" Val="1781793988"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/LowPAPR1.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SRS_claude_v3/SRS_v1.srcs/sources_1/imports/new/LowPAPR1.v"/>
+        <Attr Name="ImportTime" Val="1781793987"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/DualPortRAM.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SRS_claude_v3/SRS_v1.srcs/sources_1/imports/new/DualPortRAM.v"/>
+        <Attr Name="ImportTime" Val="1781793987"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/SubDemap.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SRS_claude_v3/SRS_v1.srcs/sources_1/imports/new/SubDemap.v"/>
+        <Attr Name="ImportTime" Val="1781793987"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Demap.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SRS_claude_v3/SRS_v1.srcs/sources_1/imports/new/Demap.v"/>
+        <Attr Name="ImportTime" Val="1781836547"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Correlation.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SRS_claude_v3/SRS_v1.srcs/sources_1/imports/new/Correlation.v"/>
+        <Attr Name="ImportTime" Val="1781836551"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/SsubAverage.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SRS_claude_v3/SRS_v1.srcs/sources_1/new/SsubAverage.v"/>
+        <Attr Name="ImportTime" Val="1781793988"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/SubAverage.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SRS_claude_v3/SRS_v1.srcs/sources_1/new/SubAverage.v"/>
+        <Attr Name="ImportTime" Val="1781793988"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Average.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SRS_claude_v3/SRS_v1.srcs/sources_1/new/Average.v"/>
+        <Attr Name="ImportTime" Val="1781793988"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/MuxPDU.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SRS_claude_v3/SRS_v1.srcs/sources_1/imports/new/MuxPDU.v"/>
+        <Attr Name="ImportTime" Val="1781793987"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/EstNoise.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SRS_claude_v3/SRS_v1.srcs/sources_1/new/EstNoise.v"/>
+        <Attr Name="ImportTime" Val="1781793988"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/NoiseSsubAverage.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/NoiseAverage.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/ChannelNorm.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SRS_claude_v3/SRS_v1.srcs/sources_1/new/ChannelNorm.v"/>
+        <Attr Name="ImportTime" Val="1781808187"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/svd_defs.vh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SRS_claude_v3/SRS_v1.srcs/sources_1/new/svd_defs.vh"/>
+        <Attr Name="ImportTime" Val="1781793988"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/svd_hnorm_pack.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/svd_start_fc.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/eig_sym_2x2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SRS_claude_v3/SRS_v1.srcs/sources_1/new/eig_sym_2x2.v"/>
+        <Attr Name="ImportTime" Val="1781804822"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/gram_cmx2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SRS_claude_v3/SRS_v1.srcs/sources_1/new/gram_cmx2.v"/>
+        <Attr Name="ImportTime" Val="1781816415"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/umat_calc_cmx2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SRS_claude_v3/SRS_v1.srcs/sources_1/new/umat_calc_cmx2.v"/>
+        <Attr Name="ImportTime" Val="1781816488"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/svd_128x2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SRS_claude_v3/SRS_v1.srcs/sources_1/new/svd_128x2.v"/>
+        <Attr Name="ImportTime" Val="1781816550"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/csi_calc.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/CE_128TR/CE_128TR.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/CE_128TR/hdl/CE_128TR_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="CE_128TR_wrapper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/svd_128x2.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Demap_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Demap_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Average_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Demap_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_ChannelNorm_4_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Average_6_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Correlation_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_ChannelNorm_7_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Correlation_4_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_svd_fc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_NoiseAverage_7_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_LowPAPR1_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_ChannelNorm_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_MuxPDU_0_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Average_5_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Demap_7_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Correlation_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Correlation_5_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Correlation_6_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_ChannelNorm_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Demap_4_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Average_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Average_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Demap_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_ChannelNorm_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_svd_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Average_4_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Demap_6_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_ChannelNorm_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Average_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Demap_5_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_ChannelNorm_5_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Average_7_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Correlation_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Correlation_7_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_ChannelNorm_6_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Correlation_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_EstNoise_6_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="sin_cos_lp"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_delay_tdata"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_EstNoise_7_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="cmpy_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="cordic_sqrt"/>
+  <BlockFileSet Type="BlockSrcs" Name="recip_unit"/>
+  <BlockFileSet Type="BlockSrcs" Name="div_31"/>
+  <BlockFileSet Type="BlockSrcs" Name="ls_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="div_gen_frac"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_NoiseAverage_4_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="cordic_rot"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_NoiseAverage_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="cordic_vec"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_EstNoise_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_NoiseAverage_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_svd_pack_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_NoiseAverage_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_EstNoise_5_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_EstNoise_4_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_EstNoise_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_EstNoise_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_NoiseAverage_5_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_NoiseAverage_6_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_EstNoise_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_NoiseAverage_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_csi_0_0"/>
+</GenRun>

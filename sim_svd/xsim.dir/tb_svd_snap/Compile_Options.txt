@@ -1,0 +1,1 @@
+-initfile "xsim.ini" -debug "off" -relax -L "xil_defaultlib" -L "cordic_v6_0_23" -L "div_gen_v5_1_23" -L "secureip" -L "unisims_ver" -L "xpm" "xil_defaultlib.tb_svd_cmx2" -s "tb_svd_snap" 

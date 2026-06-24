@@ -1,0 +1,799 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Tue Jun 23 22:54:36 2026
+| Host         : LAPTOP-55KNS8Q0 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu19eg-ffvc1760-2-i
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'sin_cos_lp'
+
+1. Summary
+----------
+
+SUCCESS in the update of sin_cos_lp (xilinx.com:ip:cordic:6.0 (Rev. 23)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Tue Jun 23 22:54:35 2026
+| Host         : LAPTOP-55KNS8Q0 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu19eg-ffvc1760-2-i
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'recip_unit'
+
+1. Summary
+----------
+
+SUCCESS in the update of recip_unit (xilinx.com:ip:div_gen:5.1 (Rev. 23)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Tue Jun 23 22:54:34 2026
+| Host         : LAPTOP-55KNS8Q0 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu19eg-ffvc1760-2-i
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ls_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the update of ls_0 (xilinx.com:ip:cmpy:6.0 (Rev. 25)) to current project options.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+An attempt to modify the value of disabled parameter 'MinimumLatency' from '6' to '5' has been ignored for IP 'ls_0'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:cmpy:6.0 -user_name ls_0
+set_property -dict "\
+  CONFIG.ACLKEN {false} \
+  CONFIG.APortWidth {16} \
+  CONFIG.ARESETN {false} \
+  CONFIG.ATUSERWidth {1} \
+  CONFIG.BPortWidth {16} \
+  CONFIG.BTUSERWidth {1} \
+  CONFIG.CTRLTUSERWidth {1} \
+  CONFIG.Component_Name {ls_0} \
+  CONFIG.DataType {Integer} \
+  CONFIG.FlowControl {NonBlocking} \
+  CONFIG.HasATLAST {false} \
+  CONFIG.HasATUSER {false} \
+  CONFIG.HasAccumulator {false} \
+  CONFIG.HasBTLAST {false} \
+  CONFIG.HasBTUSER {false} \
+  CONFIG.HasCTRLTLAST {false} \
+  CONFIG.HasCTRLTUSER {false} \
+  CONFIG.LatencyConfig {Automatic} \
+  CONFIG.M_AXIS_DOUT.CLK_DOMAIN {} \
+  CONFIG.M_AXIS_DOUT.FREQ_HZ {100000000} \
+  CONFIG.M_AXIS_DOUT.HAS_TKEEP {0} \
+  CONFIG.M_AXIS_DOUT.HAS_TLAST {0} \
+  CONFIG.M_AXIS_DOUT.HAS_TREADY {0} \
+  CONFIG.M_AXIS_DOUT.HAS_TSTRB {0} \
+  CONFIG.M_AXIS_DOUT.INSERT_VIP {0} \
+  CONFIG.M_AXIS_DOUT.LAYERED_METADATA {undef} \
+  CONFIG.M_AXIS_DOUT.PHASE {0.0} \
+  CONFIG.M_AXIS_DOUT.TDATA_NUM_BYTES {6} \
+  CONFIG.M_AXIS_DOUT.TDEST_WIDTH {0} \
+  CONFIG.M_AXIS_DOUT.TID_WIDTH {0} \
+  CONFIG.M_AXIS_DOUT.TUSER_WIDTH {0} \
+  CONFIG.MinimumLatency {5} \
+  CONFIG.MultType {Use_Mults} \
+  CONFIG.OptimizeGoal {Resources} \
+  CONFIG.OutTLASTBehv {Null} \
+  CONFIG.OutputWidth {19} \
+  CONFIG.RoundMode {Truncate} \
+  CONFIG.S_AXIS_A.CLK_DOMAIN {} \
+  CONFIG.S_AXIS_A.FREQ_HZ {100000000} \
+  CONFIG.S_AXIS_A.HAS_TKEEP {0} \
+  CONFIG.S_AXIS_A.HAS_TLAST {0} \
+  CONFIG.S_AXIS_A.HAS_TREADY {0} \
+  CONFIG.S_AXIS_A.HAS_TSTRB {0} \
+  CONFIG.S_AXIS_A.INSERT_VIP {0} \
+  CONFIG.S_AXIS_A.LAYERED_METADATA {undef} \
+  CONFIG.S_AXIS_A.PHASE {0.0} \
+  CONFIG.S_AXIS_A.TDATA_NUM_BYTES {4} \
+  CONFIG.S_AXIS_A.TDEST_WIDTH {0} \
+  CONFIG.S_AXIS_A.TID_WIDTH {0} \
+  CONFIG.S_AXIS_A.TUSER_WIDTH {0} \
+  CONFIG.S_AXIS_B.CLK_DOMAIN {} \
+  CONFIG.S_AXIS_B.FREQ_HZ {100000000} \
+  CONFIG.S_AXIS_B.HAS_TKEEP {0} \
+  CONFIG.S_AXIS_B.HAS_TLAST {0} \
+  CONFIG.S_AXIS_B.HAS_TREADY {0} \
+  CONFIG.S_AXIS_B.HAS_TSTRB {0} \
+  CONFIG.S_AXIS_B.INSERT_VIP {0} \
+  CONFIG.S_AXIS_B.LAYERED_METADATA {undef} \
+  CONFIG.S_AXIS_B.PHASE {0.0} \
+  CONFIG.S_AXIS_B.TDATA_NUM_BYTES {4} \
+  CONFIG.S_AXIS_B.TDEST_WIDTH {0} \
+  CONFIG.S_AXIS_B.TID_WIDTH {0} \
+  CONFIG.S_AXIS_B.TUSER_WIDTH {0} \
+  CONFIG.aclk_intf.ASSOCIATED_BUSIF {S_AXIS_CTRL:S_AXIS_B:S_AXIS_A:M_AXIS_DOUT} \
+  CONFIG.aclk_intf.ASSOCIATED_CLKEN {aclken} \
+  CONFIG.aclk_intf.ASSOCIATED_PORT {} \
+  CONFIG.aclk_intf.ASSOCIATED_RESET {aresetn} \
+  CONFIG.aclk_intf.CLK_DOMAIN {} \
+  CONFIG.aclk_intf.FREQ_HZ {10000000} \
+  CONFIG.aclk_intf.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.aclk_intf.INSERT_VIP {0} \
+  CONFIG.aclk_intf.PHASE {0.0} \
+  CONFIG.aclken_intf.POLARITY {ACTIVE_HIGH} \
+  CONFIG.aresetn_intf.INSERT_VIP {0} \
+  CONFIG.aresetn_intf.POLARITY {ACTIVE_LOW} " [get_ips ls_0]
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Tue Jun 23 22:54:33 2026
+| Host         : LAPTOP-55KNS8Q0 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu19eg-ffvc1760-2-i
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fifo_delay_tdata'
+
+1. Summary
+----------
+
+SUCCESS in the update of fifo_delay_tdata (xilinx.com:ip:axis_data_fifo:2.0 (Rev. 15)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Tue Jun 23 22:54:32 2026
+| Host         : LAPTOP-55KNS8Q0 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu19eg-ffvc1760-2-i
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'div_gen_frac'
+
+1. Summary
+----------
+
+SUCCESS in the update of div_gen_frac (xilinx.com:ip:div_gen:5.1 (Rev. 23)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Tue Jun 23 22:54:31 2026
+| Host         : LAPTOP-55KNS8Q0 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu19eg-ffvc1760-2-i
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'div_31'
+
+1. Summary
+----------
+
+SUCCESS in the update of div_31 (xilinx.com:ip:div_gen:5.1 (Rev. 23)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Tue Jun 23 22:54:30 2026
+| Host         : LAPTOP-55KNS8Q0 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu19eg-ffvc1760-2-i
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'cordic_vec'
+
+1. Summary
+----------
+
+SUCCESS in the update of cordic_vec (xilinx.com:ip:cordic:6.0 (Rev. 23)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Tue Jun 23 22:54:29 2026
+| Host         : LAPTOP-55KNS8Q0 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu19eg-ffvc1760-2-i
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'cordic_sqrt'
+
+1. Summary
+----------
+
+SUCCESS in the update of cordic_sqrt (xilinx.com:ip:cordic:6.0 (Rev. 23)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Tue Jun 23 22:54:29 2026
+| Host         : LAPTOP-55KNS8Q0 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu19eg-ffvc1760-2-i
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'cordic_rot'
+
+1. Summary
+----------
+
+SUCCESS in the update of cordic_rot (xilinx.com:ip:cordic:6.0 (Rev. 23)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Tue Jun 23 22:54:28 2026
+| Host         : LAPTOP-55KNS8Q0 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu19eg-ffvc1760-2-i
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'cmpy_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the update of cmpy_0 (xilinx.com:ip:cmpy:6.0 (Rev. 25)) to current project options.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+An attempt to modify the value of disabled parameter 'MinimumLatency' from '6' to '5' has been ignored for IP 'cmpy_0'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:cmpy:6.0 -user_name cmpy_0
+set_property -dict "\
+  CONFIG.ACLKEN {false} \
+  CONFIG.APortWidth {16} \
+  CONFIG.ARESETN {false} \
+  CONFIG.ATUSERWidth {1} \
+  CONFIG.BPortWidth {16} \
+  CONFIG.BTUSERWidth {1} \
+  CONFIG.CTRLTUSERWidth {1} \
+  CONFIG.Component_Name {cmpy_0} \
+  CONFIG.DataType {Integer} \
+  CONFIG.FlowControl {NonBlocking} \
+  CONFIG.HasATLAST {false} \
+  CONFIG.HasATUSER {false} \
+  CONFIG.HasAccumulator {false} \
+  CONFIG.HasBTLAST {false} \
+  CONFIG.HasBTUSER {false} \
+  CONFIG.HasCTRLTLAST {false} \
+  CONFIG.HasCTRLTUSER {false} \
+  CONFIG.LatencyConfig {Automatic} \
+  CONFIG.M_AXIS_DOUT.CLK_DOMAIN {} \
+  CONFIG.M_AXIS_DOUT.FREQ_HZ {100000000} \
+  CONFIG.M_AXIS_DOUT.HAS_TKEEP {0} \
+  CONFIG.M_AXIS_DOUT.HAS_TLAST {0} \
+  CONFIG.M_AXIS_DOUT.HAS_TREADY {0} \
+  CONFIG.M_AXIS_DOUT.HAS_TSTRB {0} \
+  CONFIG.M_AXIS_DOUT.INSERT_VIP {0} \
+  CONFIG.M_AXIS_DOUT.LAYERED_METADATA {undef} \
+  CONFIG.M_AXIS_DOUT.PHASE {0.0} \
+  CONFIG.M_AXIS_DOUT.TDATA_NUM_BYTES {4} \
+  CONFIG.M_AXIS_DOUT.TDEST_WIDTH {0} \
+  CONFIG.M_AXIS_DOUT.TID_WIDTH {0} \
+  CONFIG.M_AXIS_DOUT.TUSER_WIDTH {0} \
+  CONFIG.MinimumLatency {5} \
+  CONFIG.MultType {Use_Mults} \
+  CONFIG.OptimizeGoal {Resources} \
+  CONFIG.OutTLASTBehv {Null} \
+  CONFIG.OutputWidth {16} \
+  CONFIG.RoundMode {Truncate} \
+  CONFIG.S_AXIS_A.CLK_DOMAIN {} \
+  CONFIG.S_AXIS_A.FREQ_HZ {100000000} \
+  CONFIG.S_AXIS_A.HAS_TKEEP {0} \
+  CONFIG.S_AXIS_A.HAS_TLAST {0} \
+  CONFIG.S_AXIS_A.HAS_TREADY {0} \
+  CONFIG.S_AXIS_A.HAS_TSTRB {0} \
+  CONFIG.S_AXIS_A.INSERT_VIP {0} \
+  CONFIG.S_AXIS_A.LAYERED_METADATA {undef} \
+  CONFIG.S_AXIS_A.PHASE {0.0} \
+  CONFIG.S_AXIS_A.TDATA_NUM_BYTES {4} \
+  CONFIG.S_AXIS_A.TDEST_WIDTH {0} \
+  CONFIG.S_AXIS_A.TID_WIDTH {0} \
+  CONFIG.S_AXIS_A.TUSER_WIDTH {0} \
+  CONFIG.S_AXIS_B.CLK_DOMAIN {} \
+  CONFIG.S_AXIS_B.FREQ_HZ {100000000} \
+  CONFIG.S_AXIS_B.HAS_TKEEP {0} \
+  CONFIG.S_AXIS_B.HAS_TLAST {0} \
+  CONFIG.S_AXIS_B.HAS_TREADY {0} \
+  CONFIG.S_AXIS_B.HAS_TSTRB {0} \
+  CONFIG.S_AXIS_B.INSERT_VIP {0} \
+  CONFIG.S_AXIS_B.LAYERED_METADATA {undef} \
+  CONFIG.S_AXIS_B.PHASE {0.0} \
+  CONFIG.S_AXIS_B.TDATA_NUM_BYTES {4} \
+  CONFIG.S_AXIS_B.TDEST_WIDTH {0} \
+  CONFIG.S_AXIS_B.TID_WIDTH {0} \
+  CONFIG.S_AXIS_B.TUSER_WIDTH {0} \
+  CONFIG.aclk_intf.ASSOCIATED_BUSIF {S_AXIS_CTRL:S_AXIS_B:S_AXIS_A:M_AXIS_DOUT} \
+  CONFIG.aclk_intf.ASSOCIATED_CLKEN {aclken} \
+  CONFIG.aclk_intf.ASSOCIATED_PORT {} \
+  CONFIG.aclk_intf.ASSOCIATED_RESET {aresetn} \
+  CONFIG.aclk_intf.CLK_DOMAIN {} \
+  CONFIG.aclk_intf.FREQ_HZ {10000000} \
+  CONFIG.aclk_intf.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.aclk_intf.INSERT_VIP {0} \
+  CONFIG.aclk_intf.PHASE {0.0} \
+  CONFIG.aclken_intf.POLARITY {ACTIVE_HIGH} \
+  CONFIG.aresetn_intf.INSERT_VIP {0} \
+  CONFIG.aresetn_intf.POLARITY {ACTIVE_LOW} " [get_ips cmpy_0]
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
+| Date         : Thu Jun 18 23:16:47 2026
+| Host         : localhost.localdomain running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+| Command      : upgrade_ip
+| Device       : xcvp2802-vsva5601-2MP-i-L
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'sin_cos_lp'
+
+1. Summary
+----------
+
+SUCCESS in the update of sin_cos_lp (xilinx.com:ip:cordic:6.0 (Rev. 23)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
+| Date         : Thu Jun 18 23:16:46 2026
+| Host         : localhost.localdomain running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+| Command      : upgrade_ip
+| Device       : xcvp2802-vsva5601-2MP-i-L
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'recip_unit'
+
+1. Summary
+----------
+
+SUCCESS in the update of recip_unit (xilinx.com:ip:div_gen:5.1 (Rev. 23)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
+| Date         : Thu Jun 18 23:16:46 2026
+| Host         : localhost.localdomain running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+| Command      : upgrade_ip
+| Device       : xcvp2802-vsva5601-2MP-i-L
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ls_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the update of ls_0 (xilinx.com:ip:cmpy:6.0 (Rev. 25)) to current project options.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+An attempt to modify the value of disabled parameter 'MinimumLatency' from '5' to '6' has been ignored for IP 'ls_0'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:cmpy:6.0 -user_name ls_0
+set_property -dict "\
+  CONFIG.ACLKEN {false} \
+  CONFIG.APortWidth {16} \
+  CONFIG.ARESETN {false} \
+  CONFIG.ATUSERWidth {1} \
+  CONFIG.BPortWidth {16} \
+  CONFIG.BTUSERWidth {1} \
+  CONFIG.CTRLTUSERWidth {1} \
+  CONFIG.Component_Name {ls_0} \
+  CONFIG.DataType {Integer} \
+  CONFIG.FlowControl {NonBlocking} \
+  CONFIG.HasATLAST {false} \
+  CONFIG.HasATUSER {false} \
+  CONFIG.HasAccumulator {false} \
+  CONFIG.HasBTLAST {false} \
+  CONFIG.HasBTUSER {false} \
+  CONFIG.HasCTRLTLAST {false} \
+  CONFIG.HasCTRLTUSER {false} \
+  CONFIG.LatencyConfig {Automatic} \
+  CONFIG.M_AXIS_DOUT.CLK_DOMAIN {} \
+  CONFIG.M_AXIS_DOUT.FREQ_HZ {100000000} \
+  CONFIG.M_AXIS_DOUT.HAS_TKEEP {0} \
+  CONFIG.M_AXIS_DOUT.HAS_TLAST {0} \
+  CONFIG.M_AXIS_DOUT.HAS_TREADY {0} \
+  CONFIG.M_AXIS_DOUT.HAS_TSTRB {0} \
+  CONFIG.M_AXIS_DOUT.INSERT_VIP {0} \
+  CONFIG.M_AXIS_DOUT.LAYERED_METADATA {undef} \
+  CONFIG.M_AXIS_DOUT.PHASE {0.0} \
+  CONFIG.M_AXIS_DOUT.TDATA_NUM_BYTES {6} \
+  CONFIG.M_AXIS_DOUT.TDEST_WIDTH {0} \
+  CONFIG.M_AXIS_DOUT.TID_WIDTH {0} \
+  CONFIG.M_AXIS_DOUT.TUSER_WIDTH {0} \
+  CONFIG.MinimumLatency {6} \
+  CONFIG.MultType {Use_Mults} \
+  CONFIG.OptimizeGoal {Resources} \
+  CONFIG.OutTLASTBehv {Null} \
+  CONFIG.OutputWidth {19} \
+  CONFIG.RoundMode {Truncate} \
+  CONFIG.S_AXIS_A.CLK_DOMAIN {} \
+  CONFIG.S_AXIS_A.FREQ_HZ {100000000} \
+  CONFIG.S_AXIS_A.HAS_TKEEP {0} \
+  CONFIG.S_AXIS_A.HAS_TLAST {0} \
+  CONFIG.S_AXIS_A.HAS_TREADY {0} \
+  CONFIG.S_AXIS_A.HAS_TSTRB {0} \
+  CONFIG.S_AXIS_A.INSERT_VIP {0} \
+  CONFIG.S_AXIS_A.LAYERED_METADATA {undef} \
+  CONFIG.S_AXIS_A.PHASE {0.0} \
+  CONFIG.S_AXIS_A.TDATA_NUM_BYTES {4} \
+  CONFIG.S_AXIS_A.TDEST_WIDTH {0} \
+  CONFIG.S_AXIS_A.TID_WIDTH {0} \
+  CONFIG.S_AXIS_A.TUSER_WIDTH {0} \
+  CONFIG.S_AXIS_B.CLK_DOMAIN {} \
+  CONFIG.S_AXIS_B.FREQ_HZ {100000000} \
+  CONFIG.S_AXIS_B.HAS_TKEEP {0} \
+  CONFIG.S_AXIS_B.HAS_TLAST {0} \
+  CONFIG.S_AXIS_B.HAS_TREADY {0} \
+  CONFIG.S_AXIS_B.HAS_TSTRB {0} \
+  CONFIG.S_AXIS_B.INSERT_VIP {0} \
+  CONFIG.S_AXIS_B.LAYERED_METADATA {undef} \
+  CONFIG.S_AXIS_B.PHASE {0.0} \
+  CONFIG.S_AXIS_B.TDATA_NUM_BYTES {4} \
+  CONFIG.S_AXIS_B.TDEST_WIDTH {0} \
+  CONFIG.S_AXIS_B.TID_WIDTH {0} \
+  CONFIG.S_AXIS_B.TUSER_WIDTH {0} \
+  CONFIG.aclk_intf.ASSOCIATED_BUSIF {S_AXIS_CTRL:S_AXIS_B:S_AXIS_A:M_AXIS_DOUT} \
+  CONFIG.aclk_intf.ASSOCIATED_CLKEN {aclken} \
+  CONFIG.aclk_intf.ASSOCIATED_PORT {} \
+  CONFIG.aclk_intf.ASSOCIATED_RESET {aresetn} \
+  CONFIG.aclk_intf.CLK_DOMAIN {} \
+  CONFIG.aclk_intf.FREQ_HZ {10000000} \
+  CONFIG.aclk_intf.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.aclk_intf.INSERT_VIP {0} \
+  CONFIG.aclk_intf.PHASE {0.0} \
+  CONFIG.aclken_intf.POLARITY {ACTIVE_HIGH} \
+  CONFIG.aresetn_intf.INSERT_VIP {0} \
+  CONFIG.aresetn_intf.POLARITY {ACTIVE_LOW} " [get_ips ls_0]
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
+| Date         : Thu Jun 18 23:16:46 2026
+| Host         : localhost.localdomain running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+| Command      : upgrade_ip
+| Device       : xcvp2802-vsva5601-2MP-i-L
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fifo_delay_tdata'
+
+1. Summary
+----------
+
+SUCCESS in the update of fifo_delay_tdata (xilinx.com:ip:axis_data_fifo:2.0 (Rev. 15)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
+| Date         : Thu Jun 18 23:16:46 2026
+| Host         : localhost.localdomain running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+| Command      : upgrade_ip
+| Device       : xcvp2802-vsva5601-2MP-i-L
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'div_gen_frac'
+
+1. Summary
+----------
+
+SUCCESS in the update of div_gen_frac (xilinx.com:ip:div_gen:5.1 (Rev. 23)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
+| Date         : Thu Jun 18 23:16:45 2026
+| Host         : localhost.localdomain running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+| Command      : upgrade_ip
+| Device       : xcvp2802-vsva5601-2MP-i-L
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'div_31'
+
+1. Summary
+----------
+
+SUCCESS in the update of div_31 (xilinx.com:ip:div_gen:5.1 (Rev. 23)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
+| Date         : Thu Jun 18 23:16:45 2026
+| Host         : localhost.localdomain running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+| Command      : upgrade_ip
+| Device       : xcvp2802-vsva5601-2MP-i-L
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'cordic_vec'
+
+1. Summary
+----------
+
+SUCCESS in the update of cordic_vec (xilinx.com:ip:cordic:6.0 (Rev. 23)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
+| Date         : Thu Jun 18 23:16:45 2026
+| Host         : localhost.localdomain running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+| Command      : upgrade_ip
+| Device       : xcvp2802-vsva5601-2MP-i-L
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'cordic_sqrt'
+
+1. Summary
+----------
+
+SUCCESS in the update of cordic_sqrt (xilinx.com:ip:cordic:6.0 (Rev. 23)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
+| Date         : Thu Jun 18 23:16:44 2026
+| Host         : localhost.localdomain running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+| Command      : upgrade_ip
+| Device       : xcvp2802-vsva5601-2MP-i-L
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'cordic_rot'
+
+1. Summary
+----------
+
+SUCCESS in the update of cordic_rot (xilinx.com:ip:cordic:6.0 (Rev. 23)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
+| Date         : Thu Jun 18 23:16:44 2026
+| Host         : localhost.localdomain running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+| Command      : upgrade_ip
+| Device       : xcvp2802-vsva5601-2MP-i-L
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'cmpy_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the update of cmpy_0 (xilinx.com:ip:cmpy:6.0 (Rev. 25)) to current project options.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+An attempt to modify the value of disabled parameter 'MinimumLatency' from '5' to '6' has been ignored for IP 'cmpy_0'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:cmpy:6.0 -user_name cmpy_0
+set_property -dict "\
+  CONFIG.ACLKEN {false} \
+  CONFIG.APortWidth {16} \
+  CONFIG.ARESETN {false} \
+  CONFIG.ATUSERWidth {1} \
+  CONFIG.BPortWidth {16} \
+  CONFIG.BTUSERWidth {1} \
+  CONFIG.CTRLTUSERWidth {1} \
+  CONFIG.Component_Name {cmpy_0} \
+  CONFIG.DataType {Integer} \
+  CONFIG.FlowControl {NonBlocking} \
+  CONFIG.HasATLAST {false} \
+  CONFIG.HasATUSER {false} \
+  CONFIG.HasAccumulator {false} \
+  CONFIG.HasBTLAST {false} \
+  CONFIG.HasBTUSER {false} \
+  CONFIG.HasCTRLTLAST {false} \
+  CONFIG.HasCTRLTUSER {false} \
+  CONFIG.LatencyConfig {Automatic} \
+  CONFIG.M_AXIS_DOUT.CLK_DOMAIN {} \
+  CONFIG.M_AXIS_DOUT.FREQ_HZ {100000000} \
+  CONFIG.M_AXIS_DOUT.HAS_TKEEP {0} \
+  CONFIG.M_AXIS_DOUT.HAS_TLAST {0} \
+  CONFIG.M_AXIS_DOUT.HAS_TREADY {0} \
+  CONFIG.M_AXIS_DOUT.HAS_TSTRB {0} \
+  CONFIG.M_AXIS_DOUT.INSERT_VIP {0} \
+  CONFIG.M_AXIS_DOUT.LAYERED_METADATA {undef} \
+  CONFIG.M_AXIS_DOUT.PHASE {0.0} \
+  CONFIG.M_AXIS_DOUT.TDATA_NUM_BYTES {4} \
+  CONFIG.M_AXIS_DOUT.TDEST_WIDTH {0} \
+  CONFIG.M_AXIS_DOUT.TID_WIDTH {0} \
+  CONFIG.M_AXIS_DOUT.TUSER_WIDTH {0} \
+  CONFIG.MinimumLatency {6} \
+  CONFIG.MultType {Use_Mults} \
+  CONFIG.OptimizeGoal {Resources} \
+  CONFIG.OutTLASTBehv {Null} \
+  CONFIG.OutputWidth {16} \
+  CONFIG.RoundMode {Truncate} \
+  CONFIG.S_AXIS_A.CLK_DOMAIN {} \
+  CONFIG.S_AXIS_A.FREQ_HZ {100000000} \
+  CONFIG.S_AXIS_A.HAS_TKEEP {0} \
+  CONFIG.S_AXIS_A.HAS_TLAST {0} \
+  CONFIG.S_AXIS_A.HAS_TREADY {0} \
+  CONFIG.S_AXIS_A.HAS_TSTRB {0} \
+  CONFIG.S_AXIS_A.INSERT_VIP {0} \
+  CONFIG.S_AXIS_A.LAYERED_METADATA {undef} \
+  CONFIG.S_AXIS_A.PHASE {0.0} \
+  CONFIG.S_AXIS_A.TDATA_NUM_BYTES {4} \
+  CONFIG.S_AXIS_A.TDEST_WIDTH {0} \
+  CONFIG.S_AXIS_A.TID_WIDTH {0} \
+  CONFIG.S_AXIS_A.TUSER_WIDTH {0} \
+  CONFIG.S_AXIS_B.CLK_DOMAIN {} \
+  CONFIG.S_AXIS_B.FREQ_HZ {100000000} \
+  CONFIG.S_AXIS_B.HAS_TKEEP {0} \
+  CONFIG.S_AXIS_B.HAS_TLAST {0} \
+  CONFIG.S_AXIS_B.HAS_TREADY {0} \
+  CONFIG.S_AXIS_B.HAS_TSTRB {0} \
+  CONFIG.S_AXIS_B.INSERT_VIP {0} \
+  CONFIG.S_AXIS_B.LAYERED_METADATA {undef} \
+  CONFIG.S_AXIS_B.PHASE {0.0} \
+  CONFIG.S_AXIS_B.TDATA_NUM_BYTES {4} \
+  CONFIG.S_AXIS_B.TDEST_WIDTH {0} \
+  CONFIG.S_AXIS_B.TID_WIDTH {0} \
+  CONFIG.S_AXIS_B.TUSER_WIDTH {0} \
+  CONFIG.aclk_intf.ASSOCIATED_BUSIF {S_AXIS_CTRL:S_AXIS_B:S_AXIS_A:M_AXIS_DOUT} \
+  CONFIG.aclk_intf.ASSOCIATED_CLKEN {aclken} \
+  CONFIG.aclk_intf.ASSOCIATED_PORT {} \
+  CONFIG.aclk_intf.ASSOCIATED_RESET {aresetn} \
+  CONFIG.aclk_intf.CLK_DOMAIN {} \
+  CONFIG.aclk_intf.FREQ_HZ {10000000} \
+  CONFIG.aclk_intf.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.aclk_intf.INSERT_VIP {0} \
+  CONFIG.aclk_intf.PHASE {0.0} \
+  CONFIG.aclken_intf.POLARITY {ACTIVE_HIGH} \
+  CONFIG.aresetn_intf.INSERT_VIP {0} \
+  CONFIG.aresetn_intf.POLARITY {ACTIVE_LOW} " [get_ips cmpy_0]
+
+

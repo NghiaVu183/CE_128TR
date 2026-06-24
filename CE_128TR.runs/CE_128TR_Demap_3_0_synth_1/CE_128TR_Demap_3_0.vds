@@ -1,0 +1,370 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Jun 23 23:12:34 2026
+# Process ID         : 13124
+# Current directory  : E:/CE_128TR/CE_128TR.runs/CE_128TR_Demap_3_0_synth_1
+# Command line       : vivado.exe -log CE_128TR_Demap_3_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CE_128TR_Demap_3_0.tcl
+# Log file           : E:/CE_128TR/CE_128TR.runs/CE_128TR_Demap_3_0_synth_1/CE_128TR_Demap_3_0.vds
+# Journal file       : E:/CE_128TR/CE_128TR.runs/CE_128TR_Demap_3_0_synth_1\vivado.jou
+# Running On         : LAPTOP-55KNS8Q0
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 17002 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 25592 MB
+# Available Virtual  : 10798 MB
+#-----------------------------------------------------------
+source CE_128TR_Demap_3_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 381.043 ; gain = 85.723
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2024.2/data/ip'.
+Command: synth_design -top CE_128TR_Demap_3_0 -part xczu19eg-ffvc1760-2-i -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu19eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu19eg'
+INFO: [Device 21-403] Loading part xczu19eg-ffvc1760-2-i
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 15816
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1868.789 ; gain = 200.496
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CE_128TR_Demap_3_0' [e:/CE_128TR/CE_128TR.gen/sources_1/bd/CE_128TR/ip/CE_128TR_Demap_3_0/synth/CE_128TR_Demap_3_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'Demap' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Demap.v:1]
+	Parameter PARA bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'SubDemap' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/SubDemap.v:1]
+INFO: [Synth 8-6157] synthesizing module 'DualPortRAM' [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/DualPortRAM.v:1]
+	Parameter ADDR_LEN bound to: 14 - type: integer 
+	Parameter DATA_LEN bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 13104 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'DualPortRAM' (0#1) [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/DualPortRAM.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'SubDemap' (0#1) [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/SubDemap.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Demap' (0#1) [E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/Demap.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'CE_128TR_Demap_3_0' (0#1) [e:/CE_128TR/CE_128TR.gen/sources_1/bd/CE_128TR/ip/CE_128TR_Demap_3_0/synth/CE_128TR_Demap_3_0.v:53]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1996.395 ; gain = 328.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1996.395 ; gain = 328.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1996.395 ; gain = 328.102
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 1996.395 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2089.812 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.155 . Memory (MB): peak = 2108.582 ; gain = 18.770
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 2108.582 ; gain = 440.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu19eg-ffvc1760-2-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 2108.582 ; gain = 440.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 2108.582 ; gain = 440.289
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5780] Default cascade height of 4 will be used for URAM '"DualPortRAM:/ram_reg"'.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 2108.582 ; gain = 440.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   32 Bit       Adders := 16    
+	   2 Input   14 Bit       Adders := 16    
+	   2 Input   12 Bit       Adders := 16    
++---Registers : 
+	               32 Bit    Registers := 16    
+	               14 Bit    Registers := 32    
+	               12 Bit    Registers := 16    
+	                1 Bit    Registers := 49    
++---RAMs : 
+	             409K Bit	(13104 X 32 bit)          RAMs := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1968 (col length:264)
+BRAMs: 1968 (col length: RAMB18 264 RAMB36 132)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-5780] Default cascade height of 4 will be used for URAM '"CE_128TR_Demap_3_0/inst/SUB_DEMAP0[0].sub_demap/demaped/ram_reg"'.
+INFO: [Synth 8-5780] Default cascade height of 4 will be used for URAM '"CE_128TR_Demap_3_0/inst/SUB_DEMAP0[1].sub_demap/demaped/ram_reg"'.
+INFO: [Synth 8-5780] Default cascade height of 4 will be used for URAM '"CE_128TR_Demap_3_0/inst/SUB_DEMAP0[2].sub_demap/demaped/ram_reg"'.
+INFO: [Synth 8-5780] Default cascade height of 4 will be used for URAM '"CE_128TR_Demap_3_0/inst/SUB_DEMAP0[3].sub_demap/demaped/ram_reg"'.
+INFO: [Synth 8-5780] Default cascade height of 4 will be used for URAM '"CE_128TR_Demap_3_0/inst/SUB_DEMAP0[4].sub_demap/demaped/ram_reg"'.
+INFO: [Synth 8-5780] Default cascade height of 4 will be used for URAM '"CE_128TR_Demap_3_0/inst/SUB_DEMAP0[5].sub_demap/demaped/ram_reg"'.
+INFO: [Synth 8-5780] Default cascade height of 4 will be used for URAM '"CE_128TR_Demap_3_0/inst/SUB_DEMAP0[6].sub_demap/demaped/ram_reg"'.
+INFO: [Synth 8-5780] Default cascade height of 4 will be used for URAM '"CE_128TR_Demap_3_0/inst/SUB_DEMAP0[7].sub_demap/demaped/ram_reg"'.
+INFO: [Synth 8-5780] Default cascade height of 4 will be used for URAM '"CE_128TR_Demap_3_0/inst/SUB_DEMAP0[8].sub_demap/demaped/ram_reg"'.
+INFO: [Synth 8-5780] Default cascade height of 4 will be used for URAM '"CE_128TR_Demap_3_0/inst/SUB_DEMAP0[9].sub_demap/demaped/ram_reg"'.
+INFO: [Synth 8-5780] Default cascade height of 4 will be used for URAM '"CE_128TR_Demap_3_0/inst/SUB_DEMAP0[10].sub_demap/demaped/ram_reg"'.
+INFO: [Synth 8-5780] Default cascade height of 4 will be used for URAM '"CE_128TR_Demap_3_0/inst/SUB_DEMAP0[11].sub_demap/demaped/ram_reg"'.
+INFO: [Synth 8-5780] Default cascade height of 4 will be used for URAM '"CE_128TR_Demap_3_0/inst/SUB_DEMAP0[12].sub_demap/demaped/ram_reg"'.
+INFO: [Synth 8-5780] Default cascade height of 4 will be used for URAM '"CE_128TR_Demap_3_0/inst/SUB_DEMAP0[13].sub_demap/demaped/ram_reg"'.
+INFO: [Synth 8-5780] Default cascade height of 4 will be used for URAM '"CE_128TR_Demap_3_0/inst/SUB_DEMAP0[14].sub_demap/demaped/ram_reg"'.
+INFO: [Synth 8-5780] Default cascade height of 4 will be used for URAM '"CE_128TR_Demap_3_0/inst/SUB_DEMAP0[15].sub_demap/demaped/ram_reg"'.
+INFO: [Synth 8-5780] Default cascade height of 4 will be used for URAM '"CE_128TR_Demap_3_0/inst/SUB_DEMAP0[0].sub_demap/demaped/ram_reg"'.
+INFO: [Synth 8-5780] Default cascade height of 4 will be used for URAM '"CE_128TR_Demap_3_0/inst/SUB_DEMAP0[1].sub_demap/demaped/ram_reg"'.
+INFO: [Synth 8-5780] Default cascade height of 4 will be used for URAM '"CE_128TR_Demap_3_0/inst/SUB_DEMAP0[2].sub_demap/demaped/ram_reg"'.
+INFO: [Synth 8-5780] Default cascade height of 4 will be used for URAM '"CE_128TR_Demap_3_0/inst/SUB_DEMAP0[3].sub_demap/demaped/ram_reg"'.
+INFO: [Synth 8-5780] Default cascade height of 4 will be used for URAM '"CE_128TR_Demap_3_0/inst/SUB_DEMAP0[4].sub_demap/demaped/ram_reg"'.
+INFO: [Synth 8-5780] Default cascade height of 4 will be used for URAM '"CE_128TR_Demap_3_0/inst/SUB_DEMAP0[5].sub_demap/demaped/ram_reg"'.
+INFO: [Synth 8-5780] Default cascade height of 4 will be used for URAM '"CE_128TR_Demap_3_0/inst/SUB_DEMAP0[6].sub_demap/demaped/ram_reg"'.
+INFO: [Synth 8-5780] Default cascade height of 4 will be used for URAM '"CE_128TR_Demap_3_0/inst/SUB_DEMAP0[7].sub_demap/demaped/ram_reg"'.
+INFO: [Synth 8-5780] Default cascade height of 4 will be used for URAM '"CE_128TR_Demap_3_0/inst/SUB_DEMAP0[8].sub_demap/demaped/ram_reg"'.
+INFO: [Synth 8-5780] Default cascade height of 4 will be used for URAM '"CE_128TR_Demap_3_0/inst/SUB_DEMAP0[9].sub_demap/demaped/ram_reg"'.
+INFO: [Synth 8-5780] Default cascade height of 4 will be used for URAM '"CE_128TR_Demap_3_0/inst/SUB_DEMAP0[10].sub_demap/demaped/ram_reg"'.
+INFO: [Synth 8-5780] Default cascade height of 4 will be used for URAM '"CE_128TR_Demap_3_0/inst/SUB_DEMAP0[11].sub_demap/demaped/ram_reg"'.
+INFO: [Synth 8-5780] Default cascade height of 4 will be used for URAM '"CE_128TR_Demap_3_0/inst/SUB_DEMAP0[12].sub_demap/demaped/ram_reg"'.
+INFO: [Synth 8-5780] Default cascade height of 4 will be used for URAM '"CE_128TR_Demap_3_0/inst/SUB_DEMAP0[13].sub_demap/demaped/ram_reg"'.
+INFO: [Synth 8-5780] Default cascade height of 4 will be used for URAM '"CE_128TR_Demap_3_0/inst/SUB_DEMAP0[14].sub_demap/demaped/ram_reg"'.
+INFO: [Synth 8-5780] Default cascade height of 4 will be used for URAM '"CE_128TR_Demap_3_0/inst/SUB_DEMAP0[15].sub_demap/demaped/ram_reg"'.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:51 . Memory (MB): peak = 2126.211 ; gain = 457.918
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6057] Memory: "inst/SUB_DEMAP0[0].sub_demap/demaped/ram_reg" defined in module: "CE_128TR_Demap_3_0" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "inst/SUB_DEMAP0[1].sub_demap/demaped/ram_reg" defined in module: "CE_128TR_Demap_3_0" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "inst/SUB_DEMAP0[2].sub_demap/demaped/ram_reg" defined in module: "CE_128TR_Demap_3_0" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "inst/SUB_DEMAP0[3].sub_demap/demaped/ram_reg" defined in module: "CE_128TR_Demap_3_0" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "inst/SUB_DEMAP0[4].sub_demap/demaped/ram_reg" defined in module: "CE_128TR_Demap_3_0" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "inst/SUB_DEMAP0[5].sub_demap/demaped/ram_reg" defined in module: "CE_128TR_Demap_3_0" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "inst/SUB_DEMAP0[6].sub_demap/demaped/ram_reg" defined in module: "CE_128TR_Demap_3_0" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "inst/SUB_DEMAP0[7].sub_demap/demaped/ram_reg" defined in module: "CE_128TR_Demap_3_0" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "inst/SUB_DEMAP0[8].sub_demap/demaped/ram_reg" defined in module: "CE_128TR_Demap_3_0" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "inst/SUB_DEMAP0[9].sub_demap/demaped/ram_reg" defined in module: "CE_128TR_Demap_3_0" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "inst/SUB_DEMAP0[10].sub_demap/demaped/ram_reg" defined in module: "CE_128TR_Demap_3_0" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "inst/SUB_DEMAP0[11].sub_demap/demaped/ram_reg" defined in module: "CE_128TR_Demap_3_0" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "inst/SUB_DEMAP0[12].sub_demap/demaped/ram_reg" defined in module: "CE_128TR_Demap_3_0" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "inst/SUB_DEMAP0[13].sub_demap/demaped/ram_reg" defined in module: "CE_128TR_Demap_3_0" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "inst/SUB_DEMAP0[14].sub_demap/demaped/ram_reg" defined in module: "CE_128TR_Demap_3_0" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "inst/SUB_DEMAP0[15].sub_demap/demaped/ram_reg" defined in module: "CE_128TR_Demap_3_0" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Ultra RAM: Preliminary Mapping Report (see note below)
++-------------------+-----------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+---------+--------------+--------------------------+-------------+
+|Module Name        | RTL Object                                    | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | URAM288 | Matrix Shape | FF provided for Pipeline | FF absorbed | 
++-------------------+-----------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+---------+--------------+--------------------------+-------------+
+|CE_128TR_Demap_3_0 | inst/SUB_DEMAP0[0].sub_demap/demaped/ram_reg  | 12 K x 32              |   | R | 12 K x 32              | W |   | Port A and B     | 4       | 4x1          | 0                        | 0           | 
+|CE_128TR_Demap_3_0 | inst/SUB_DEMAP0[1].sub_demap/demaped/ram_reg  | 12 K x 32              |   | R | 12 K x 32              | W |   | Port A and B     | 4       | 4x1          | 0                        | 0           | 
+|CE_128TR_Demap_3_0 | inst/SUB_DEMAP0[2].sub_demap/demaped/ram_reg  | 12 K x 32              |   | R | 12 K x 32              | W |   | Port A and B     | 4       | 4x1          | 0                        | 0           | 
+|CE_128TR_Demap_3_0 | inst/SUB_DEMAP0[3].sub_demap/demaped/ram_reg  | 12 K x 32              |   | R | 12 K x 32              | W |   | Port A and B     | 4       | 4x1          | 0                        | 0           | 
+|CE_128TR_Demap_3_0 | inst/SUB_DEMAP0[4].sub_demap/demaped/ram_reg  | 12 K x 32              |   | R | 12 K x 32              | W |   | Port A and B     | 4       | 4x1          | 0                        | 0           | 
+|CE_128TR_Demap_3_0 | inst/SUB_DEMAP0[5].sub_demap/demaped/ram_reg  | 12 K x 32              |   | R | 12 K x 32              | W |   | Port A and B     | 4       | 4x1          | 0                        | 0           | 
+|CE_128TR_Demap_3_0 | inst/SUB_DEMAP0[6].sub_demap/demaped/ram_reg  | 12 K x 32              |   | R | 12 K x 32              | W |   | Port A and B     | 4       | 4x1          | 0                        | 0           | 
+|CE_128TR_Demap_3_0 | inst/SUB_DEMAP0[7].sub_demap/demaped/ram_reg  | 12 K x 32              |   | R | 12 K x 32              | W |   | Port A and B     | 4       | 4x1          | 0                        | 0           | 
+|CE_128TR_Demap_3_0 | inst/SUB_DEMAP0[8].sub_demap/demaped/ram_reg  | 12 K x 32              |   | R | 12 K x 32              | W |   | Port A and B     | 4       | 4x1          | 0                        | 0           | 
+|CE_128TR_Demap_3_0 | inst/SUB_DEMAP0[9].sub_demap/demaped/ram_reg  | 12 K x 32              |   | R | 12 K x 32              | W |   | Port A and B     | 4       | 4x1          | 0                        | 0           | 
+|CE_128TR_Demap_3_0 | inst/SUB_DEMAP0[10].sub_demap/demaped/ram_reg | 12 K x 32              |   | R | 12 K x 32              | W |   | Port A and B     | 4       | 4x1          | 0                        | 0           | 
+|CE_128TR_Demap_3_0 | inst/SUB_DEMAP0[11].sub_demap/demaped/ram_reg | 12 K x 32              |   | R | 12 K x 32              | W |   | Port A and B     | 4       | 4x1          | 0                        | 0           | 
+|CE_128TR_Demap_3_0 | inst/SUB_DEMAP0[12].sub_demap/demaped/ram_reg | 12 K x 32              |   | R | 12 K x 32              | W |   | Port A and B     | 4       | 4x1          | 0                        | 0           | 
+|CE_128TR_Demap_3_0 | inst/SUB_DEMAP0[13].sub_demap/demaped/ram_reg | 12 K x 32              |   | R | 12 K x 32              | W |   | Port A and B     | 4       | 4x1          | 0                        | 0           | 
+|CE_128TR_Demap_3_0 | inst/SUB_DEMAP0[14].sub_demap/demaped/ram_reg | 12 K x 32              |   | R | 12 K x 32              | W |   | Port A and B     | 4       | 4x1          | 0                        | 0           | 
+|CE_128TR_Demap_3_0 | inst/SUB_DEMAP0[15].sub_demap/demaped/ram_reg | 12 K x 32              |   | R | 12 K x 32              | W |   | Port A and B     | 4       | 4x1          | 0                        | 0           | 
++-------------------+-----------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+---------+--------------+--------------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Ultra RAMs at the current stage of the synthesis flow. Some Ultra RAMs may be reimplemented as non Ultra RAM primitives later in the synthesis flow. Multiple instantiated Ultra RAMs are reported only once. Fields "FF provided for Pipeline" and "FF absorbed" respectively indicate number of registers available for pipelining and number of registers absorbed in the URAM matrix for pipelining. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:11 ; elapsed = 00:01:22 . Memory (MB): peak = 2829.953 ; gain = 1161.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:11 ; elapsed = 00:01:22 . Memory (MB): peak = 2834.023 ; gain = 1165.730
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6057] Memory: "inst/SUB_DEMAP0[0].sub_demap/demaped/ram_reg" defined in module: "CE_128TR_Demap_3_0" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "inst/SUB_DEMAP0[1].sub_demap/demaped/ram_reg" defined in module: "CE_128TR_Demap_3_0" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "inst/SUB_DEMAP0[2].sub_demap/demaped/ram_reg" defined in module: "CE_128TR_Demap_3_0" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "inst/SUB_DEMAP0[3].sub_demap/demaped/ram_reg" defined in module: "CE_128TR_Demap_3_0" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "inst/SUB_DEMAP0[4].sub_demap/demaped/ram_reg" defined in module: "CE_128TR_Demap_3_0" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "inst/SUB_DEMAP0[5].sub_demap/demaped/ram_reg" defined in module: "CE_128TR_Demap_3_0" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "inst/SUB_DEMAP0[6].sub_demap/demaped/ram_reg" defined in module: "CE_128TR_Demap_3_0" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "inst/SUB_DEMAP0[7].sub_demap/demaped/ram_reg" defined in module: "CE_128TR_Demap_3_0" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "inst/SUB_DEMAP0[8].sub_demap/demaped/ram_reg" defined in module: "CE_128TR_Demap_3_0" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "inst/SUB_DEMAP0[9].sub_demap/demaped/ram_reg" defined in module: "CE_128TR_Demap_3_0" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "inst/SUB_DEMAP0[10].sub_demap/demaped/ram_reg" defined in module: "CE_128TR_Demap_3_0" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "inst/SUB_DEMAP0[11].sub_demap/demaped/ram_reg" defined in module: "CE_128TR_Demap_3_0" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "inst/SUB_DEMAP0[12].sub_demap/demaped/ram_reg" defined in module: "CE_128TR_Demap_3_0" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "inst/SUB_DEMAP0[13].sub_demap/demaped/ram_reg" defined in module: "CE_128TR_Demap_3_0" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "inst/SUB_DEMAP0[14].sub_demap/demaped/ram_reg" defined in module: "CE_128TR_Demap_3_0" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "inst/SUB_DEMAP0[15].sub_demap/demaped/ram_reg" defined in module: "CE_128TR_Demap_3_0" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Ultra RAM: Final Mapping Report
++-------------------+-----------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+---------+--------------+--------------------------+-------------+
+|Module Name        | RTL Object                                    | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | URAM288 | Matrix Shape | FF provided for Pipeline | FF absorbed | 
++-------------------+-----------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+---------+--------------+--------------------------+-------------+
+|CE_128TR_Demap_3_0 | inst/SUB_DEMAP0[0].sub_demap/demaped/ram_reg  | 12 K x 32              |   | R | 12 K x 32              | W |   | Port A and B     | 4       | 4x1          | 0                        | 0           | 
+|CE_128TR_Demap_3_0 | inst/SUB_DEMAP0[1].sub_demap/demaped/ram_reg  | 12 K x 32              |   | R | 12 K x 32              | W |   | Port A and B     | 4       | 4x1          | 0                        | 0           | 
+|CE_128TR_Demap_3_0 | inst/SUB_DEMAP0[2].sub_demap/demaped/ram_reg  | 12 K x 32              |   | R | 12 K x 32              | W |   | Port A and B     | 4       | 4x1          | 0                        | 0           | 
+|CE_128TR_Demap_3_0 | inst/SUB_DEMAP0[3].sub_demap/demaped/ram_reg  | 12 K x 32              |   | R | 12 K x 32              | W |   | Port A and B     | 4       | 4x1          | 0                        | 0           | 
+|CE_128TR_Demap_3_0 | inst/SUB_DEMAP0[4].sub_demap/demaped/ram_reg  | 12 K x 32              |   | R | 12 K x 32              | W |   | Port A and B     | 4       | 4x1          | 0                        | 0           | 
+|CE_128TR_Demap_3_0 | inst/SUB_DEMAP0[5].sub_demap/demaped/ram_reg  | 12 K x 32              |   | R | 12 K x 32              | W |   | Port A and B     | 4       | 4x1          | 0                        | 0           | 
+|CE_128TR_Demap_3_0 | inst/SUB_DEMAP0[6].sub_demap/demaped/ram_reg  | 12 K x 32              |   | R | 12 K x 32              | W |   | Port A and B     | 4       | 4x1          | 0                        | 0           | 
+|CE_128TR_Demap_3_0 | inst/SUB_DEMAP0[7].sub_demap/demaped/ram_reg  | 12 K x 32              |   | R | 12 K x 32              | W |   | Port A and B     | 4       | 4x1          | 0                        | 0           | 
+|CE_128TR_Demap_3_0 | inst/SUB_DEMAP0[8].sub_demap/demaped/ram_reg  | 12 K x 32              |   | R | 12 K x 32              | W |   | Port A and B     | 4       | 4x1          | 0                        | 0           | 
+|CE_128TR_Demap_3_0 | inst/SUB_DEMAP0[9].sub_demap/demaped/ram_reg  | 12 K x 32              |   | R | 12 K x 32              | W |   | Port A and B     | 4       | 4x1          | 0                        | 0           | 
+|CE_128TR_Demap_3_0 | inst/SUB_DEMAP0[10].sub_demap/demaped/ram_reg | 12 K x 32              |   | R | 12 K x 32              | W |   | Port A and B     | 4       | 4x1          | 0                        | 0           | 
+|CE_128TR_Demap_3_0 | inst/SUB_DEMAP0[11].sub_demap/demaped/ram_reg | 12 K x 32              |   | R | 12 K x 32              | W |   | Port A and B     | 4       | 4x1          | 0                        | 0           | 
+|CE_128TR_Demap_3_0 | inst/SUB_DEMAP0[12].sub_demap/demaped/ram_reg | 12 K x 32              |   | R | 12 K x 32              | W |   | Port A and B     | 4       | 4x1          | 0                        | 0           | 
+|CE_128TR_Demap_3_0 | inst/SUB_DEMAP0[13].sub_demap/demaped/ram_reg | 12 K x 32              |   | R | 12 K x 32              | W |   | Port A and B     | 4       | 4x1          | 0                        | 0           | 
+|CE_128TR_Demap_3_0 | inst/SUB_DEMAP0[14].sub_demap/demaped/ram_reg | 12 K x 32              |   | R | 12 K x 32              | W |   | Port A and B     | 4       | 4x1          | 0                        | 0           | 
+|CE_128TR_Demap_3_0 | inst/SUB_DEMAP0[15].sub_demap/demaped/ram_reg | 12 K x 32              |   | R | 12 K x 32              | W |   | Port A and B     | 4       | 4x1          | 0                        | 0           | 
++-------------------+-----------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+---------+--------------+--------------------------+-------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:12 ; elapsed = 00:01:23 . Memory (MB): peak = 2852.629 ; gain = 1184.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:23 ; elapsed = 00:01:35 . Memory (MB): peak = 3030.645 ; gain = 1362.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:23 ; elapsed = 00:01:35 . Memory (MB): peak = 3030.645 ; gain = 1362.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:24 ; elapsed = 00:01:35 . Memory (MB): peak = 3030.645 ; gain = 1362.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:24 ; elapsed = 00:01:35 . Memory (MB): peak = 3030.645 ; gain = 1362.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:24 ; elapsed = 00:01:35 . Memory (MB): peak = 3030.645 ; gain = 1362.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:24 ; elapsed = 00:01:36 . Memory (MB): peak = 3030.645 ; gain = 1362.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY8  |   128|
+|2     |LUT1    |    17|
+|3     |LUT2    |     2|
+|4     |LUT3    |    16|
+|5     |LUT4    |   627|
+|6     |LUT5    |   100|
+|7     |LUT6    |    72|
+|8     |URAM288 |    64|
+|11    |FDRE    |   659|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:24 ; elapsed = 00:01:36 . Memory (MB): peak = 3030.645 ; gain = 1362.352
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 33 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:03 ; elapsed = 00:01:32 . Memory (MB): peak = 3030.645 ; gain = 1250.164
+Synthesis Optimization Complete : Time (s): cpu = 00:01:25 ; elapsed = 00:01:37 . Memory (MB): peak = 3030.645 ; gain = 1362.352
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.164 . Memory (MB): peak = 3030.645 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 128 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3030.645 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: ced4560b
+INFO: [Common 17-83] Releasing license: Synthesis
+60 Infos, 33 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:47 ; elapsed = 00:02:18 . Memory (MB): peak = 3030.645 ; gain = 2587.922
+INFO: [Coretcl 2-1174] Renamed 33 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 3030.645 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/CE_128TR/CE_128TR.runs/CE_128TR_Demap_3_0_synth_1/CE_128TR_Demap_3_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file CE_128TR_Demap_3_0_utilization_synth.rpt -pb CE_128TR_Demap_3_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 23 23:15:14 2026...

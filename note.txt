@@ -1,0 +1,154 @@
+Đã xử lý flow-control cho svd
+Vì svd_128x2 chỉ chạy một ma trận tại một thời điểm (latency cố định start→done), tôi chèn một khối đệm + lập lịch giữa adapter và svd thay vì nối thẳng.
+
+Module mới: svd_start_fc.v
+FIFO (đăng ký đọc → suy ra BRAM/LUTRAM) đệm mỗi a_in_pk (8192-bit) khi nó đến (in_start).
+FSM scheduler (IDLE→RD→BUSY): chỉ phát svd_start khi svd rảnh, giữ svd_a_in_pk ổn định đúng chu kỳ start=1, rồi chờ svd_done mới phục vụ ma trận kế tiếp → không bao giờ ghi đè khi svd đang bận.
+Cờ overflow (sticky): bật nếu FIFO đầy mà vẫn có subband mới đến → bạn biết cần tăng DEPTH.
+Tham số DW=8192, DEPTH=4 (mặc định). Mỗi entry rộng 8192-bit nên FIFO tốn tài nguyên — chỉnh DEPTH theo kết quả sim.
+Sơ đồ mới
+
+svd_pack ──(start, a_in_pk)──► svd_start_fc ──(svd_start, svd_a_in_pk)──► svd_128x2
+                                     ▲────────────── svd_done ──────────────┘
+TCL đã cập nhật (add_estnoise_svd_chain.tcl, mục 4)
+Thêm svd_start_fc.v vào danh sách source.
+Tạo cell svd_fc và nối: svd_pack/start→svd_fc/in_start, svd_pack/a_in_pk→svd_fc/in_data, svd_fc/svd_start→svd_0/start, svd_fc/svd_a_in_pk→svd_0/a_in_pk, svd_0/done→svd_fc/svd_done.
+Thêm cổng top svd_ovf để giám sát tràn FIFO.
+Cách chọn DEPTH
+DEPTH ≥ ceil(latency_svd / khoảng_cách_subband). Khoảng cách subband ≈ số pilot/subband (div = 12…192 chu kỳ). Nếu subband đến chậm hơn latency svd thì DEPTH=2 là đủ. Chạy xsim, quan sát svd_ovf: nếu bật → tăng DEPTH (lũy thừa 2).
+
+Một lưu ý nhỏ: nếu bạn đã chạy bản TCL cũ (nối thẳng svd_pack→svd_0), hãy chạy lại trên block design sạch, hoặc xóa 2 net start/a_in_pk cũ trước khi source bản mới.
+
+================================================================================
+
+Module mới: csi_calc.v
+Tính RI/CQI/PMI mỗi subband từ đầu ra svd_128x2, bám sát MATLAB:
+
+MATLAB	Verilog
+channelPower = diag(s)	sig0=s_out_pk[23:0], sig1=s_out_pk[47:24] (Q8.15, đã sort giảm dần)
+channelSel = find(power > nThres)	sel0=sig0>THR, sel1=sig1>THR (THR=655 = 0.02 Q8.15)
+nRI = length(channelSel)	RI = sel0 + sel1 (0/1/2)
+nCQI = sum(sel)*nScale; max(1,·)	CQI = max(1.0, 0.5·(Σ sigma được chọn)), Q8.15, *0.5=>>1
+nPMI = u(:,channelSel)'	PMI_pk = conj(U) đầy đủ; số cột hợp lệ = RI; PMI_sel = mask
+Vì sao PMI xuất conj(U) đầy đủ thay vì nén cột: sigma sort giảm dần (xác nhận trong eig_sym_2x2: lam0≥lam1≥0) nên channelSel luôn là tiền tố {}/{0}/{0,1}. Do đó cột PMI thứ j chính là conj(U[:,j]) — không cần mux. PMI_pk[i*2+j] = conj(U[i][j]) (layer 0 = word chẵn, layer 1 = word lẻ). Phép ' của MATLAB chỉ là đọc cột thành hàng → cùng dữ liệu; conj = đảo dấu phần ảo (có bão hòa khi im=-2^15).
+
+I/O: vào clk/rst_n/svd_done/s_out_pk/u_out_pk; ra (đăng ký theo svd_done, trễ 1 chu kỳ + csi_valid): RI[1:0], CQI[23:0] (Q8.15), PMI_sel[1:0], PMI_pk[8191:0].
+
+TCL đã cập nhật (add_estnoise_svd_chain.tcl mục 5)
+Thêm csi_calc.v vào nguồn; tạo cell csi_0, nối svd_0/done|s_out_pk|u_out_pk → csi_0; phơi csi_valid/RI/CQI/PMI_sel/PMI_pk ra cổng top.
+
+Chuỗi hoàn chỉnh:
+
+
+… → ChannelNorm → svd_pack → svd_start_fc → svd_128x2 → csi_calc → (RI/CQI/PMI)
+Lưu ý
+THR_Q15 (ngưỡng nThres) là parameter; muốn chỉnh lúc chạy thì đổi thành cổng input + xlconstant trong BD. nScale=0.5 hardcode >>1 — nếu cần hệ số khác thì thay bằng phép nhân Q-format.
+CQI ở đây là giá trị liên tục max(1, …) đúng như MATLAB, không phải chỉ số CQI 4-bit (0–15). Nếu cần ánh xạ sang chỉ số bảng thì đó là bước tra bảng riêng.
+Các cổng top u_out_pk/s_out_pk (raw svd) giờ trùng dữ liệu với PMI; có thể bỏ bớt nếu chỉ cần CSI.
+Bạn có muốn tôi thêm bước ánh xạ CQI sang chỉ số 0–15 theo bảng MCS, hoặc gộp RI/CQI/PMI thành một gói báo cáo (report packer) để đẩy ra ngoài không?
+
+===========================================================================
+
+Đã tạo testbench full-chain + bộ đọc MATLAB
+tb_ce128tr_full.sv
+Mô phỏng theo test.sv nhưng cho CE_128TR_wrapper đầy đủ (MuxPDU → … → svd → csi_calc):
+
+Clock/reset/timing: giữ nguyên cấu trúc của test.sv (100 MHz, reset 102ns, chuỗi symbol 11/12/13).
+Kích thích 128 Rx: 8 bus fft_data_* (mỗi bus nhân bản 1 mẫu ra 16 Rx), srs_pdu_*_0 384-bit dựng từ hàm make_pdu theo đúng bản đồ trường trong MuxPDU.v (KTC/CSRS/NrOfSrsPorts…), srs_valid_*_0 xung 1 nhịp để nạp PDU.
+Ghi file (1 subband/dòng, hex) — căn theo svd_done (input+svd out) và csi_valid (CSI):
+File	Nội dung	Q-format
+ce_ain.txt	a_in_dbg — ma trận kênh vào svd (chính là svd(HPerBand) của bạn)	Q2.13
+ce_sig.txt	sigma0, sigma1	Q8.15
+ce_u.txt / ce_v.txt	U (128×2) / V (2×2)	Q1.14
+ce_csi.txt	idx RI CQI PMI_sel	CQI Q8.15
+ce_pmi.txt	PMI = conj(U)	Q1.14
+read_ce128tr.m
+Đọc các file trên, giải mã Q-format, chạy svd + CSI tham chiếu ngay trên ma trận HW đã dùng, và in so sánh sigma / RI / CQI từng subband.
+
+Phụ thuộc & lưu ý
+Prerequisite: phải chạy add_estnoise_svd_chain.tcl rồi Generate Wrapper cho CE_128TR.bd trước — TB tham chiếu CE_128TR_wrapper và các cổng do TCL tạo (gồm cổng debug a_in_dbg tôi vừa thêm = svd_fc/svd_a_in_pk, đọc được ổn định tại svd_done).
+Cần thay bằng dữ liệu thật: file data_fft0.mem + cách nhân bản 16 Rx (hiện mọi Rx giống nhau → ma trận gần hạng-1), cấu hình PDU và timing symbol — đây là scaffold theo test.sv.
+Bản đồ trường make_pdu suy từ MuxPDU.v; hãy đối chiếu với định dạng SRS PDU thực tế của bạn.
+So sánh U/PMI cần lưu ý SVD có bất định pha (mỗi cột U sai khác một hệ số pha đơn vị) → script chỉ so sigma/RI/CQI là chắc chắn; muốn so U thì dùng subspace |u_ref' * u_hw|.
+a_in_dbg là cổng debug 8192-bit — bỏ trước khi synth thật.
+Bạn có muốn tôi bổ sung phần so sánh subspace U/PMI trong read_ce128tr.m, hay thêm tự động kiểm tra (assert) sai số sigma/CQI vượt ngưỡng ngay trong testbench không?
+
+
+===========================================
+
+1. Điểm cắt bit-width lớn nhất: ChannelNorm → SVD (lãng phí ~2×)
+ChannelNorm.v:19-24 xuất hnorm ở Q16.16 = 32 bit/thành phần. Nhưng ngay sau đó svd_hnorm_pack.v:160 làm SH = 16-13 = 3, dịch phải 3 và bão hòa xuống Q2.13 = 16 bit.
+
+Nghĩa là:
+
+16 bit phần nguyên của ChannelNorm bị bão hòa còn 2-3 bit (vì |hnorm| < 4).
+3 bit phần lẻ thấp bị vứt ngay (>>3).
+→ Carry 32 bit qua 512 bộ chia + bus hnorm rộng 128·2·2·32 = 16384 bit trong khi SVD chỉ dùng 16 bit. Đề xuất:
+
+Đặt FRAC_W = 13 (thay vì 16) trong ChannelNorm — bỏ luôn 3 bit >>3.
+Phần nguyên chỉ cần 3 bit → DIN_W hiệu dụng ~ Q3.13 (17 bit). Cấu hình div_gen_frac fractional_width=13, output ~17b.
+svd_hnorm_pack gần như biến mất: chỉ còn bão hòa nhẹ (hoặc bỏ hẳn nếu chọn Q3.13), loại 256 khối round/saturate.
+Đây là thay đổi đáng giá nhất về cả area lẫn routing.
+
+2. ChannelNorm: 512 bộ chia → giảm còn ~64 (hoặc ít hơn)
+ChannelNorm.v:192-213 tạo 2 div_gen_frac (I và Q) cho mỗi (path, port): 16 path × 2 port × 2 = 64/instance × 8 instance = 512 bộ chia Radix2 33-bit, latency 36. Đây gần như chắc chắn là khối tốn tài nguyên nhất toàn thiết kế.
+
+Hai tối ưu cộng dồn:
+
+Nghịch đảo dùng chung: I và Q (và cả 2 port của cùng path) chia cho cùng một noise. Tính 1/noise một lần (1 reciprocal) rồi nhân (DSP) cho I/Q/port → thay 2·PORT bộ chia bằng 1 reciprocal + 2·PORT phép nhân. Average đã dùng đúng kỹ thuật reciprocal-mult này (SsubAverage.v:114) — nên áp lại cho ChannelNorm.
+Time-multiplex theo tốc độ dữ liệu: mỗi path chỉ ra 1 mẫu/subband, các subband cách nhau ≥12 chu kỳ (div = 12…192), divider II=1. Một bộ chia/nghịch-đảo có thể phục vụ nhiều kênh bằng scheduler nhỏ. Có thể xuống còn vài bộ chia thay vì 512.
+3. Đường nhiễu (EstNoise/NoiseAverage) đang quá rộng
+EstNoise.v:68-73: residual NW=17b, bình phương SQW=34b, tổng SUMW=35b, rồi bão hòa về OW=32b. Giá trị này chỉ dùng làm số chia trong ChannelNorm và so ngưỡng. 32 bit kéo theo divisor 33-bit (ChannelNorm.v:184) cho cả 512 bộ chia.
+
+Thực tế nvar hữu ích nhỏ hơn nhiều. Cắt OW xuống ~20-24 bit (sau khi xem dải động thực trong sim) sẽ thu nhỏ trực tiếp divisor_width của toàn bộ bộ chia/nghịch đảo ở mục 2.
+NoiseAverage/NoiseSsubAverage (DATA_W=32, ACC_W=48, MULT_W=73) cũng co theo.
+4. Khối Average — nhiều bit thừa cố định
+SubAverage.v:22 / SsubAverage.v:
+
+DIV_W = 16 nhưng div max = 192 → chỉ cần 8-9 bit. div, div_reg, cnt, div1 đều dư 7 bit (lặp lại ở Average, NoiseAverage).
+FRAC_BITS = 24 cho inv_div (INV_W=25). Vì div là số nguyên ≤192, 1/div cần ~8 bit nguyên + đủ phần lẻ; 18 bit phần lẻ thường đủ cho sai số Q1.15 → cắt MULT_W từ 59 xuống ~50.
+ACC_W = 33 (16+16+1): tổng ≤192 mẫu Q1.15 cần 15 lẻ + 8 nguyên + dấu = 24 bit, đang dư ~9 bit.
+5. Đường SVD (gram/CORDIC) — GR_DW=40 có thể là điểm đổi area↔sai số
+svd_defs.vh:26-27: GR = Q13.26 (40b), SHIFT=0 (không mất phần lẻ). Kéo theo cordic_vec/cordic_sqrt input 40-bit (max pipelining + coarse rotate → khá đắt). Q.26 phần lẻ là rất nhiều cho mục đích cuối là σ ở Q8.15 (15 bit lẻ).
+
+Giảm GR_FW 26→~20 (giữ đủ nguyên 13 bit cho dải N_ROW=128) sẽ thu nhỏ accumulator gram và input CORDIC xuống ~34 bit. Đây là trade-off accuracy → cần sim kiểm tra sai số σ/U trước khi chốt.
+6. Tối ưu cấu trúc khác (không phải bit-width)
+Ma trận A lưu 3 lần (8192 bit/bản): svd_128x2.v:56 a_reg_pk, gram_cmx2.v:46 a_reg, umat_calc_cmx2.v:56 a_reg. Vì single-op-in-flight, có thể chia sẻ 1 bản → tiết kiệm ~16k FF.
+svd_start_fc FIFO: DW=8192 × DEPTH=4 = 32768 bit. Theo phân tích trong chính file (svd_start_fc.v:15-18), nếu subband chậm hơn latency SVD thì DEPTH=2 là đủ — xác nhận qua cờ overflow trong sim rồi hạ DEPTH (halve BRAM).
+div_31 cho phép chia hằng số 31 (q_param.v:56): chia cho hằng → thay bằng nhân nghịch đảo + dịch, bỏ IP + 8 chu kỳ latency.
+recip_unit latency 49 với dividend là hằng 4096 (umat_calc_cmx2.v:51): có thể dùng cấu hình nhỏ hơn / LUT-based để giảm latency (chỉ 2 instance nên không phải area, nhưng ảnh hưởng latency chuỗi SVD).
+7. Cần KIỂM TRA (chạm tới width — nên xác nhận trong sim trước)
+Correlation slicing nghi off-by-one: Correlation.v:77-92 lấy corr_data_w[..][88:73] cho phần ảo port 1, trong khi các lát khác là [63:48]/[39:24]/[15:0] (đều bội số 24). [88:73] lệch 1 bit so với [87:72] mong đợi — cần xác nhận đây là làm tròn cố ý hay lỗi.
+fifo_delay_tdata rộng 128-bit (TDATA_NUM_BYTES=16) nhưng EstNoise.v:188 đẩy demap_data rộng 512-bit (32*PARA) qua nó. Cần xác nhận có biến thể IP riêng cho nhánh demap, nếu không là cắt cụt dữ liệu (trùng với điểm "EstNoise cần verify trong xsim" đã ghi nhận).
+Thứ tự nên làm (impact/effort): (1)+(2)+(3) là gói lớn nhất và liên kết với nhau — sửa ChannelNorm output sang Q3.13, dùng reciprocal dùng chung, thu hẹp noise — sẽ giảm mạnh số/ kích thước bộ chia và toàn bộ bus hnorm. (4) là cắt an toàn, gần như không rủi ro sai số. (5) cần sim. (6)/(7) là dọn dẹp/kiểm tra.
+
+Bạn muốn tôi bắt đầu hiện thực gói nào? Vì bạn ưu tiên chỉnh block design bằng TCL chứ không sửa .bd trực tiếp, tôi đề xuất: sửa RTL (ChannelNorm.v, svd_hnorm_pack.v, Average/SsubAverage width) trước, rồi cập nhật lại cấu hình IP div_gen_frac/recip_unit qua TCL. Cho tôi biết phạm vi bạn muốn và tôi sẽ chuẩn bị một testbench/so sánh sai số trước khi cắt những chỗ ảnh hưởng độ chính xác (mục 5).
+
+==========================
+
+Tổng hợp toàn bộ công việc
+1. Cắt bit-width an toàn (đã áp dụng, bit-exact)
+SsubAverage.v:17: ACC_W 33→25, MULT_W 59→51 (×256 leaf trong 8 IP Average).
+NoiseSsubAverage.v:27: ACC_W 48→41, MULT_W 74→67 (×128 leaf).
+Chứng minh bằng biên xấu nhất (max div=192) → ngõ ra giống hệt từng bit. Không đụng BD, không cần regen IP.
+2. Refactor ChannelNorm — chia sẻ bộ chia (đã áp dụng)
+ChannelNorm.v: mỗi đường giờ time-multiplex 1 div_gen_frac cho cả 2·PORT thành phần (I/Q × 2 port, cùng noise) thay vì 4 bộ chia song song → 512 → 128 bộ chia.
+
+Giữ nguyên port Q16.16 → không sửa BD, không regen IP.
+Đã kiểm chứng tương đương bit-for-bit với bản gốc: test directed cho thấy 4 toán hạng được định tuyến đúng slot, đúng thứ tự; và test divider độc lập cho cùng bit-pattern dù nạp đơn lẻ (bản gốc) hay nối tiếp (refactor).
+3. PHÁT HIỆN QUAN TRỌNG — lỗi bộ chia có sẵn (chưa sửa)
+div_gen_frac trả về đúng một nửa thương số khi kết quả < 1 (trường hợp phổ biến của corr/noise), đúng khi ≥ 1. Tái hiện bằng một phép chia đơn lẻ (sim_svd/tb_div.sv) → không phải do refactor, mà là lỗi cấu hình IP có sẵn trong ChannelNorm gốc. Hệ quả: ước lượng kênh hiện đang sai hệ số ~2× ở hầu hết subband.
+
+Hướng sửa: cấu hình lại div_gen_frac (khả năng cao là fractional_width hoặc cách format divisor {1'b0,noise}) — cần regen trên xcvp2802.
+4. Hạ tầng mô phỏng (mới)
+Dựng luồng xsim độc lập, không phụ thuộc part (dùng thư viện precompiled), trong E:/CE_128TR/sim_svd/:
+
+run.ps1 — chạy tb_svd_cmx2 (SVD). Baseline N_ROW=128: σ-err 1.51e-2, frob 2.05e-2, PASS.
+run_cn.ps1, tb_div.sv — kiểm thử ChannelNorm/divider.
+5. Quyết định & vướng mắc
+GR_DW: khuyến nghị BỎ — SVD chỉ instantiate 1 lần toàn thiết kế (lợi tài nguyên không đáng kể), lại phải chỉnh các phép dịch pha trong eig → rủi ro/lợi không xứng.
+Vivado ở đây KHÔNG có device-support Versal Premium (xcvp2802) → không mở được project, không regen IP, không synthesize. Mọi validate số học tôi làm qua part-independent sim; bạn cần regen/synth trên máy có VP.
+Việc bạn nên làm tiếp (ưu tiên)
+Sửa lỗi bộ chia (mục 3) — đây là lỗi đúng/sai, nên ưu tiên trước mọi tối ưu. Sau khi reconfig IP, chạy tb_div.sv để xác nhận 10000/20000 → 0.5.
+Synthesize để xác nhận tiết kiệm tài nguyên của mục 1+2 trên xcvp2802.
+Tôi đã ghi lại lỗi bộ chia + trạng thái refactor vào memory để phiên sau không phải dò lại. Bạn có muốn tôi thử một workaround RTL cho lỗi bộ chia (vd. nhân bù ×2 có điều kiện, hoặc đổi cách đóng gói divisor) để bạn so trong sim không — hay để bạn xử lý bằng reconfig IP?

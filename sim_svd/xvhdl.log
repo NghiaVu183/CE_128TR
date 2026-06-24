@@ -1,0 +1,3 @@
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "xsim.ini".
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/CE_128TR/CE_128TR.gen/sources_1/ip/div_gen_frac/sim/div_gen_frac.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'div_gen_frac'

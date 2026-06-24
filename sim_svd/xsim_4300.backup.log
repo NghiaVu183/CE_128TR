@@ -1,0 +1,362 @@
+#-----------------------------------------------------------
+# xsim v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Jun 23 00:36:27 2026
+# Process ID         : 4300
+# Current directory  : E:/CE_128TR/sim_svd
+# Command line       : xsim.exe -mode tcl -source {xsim.dir/cn_snap/xsim_script.tcl}
+# Log file           : E:/CE_128TR/sim_svd/xsim.log
+# Journal file       : E:/CE_128TR/sim_svd\xsim.jou
+# Running On         : LAPTOP-55KNS8Q0
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 17002 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 25592 MB
+# Available Virtual  : 14321 MB
+#-----------------------------------------------------------
+source xsim.dir/cn_snap/xsim_script.tcl
+# xsim {cn_snap} -autoloadwcfg -tclbatch {run_cn.do}
+Time resolution is 1 ps
+source run_cn.do
+## run all
+[sb0] DBG n0: cre00=21698 cim00=-9517 nz0=55062 | hd0=0000c56b00000d850000e9e100003270 w0=00003270 w1=0000e9e1
+[sb0] n=0 p=0 RE got=0.19702 exp=0.39406 e=1.97e-01
+[sb0] n=0 p=0 IM got=0.91359 exp=-0.17284 e=1.09e+00
+[sb0] n=0 p=1 RE got=0.05281 exp=0.10563 e=5.28e-02
+[sb0] n=0 p=1 IM got=0.77116 exp=-0.45770 e=1.23e+00
+[sb0] n=1 p=0 RE got=0.78999 exp=-0.42003 e=1.21e+00
+[sb0] n=1 p=0 IM got=0.89037 exp=-0.21929 e=1.11e+00
+[sb0] n=1 p=1 RE got=0.01720 exp=0.03441 e=1.72e-02
+[sb0] n=1 p=1 IM got=0.22469 exp=0.44937 e=2.25e-01
+[sb0] n=2 p=0 RE got=-12.11876 exp=-13.23753 e=1.12e+00
+[sb0] n=2 p=0 IM got=-49.02612 exp=-50.05226 e=1.03e+00
+[sb0] n=2 p=1 RE got=22.07243 exp=22.14489 e=7.25e-02
+[sb0] n=2 p=1 IM got=31.09976 exp=31.19952 e=9.98e-02
+[sb0] n=3 p=0 RE got=0.20650 exp=0.41302 e=2.07e-01
+[sb0] n=3 p=0 IM got=0.94669 exp=-0.10663 e=1.05e+00
+[sb0] n=3 p=1 RE got=0.99170 exp=-0.01663 e=1.01e+00
+[sb0] n=3 p=1 IM got=0.82779 exp=-0.34445 e=1.17e+00
+[sb0] n=4 p=0 RE got=0.21471 exp=0.42942 e=2.15e-01
+[sb0] n=4 p=0 IM got=1.03711 exp=1.07423 e=3.71e-02
+[sb0] n=4 p=1 RE got=0.51106 exp=-0.97788 e=1.49e+00
+[sb0] n=4 p=1 IM got=-0.34663 exp=-1.69327 e=1.35e+00
+[sb0] n=5 p=0 RE got=19.37996 exp=19.75995 e=3.80e-01
+[sb0] n=5 p=0 IM got=20.31618 exp=20.63237 e=3.16e-01
+[sb0] n=5 p=1 RE got=-15.49107 exp=-16.98217 e=1.49e+00
+[sb0] n=5 p=1 IM got=2.02538 exp=2.05075 e=2.54e-02
+[sb0] n=6 p=0 RE got=0.19916 exp=0.39833 e=1.99e-01
+[sb0] n=6 p=0 IM got=0.76422 exp=-0.47157 e=1.24e+00
+[sb0] n=6 p=1 RE got=0.34639 exp=0.69280 e=3.46e-01
+[sb0] n=7 p=0 RE got=0.18066 exp=0.36135 e=1.81e-01
+[sb0] n=7 p=0 IM got=0.09636 exp=0.19272 e=9.64e-02
+[sb0] n=7 p=1 RE got=0.17642 exp=0.35285 e=1.76e-01
+[sb0] n=7 p=1 IM got=0.08714 exp=0.17431 e=8.72e-02
+[sb0] n=8 p=0 RE got=0.26227 exp=0.52455 e=2.62e-01
+[sb0] n=8 p=0 IM got=0.07921 exp=0.15843 e=7.92e-02
+[sb0] n=8 p=1 RE got=0.00310 exp=0.00623 e=3.13e-03
+[sb0] n=8 p=1 IM got=0.36182 exp=0.72366 e=3.62e-01
+[sb0] n=9 p=0 RE got=0.77301 exp=-0.45399 e=1.23e+00
+[sb0] n=9 p=0 IM got=0.71289 exp=-0.57425 e=1.29e+00
+[sb0] n=9 p=1 RE got=0.64899 exp=-0.70203 e=1.35e+00
+[sb0] n=9 p=1 IM got=0.18132 exp=0.36265 e=1.81e-01
+[sb0] n=10 p=0 RE got=0.46764 exp=0.93530 e=4.68e-01
+[sb0] n=10 p=0 IM got=0.38515 exp=0.77032 e=3.85e-01
+[sb0] n=10 p=1 RE got=0.35576 exp=0.71153 e=3.56e-01
+[sb0] n=10 p=1 IM got=0.81757 exp=-0.36487 e=1.18e+00
+[sb0] n=11 p=0 RE got=1.11995 exp=1.23991 e=1.20e-01
+[sb0] n=11 p=0 IM got=0.51384 exp=-0.97234 e=1.49e+00
+[sb0] n=11 p=1 RE got=-0.11656 exp=-1.23314 e=1.12e+00
+[sb0] n=11 p=1 IM got=-0.01353 exp=-1.02709 e=1.01e+00
+[sb0] n=12 p=0 RE got=0.38390 exp=0.76781 e=3.84e-01
+[sb0] n=12 p=0 IM got=0.52870 exp=-0.94260 e=1.47e+00
+[sb0] n=12 p=1 RE got=2.14629 exp=2.29259 e=1.46e-01
+[sb0] n=12 p=1 IM got=-0.43291 exp=-1.86584 e=1.43e+00
+[sb0] n=13 p=0 RE got=0.72194 exp=-0.55613 e=1.28e+00
+[sb0] n=13 p=0 IM got=0.78859 exp=-0.42285 e=1.21e+00
+[sb0] n=13 p=1 RE got=0.20044 exp=0.40091 e=2.00e-01
+[sb0] n=13 p=1 IM got=0.27184 exp=0.54368 e=2.72e-01
+[sb0] n=14 p=0 RE got=0.96313 exp=-0.07373 e=1.04e+00
+[sb0] n=14 p=0 IM got=0.80444 exp=-0.39112 e=1.20e+00
+[sb0] n=14 p=1 RE got=0.70747 exp=-0.58506 e=1.29e+00
+[sb0] n=14 p=1 IM got=0.04768 exp=0.09538 e=4.77e-02
+[sb0] n=15 p=0 RE got=0.85718 exp=-0.28565 e=1.14e+00
+[sb0] n=15 p=0 IM got=0.04442 exp=0.08885 e=4.44e-02
+[sb0] n=15 p=1 RE got=0.18590 exp=0.37181 e=1.86e-01
+[sb0] n=15 p=1 IM got=0.94922 exp=-0.10157 e=1.05e+00
+[sb0] checked, running pass=1 fail=63 maxerr=1.49e+00 (TOL=1.22e-04)
+[sb1] DBG n0: cre00=9585 cim00=20156 nz0=55068 | hd0=000015b5000013d500002ed900001647 w0=00001647 w1=00002ed9
+[sb1] n=0 p=0 RE got=0.08702 exp=0.17406 e=8.70e-02
+[sb1] n=0 p=0 IM got=0.18300 exp=0.36602 e=1.83e-01
+[sb1] n=0 p=1 RE got=0.07747 exp=0.15495 e=7.75e-02
+[sb1] n=0 p=1 IM got=0.08479 exp=0.16961 e=8.48e-02
+[sb1] n=1 p=0 RE got=0.85477 exp=-0.29050 e=1.15e+00
+[sb1] n=1 p=0 IM got=0.77116 exp=-0.45769 e=1.23e+00
+[sb1] n=1 p=1 RE got=0.82472 exp=-0.35058 e=1.18e+00
+[sb1] n=1 p=1 IM got=0.98941 exp=-0.02119 e=1.01e+00
+[sb1] n=2 p=0 RE got=0.19441 exp=0.38885 e=1.94e-01
+[sb1] n=2 p=0 IM got=0.05862 exp=0.11727 e=5.86e-02
+[sb1] n=2 p=1 RE got=0.04584 exp=0.09168 e=4.58e-02
+[sb1] n=2 p=1 IM got=0.02298 exp=0.04596 e=2.30e-02
+[sb1] n=3 p=0 RE got=0.87874 exp=-0.24253 e=1.12e+00
+[sb1] n=3 p=0 IM got=0.19579 exp=0.39158 e=1.96e-01
+[sb1] n=3 p=1 RE got=0.76196 exp=-0.47607 e=1.24e+00
+[sb1] n=3 p=1 IM got=0.98692 exp=-0.02617 e=1.01e+00
+[sb1] n=4 p=0 RE got=1.00809 exp=1.01619 e=8.10e-03
+[sb1] n=4 p=0 IM got=0.75186 exp=-0.49629 e=1.25e+00
+[sb1] n=4 p=1 RE got=0.61061 exp=-0.77879 e=1.39e+00
+[sb1] n=4 p=1 IM got=0.38249 exp=0.76499 e=3.82e-01
+[sb1] n=5 p=0 RE got=0.36714 exp=0.73431 e=3.67e-01
+[sb1] n=5 p=0 IM got=0.03215 exp=0.06431 e=3.22e-02
+[sb1] n=5 p=1 RE got=0.22520 exp=0.45042 e=2.25e-01
+[sb1] n=5 p=1 IM got=0.21378 exp=0.42756 e=2.14e-01
+[sb1] n=6 p=0 RE got=0.24228 exp=0.48457 e=2.42e-01
+[sb1] n=6 p=0 IM got=0.89047 exp=-0.21907 e=1.11e+00
+[sb1] n=6 p=1 RE got=0.59143 exp=-0.81716 e=1.41e+00
+[sb1] n=6 p=1 IM got=0.98399 exp=-0.03203 e=1.02e+00
+[sb1] n=7 p=0 RE got=1.00485 exp=1.00973 e=4.88e-03
+[sb1] n=7 p=0 IM got=-0.19984 exp=-1.39969 e=1.20e+00
+[sb1] n=7 p=1 RE got=0.86868 exp=-0.26264 e=1.13e+00
+[sb1] n=7 p=1 IM got=0.08191 exp=0.16384 e=8.19e-02
+[sb1] n=8 p=0 RE got=0.01262 exp=0.02524 e=1.26e-02
+[sb1] n=8 p=0 IM got=0.86026 exp=-0.27949 e=1.14e+00
+[sb1] n=8 p=1 RE got=0.04118 exp=0.08239 e=4.12e-02
+[sb1] n=8 p=1 IM got=0.08911 exp=0.17824 e=8.91e-02
+[sb1] n=9 p=0 RE got=-31.44984 exp=-32.89971 e=1.45e+00
+[sb1] n=9 p=0 IM got=35.02034 exp=35.04070 e=2.04e-02
+[sb1] n=9 p=1 RE got=25.08502 exp=25.17006 e=8.50e-02
+[sb1] n=9 p=1 IM got=21.36046 exp=21.72093 e=3.60e-01
+[sb1] n=10 p=0 RE got=0.98015 exp=-0.03971 e=1.02e+00
+[sb1] n=10 p=0 IM got=0.71379 exp=-0.57244 e=1.29e+00
+[sb1] n=10 p=1 RE got=0.83194 exp=-0.33614 e=1.17e+00
+[sb1] n=10 p=1 IM got=0.92249 exp=-0.15504 e=1.08e+00
+[sb1] n=11 p=0 RE got=0.79796 exp=-0.40411 e=1.20e+00
+[sb1] n=11 p=0 IM got=0.09737 exp=0.19474 e=9.74e-02
+[sb1] n=11 p=1 RE got=0.10384 exp=0.20768 e=1.04e-01
+[sb1] n=11 p=1 IM got=0.04976 exp=0.09953 e=4.98e-02
+[sb1] n=12 p=0 RE got=0.89420 exp=-0.21163 e=1.11e+00
+[sb1] n=12 p=0 IM got=1.05257 exp=1.10514 e=5.26e-02
+[sb1] n=12 p=1 RE got=0.50688 exp=-0.98627 e=1.49e+00
+[sb1] n=12 p=1 IM got=-0.25481 exp=-1.50961 e=1.25e+00
+[sb1] n=13 p=0 RE got=0.75058 exp=-0.49885 e=1.25e+00
+[sb1] n=13 p=0 IM got=0.44434 exp=0.88870 e=4.44e-01
+[sb1] n=13 p=1 RE got=0.37413 exp=0.74828 e=3.74e-01
+[sb1] n=13 p=1 IM got=0.92891 exp=-0.14220 e=1.07e+00
+[sb1] n=14 p=0 RE got=-0.36504 exp=-1.73007 e=1.37e+00
+[sb1] n=14 p=0 IM got=1.17862 exp=1.35725 e=1.79e-01
+[sb1] n=14 p=1 RE got=0.58101 exp=-0.83798 e=1.42e+00
+[sb1] n=14 p=1 IM got=-0.04005 exp=-1.08012 e=1.04e+00
+[sb1] n=15 p=0 RE got=0.99117 exp=-0.01769 e=1.01e+00
+[sb1] n=15 p=0 IM got=0.73952 exp=-0.52098 e=1.26e+00
+[sb1] n=15 p=1 RE got=0.83772 exp=-0.32458 e=1.16e+00
+[sb1] n=15 p=1 IM got=0.03827 exp=0.07655 e=3.83e-02
+[sb1] checked, running pass=1 fail=127 maxerr=1.49e+00 (TOL=1.22e-04)
+[sb2] DBG n0: cre00=18256 cim00=27923 nz0=39391 | hd0=0000f3c70000c13000005abc00003b52 w0=00003b52 w1=00005abc
+[sb2] n=0 p=0 RE got=0.23172 exp=0.46346 e=2.32e-01
+[sb2] n=0 p=0 IM got=0.35443 exp=0.70887 e=3.54e-01
+[sb2] n=0 p=1 RE got=0.75464 exp=-0.49075 e=1.25e+00
+[sb2] n=0 p=1 IM got=0.95226 exp=-0.09550 e=1.05e+00
+[sb2] n=1 p=0 RE got=-0.20622 exp=-1.41247 e=1.21e+00
+[sb2] n=1 p=0 IM got=1.37093 exp=1.74188 e=3.71e-01
+[sb2] n=1 p=1 RE got=0.16530 exp=0.33063 e=1.65e-01
+[sb2] n=1 p=1 IM got=0.04546 exp=0.09092 e=4.55e-02
+[sb2] n=2 p=0 RE got=0.84117 exp=-0.31766 e=1.16e+00
+[sb2] n=2 p=0 IM got=0.88585 exp=-0.22832 e=1.11e+00
+[sb2] n=2 p=1 RE got=0.86951 exp=-0.26100 e=1.13e+00
+[sb2] n=2 p=1 IM got=0.91591 exp=-0.16821 e=1.08e+00
+[sb2] n=3 p=0 RE got=0.16919 exp=0.33839 e=1.69e-01
+[sb2] n=3 p=0 IM got=0.98320 exp=-0.03362 e=1.02e+00
+[sb2] n=3 p=1 RE got=0.12067 exp=0.24136 e=1.21e-01
+[sb2] n=3 p=1 IM got=0.99855 exp=-0.00290 e=1.00e+00
+[sb2] n=4 p=0 RE got=0.93636 exp=-0.12731 e=1.06e+00
+[sb2] n=4 p=0 IM got=1.03304 exp=1.06607 e=3.30e-02
+[sb2] n=4 p=1 RE got=0.06563 exp=0.13127 e=6.56e-02
+[sb2] n=4 p=1 IM got=1.32271 exp=1.64542 e=3.23e-01
+[sb2] n=5 p=0 RE got=-0.01759 exp=-1.03520 e=1.02e+00
+[sb2] n=5 p=0 IM got=0.19778 exp=0.39560 e=1.98e-01
+[sb2] n=5 p=1 RE got=0.84863 exp=-0.30274 e=1.15e+00
+[sb2] n=5 p=1 IM got=0.69038 exp=-0.61924 e=1.31e+00
+[sb2] n=6 p=0 RE got=0.29796 exp=0.59594 e=2.98e-01
+[sb2] n=6 p=0 IM got=0.03206 exp=0.06414 e=3.21e-02
+[sb2] n=6 p=1 RE got=1.01309 exp=1.02621 e=1.31e-02
+[sb2] n=6 p=1 IM got=0.12517 exp=0.25035 e=1.25e-01
+[sb2] n=7 p=0 RE got=0.88776 exp=-0.22451 e=1.11e+00
+[sb2] n=7 p=0 IM got=0.05466 exp=0.10933 e=5.47e-02
+[sb2] n=7 p=1 RE got=0.24776 exp=0.49554 e=2.48e-01
+[sb2] n=7 p=1 IM got=0.85114 exp=-0.29776 e=1.15e+00
+[sb2] n=8 p=0 RE got=0.13266 exp=0.26533 e=1.33e-01
+[sb2] n=8 p=0 IM got=0.99654 exp=-0.00695 e=1.00e+00
+[sb2] n=8 p=1 RE got=0.83287 exp=-0.33427 e=1.17e+00
+[sb2] n=8 p=1 IM got=0.04453 exp=0.08906 e=4.45e-02
+[sb2] n=9 p=0 RE got=0.89064 exp=-0.21874 e=1.11e+00
+[sb2] n=9 p=0 IM got=0.83028 exp=-0.33945 e=1.17e+00
+[sb2] n=9 p=1 RE got=0.98135 exp=-0.03732 e=1.02e+00
+[sb2] n=9 p=1 IM got=0.67503 exp=-0.64995 e=1.32e+00
+[sb2] n=10 p=0 RE got=0.80646 exp=-0.38709 e=1.19e+00
+[sb2] n=10 p=0 IM got=0.36586 exp=0.73173 e=3.66e-01
+[sb2] n=10 p=1 RE got=0.04851 exp=0.09703 e=4.85e-02
+[sb2] n=10 p=1 IM got=0.36853 exp=0.73709 e=3.69e-01
+[sb2] n=11 p=0 RE got=0.15901 exp=0.31805 e=1.59e-01
+[sb2] n=11 p=0 IM got=0.81331 exp=-0.37340 e=1.19e+00
+[sb2] n=11 p=1 RE got=0.88573 exp=-0.22855 e=1.11e+00
+[sb2] n=11 p=1 IM got=0.23058 exp=0.46116 e=2.31e-01
+[sb2] n=12 p=0 RE got=0.41248 exp=0.82495 e=4.12e-01
+[sb2] n=12 p=0 IM got=0.30972 exp=0.61946 e=3.10e-01
+[sb2] n=12 p=1 RE got=0.76649 exp=-0.46701 e=1.23e+00
+[sb2] n=12 p=1 IM got=0.84882 exp=-0.30238 e=1.15e+00
+[sb2] n=13 p=0 RE got=0.95029 exp=-0.09943 e=1.05e+00
+[sb2] n=13 p=0 IM got=0.98964 exp=-0.02073 e=1.01e+00
+[sb2] n=13 p=1 RE got=0.54483 exp=-0.91037 e=1.46e+00
+[sb2] n=13 p=1 IM got=0.89670 exp=-0.20661 e=1.10e+00
+[sb2] n=14 p=0 RE got=0.96912 exp=-0.06178 e=1.03e+00
+[sb2] n=14 p=0 IM got=0.76173 exp=-0.47655 e=1.24e+00
+[sb2] n=14 p=1 RE got=0.18742 exp=0.37485 e=1.87e-01
+[sb2] n=14 p=1 IM got=0.01915 exp=0.03830 e=1.92e-02
+[sb2] n=15 p=0 RE got=0.10876 exp=0.21754 e=1.09e-01
+[sb2] n=15 p=0 IM got=0.15901 exp=0.31804 e=1.59e-01
+[sb2] n=15 p=1 RE got=0.90146 exp=-0.19709 e=1.10e+00
+[sb2] n=15 p=1 IM got=0.74911 exp=-0.50178 e=1.25e+00
+[sb2] checked, running pass=1 fail=191 maxerr=1.49e+00 (TOL=1.22e-04)
+[sb3] DBG n0: cre00=23062 cim00=-28911 nz0=47396 | hd0=0000d58f00003e8f0000b1ec00003e48 w0=00003e48 w1=0000b1ec
+[sb3] n=0 p=0 RE got=0.24329 exp=0.48658 e=2.43e-01
+[sb3] n=0 p=0 IM got=0.69501 exp=-0.60999 e=1.30e+00
+[sb3] n=0 p=1 RE got=0.24437 exp=0.48875 e=2.44e-01
+[sb3] n=0 p=1 IM got=0.83421 exp=-0.33159 e=1.17e+00
+[sb3] n=1 p=0 RE got=0.82138 exp=-0.35726 e=1.18e+00
+[sb3] n=1 p=0 IM got=0.97356 exp=-0.05289 e=1.03e+00
+[sb3] n=1 p=1 RE got=0.21208 exp=0.42418 e=2.12e-01
+[sb3] n=1 p=1 IM got=0.95244 exp=-0.09513 e=1.05e+00
+[sb3] n=2 p=0 RE got=-0.22678 exp=-1.45356 e=1.23e+00
+[sb3] n=2 p=0 IM got=1.37503 exp=1.75007 e=3.75e-01
+[sb3] n=2 p=1 RE got=1.29976 exp=1.59955 e=3.00e-01
+[sb3] n=2 p=1 IM got=0.72736 exp=-0.54530 e=1.27e+00
+[sb3] n=3 p=0 RE got=0.24568 exp=0.49138 e=2.46e-01
+[sb3] n=3 p=0 IM got=0.78925 exp=-0.42151 e=1.21e+00
+[sb3] n=3 p=1 RE got=0.81393 exp=-0.37216 e=1.19e+00
+[sb3] n=3 p=1 IM got=0.93004 exp=-0.13993 e=1.07e+00
+[sb3] n=4 p=0 RE got=-0.04077 exp=-1.08154 e=1.04e+00
+[sb3] n=4 p=0 IM got=0.15384 exp=0.30770 e=1.54e-01
+[sb3] n=4 p=1 RE got=0.88962 exp=-0.22079 e=1.11e+00
+[sb3] n=4 p=1 IM got=0.12900 exp=0.25801 e=1.29e-01
+[sb3] n=5 p=0 RE got=0.18369 exp=0.36738 e=1.84e-01
+[sb3] n=5 p=0 IM got=0.70213 exp=-0.59574 e=1.30e+00
+[sb3] n=5 p=1 RE got=0.84314 exp=-0.31374 e=1.16e+00
+[sb3] n=5 p=1 IM got=0.93362 exp=-0.13277 e=1.07e+00
+[sb3] n=6 p=0 RE got=0.30688 exp=0.61379 e=3.07e-01
+[sb3] n=6 p=0 IM got=0.05104 exp=0.10210 e=5.11e-02
+[sb3] n=6 p=1 RE got=0.30215 exp=0.60432 e=3.02e-01
+[sb3] n=6 p=1 IM got=0.34238 exp=0.68477 e=3.42e-01
+[sb3] n=7 p=0 RE got=0.23741 exp=0.47483 e=2.37e-01
+[sb3] n=7 p=0 IM got=0.30952 exp=0.61907 e=3.10e-01
+[sb3] n=7 p=1 RE got=0.25096 exp=0.50195 e=2.51e-01
+[sb3] n=7 p=1 IM got=0.07724 exp=0.15448 e=7.72e-02
+[sb3] n=8 p=0 RE got=0.63892 exp=-0.72218 e=1.36e+00
+[sb3] n=8 p=0 IM got=-0.01030 exp=-1.02061 e=1.01e+00
+[sb3] n=8 p=1 RE got=0.74635 exp=-0.50729 e=1.25e+00
+[sb3] n=8 p=1 IM got=0.04445 exp=0.08890 e=4.45e-02
+[sb3] n=9 p=0 RE got=2.19572 exp=2.39147 e=1.96e-01
+[sb3] n=9 p=0 IM got=2.41634 exp=2.83270 e=4.16e-01
+[sb3] n=9 p=1 RE got=0.97617 exp=-0.04768 e=1.02e+00
+[sb3] n=9 p=1 IM got=2.31787 exp=2.63577 e=3.18e-01
+[sb3] n=10 p=0 RE got=0.13258 exp=0.26519 e=1.33e-01
+[sb3] n=10 p=0 IM got=0.75662 exp=-0.48678 e=1.24e+00
+[sb3] n=10 p=1 RE got=0.82622 exp=-0.34759 e=1.17e+00
+[sb3] n=10 p=1 IM got=0.09213 exp=0.18428 e=9.21e-02
+[sb3] n=11 p=0 RE got=0.11899 exp=0.23800 e=1.19e-01
+[sb3] n=11 p=0 IM got=0.94563 exp=-0.10874 e=1.05e+00
+[sb3] n=11 p=1 RE got=0.22632 exp=0.45265 e=2.26e-01
+[sb3] n=11 p=1 IM got=0.83539 exp=-0.32925 e=1.16e+00
+[sb3] n=12 p=0 RE got=0.18434 exp=0.36871 e=1.84e-01
+[sb3] n=12 p=0 IM got=0.09099 exp=0.18199 e=9.10e-02
+[sb3] n=12 p=1 RE got=0.19722 exp=0.39447 e=1.97e-01
+[sb3] n=12 p=1 IM got=0.81369 exp=-0.37265 e=1.19e+00
+[sb3] n=13 p=0 RE got=0.01144 exp=0.02291 e=1.15e-02
+[sb3] n=13 p=0 IM got=0.30577 exp=0.61155 e=3.06e-01
+[sb3] n=13 p=1 RE got=-3.08572 exp=-4.17146 e=1.09e+00
+[sb3] n=13 p=1 IM got=0.19940 exp=0.39883 e=1.99e-01
+[sb3] n=14 p=0 RE got=0.07138 exp=0.14278 e=7.14e-02
+[sb3] n=14 p=0 IM got=0.04008 exp=0.08019 e=4.01e-02
+[sb3] n=14 p=1 RE got=0.20508 exp=0.41018 e=2.05e-01
+[sb3] n=14 p=1 IM got=0.83786 exp=-0.32430 e=1.16e+00
+[sb3] n=15 p=0 RE got=0.95558 exp=-0.08885 e=1.04e+00
+[sb3] n=15 p=0 IM got=0.16045 exp=0.32091 e=1.60e-01
+[sb3] n=15 p=1 RE got=0.06950 exp=0.13903 e=6.95e-02
+[sb3] n=15 p=1 IM got=0.82648 exp=-0.34705 e=1.17e+00
+[sb3] checked, running pass=1 fail=255 maxerr=1.49e+00 (TOL=1.22e-04)
+[sb4] DBG n0: cre00=-28464 cim00=5598 nz0=62009 | hd0=0000dbf1000016e000000b8e0000c53f w0=0000c53f w1=00000b8e
+[sb4] n=0 p=0 RE got=0.77049 exp=-0.45903 e=1.23e+00
+[sb4] n=0 p=0 IM got=0.04514 exp=0.09028 e=4.51e-02
+[sb4] n=0 p=1 RE got=0.08936 exp=0.17873 e=8.94e-02
+[sb4] n=0 p=1 IM got=0.85915 exp=-0.28173 e=1.14e+00
+[sb4] n=1 p=0 RE got=0.99455 exp=-0.01092 e=1.01e+00
+[sb4] n=1 p=0 IM got=0.98280 exp=-0.03442 e=1.02e+00
+[sb4] n=1 p=1 RE got=0.08456 exp=0.16913 e=8.46e-02
+[sb4] n=1 p=1 IM got=0.75620 exp=-0.48762 e=1.24e+00
+[sb4] n=2 p=0 RE got=0.87607 exp=-0.24789 e=1.12e+00
+[sb4] n=2 p=0 IM got=0.89655 exp=-0.20692 e=1.10e+00
+[sb4] n=2 p=1 RE got=0.77003 exp=-0.45994 e=1.23e+00
+[sb4] n=2 p=1 IM got=0.22058 exp=0.44119 e=2.21e-01
+[sb4] n=3 p=0 RE got=0.86790 exp=-0.26419 e=1.13e+00
+[sb4] n=3 p=0 IM got=0.32095 exp=0.64192 e=3.21e-01
+[sb4] n=3 p=1 RE got=0.24916 exp=0.49832 e=2.49e-01
+[sb4] n=3 p=1 IM got=0.79091 exp=-0.41820 e=1.21e+00
+[sb4] n=4 p=0 RE got=-1.35442 exp=-2.70885 e=1.35e+00
+[sb4] n=4 p=0 IM got=0.33804 exp=0.67611 e=3.38e-01
+[sb4] n=4 p=1 RE got=2.48216 exp=2.96435 e=4.82e-01
+[sb4] n=4 p=1 IM got=-0.48216 exp=-1.96435 e=1.48e+00
+[sb4] n=5 p=0 RE got=0.74327 exp=-0.51346 e=1.26e+00
+[sb4] n=5 p=0 IM got=0.20613 exp=0.41228 e=2.06e-01
+[sb4] n=5 p=1 RE got=0.75267 exp=-0.49467 e=1.25e+00
+[sb4] n=5 p=1 IM got=0.29689 exp=0.59378 e=2.97e-01
+[sb4] n=6 p=0 RE got=0.47986 exp=0.95973 e=4.80e-01
+[sb4] n=6 p=0 IM got=0.41524 exp=0.83049 e=4.15e-01
+[sb4] n=6 p=1 RE got=0.73145 exp=-0.53711 e=1.27e+00
+[sb4] n=6 p=1 IM got=0.28065 exp=0.56134 e=2.81e-01
+[sb4] n=7 p=0 RE got=0.04750 exp=0.09501 e=4.75e-02
+[sb4] n=7 p=0 IM got=0.62120 exp=-0.75762 e=1.38e+00
+[sb4] n=7 p=1 RE got=0.15947 exp=0.31897 e=1.59e-01
+[sb4] n=7 p=1 IM got=0.34894 exp=0.69788 e=3.49e-01
+[sb4] n=8 p=0 RE got=1.35173 exp=1.70347 e=3.52e-01
+[sb4] n=8 p=0 IM got=0.15332 exp=0.30666 e=1.53e-01
+[sb4] n=8 p=1 RE got=0.91872 exp=-0.16257 e=1.08e+00
+[sb4] n=8 p=1 IM got=2.04019 exp=2.08041 e=4.02e-02
+[sb4] n=9 p=0 RE got=0.19290 exp=0.38581 e=1.93e-01
+[sb4] n=9 p=0 IM got=2.34583 exp=2.69167 e=3.46e-01
+[sb4] n=9 p=1 RE got=-0.18347 exp=-1.36696 e=1.18e+00
+[sb4] n=9 p=1 IM got=1.33505 exp=1.67012 e=3.35e-01
+[sb4] n=10 p=0 RE got=0.98001 exp=-0.03999 e=1.02e+00
+[sb4] n=10 p=0 IM got=0.78523 exp=-0.42955 e=1.21e+00
+[sb4] n=10 p=1 RE got=0.12439 exp=0.24878 e=1.24e-01
+[sb4] n=10 p=1 IM got=0.15555 exp=0.31110 e=1.56e-01
+[sb4] n=11 p=0 RE got=0.95645 exp=-0.08710 e=1.04e+00
+[sb4] n=11 p=0 IM got=0.78041 exp=-0.43921 e=1.22e+00
+[sb4] n=11 p=1 RE got=0.13818 exp=0.27640 e=1.38e-01
+[sb4] n=11 p=1 IM got=0.25679 exp=0.51360 e=2.57e-01
+[sb4] n=12 p=0 RE got=1.11821 exp=1.23645 e=1.18e-01
+[sb4] n=12 p=0 IM got=0.27377 exp=0.54756 e=2.74e-01
+[sb4] n=12 p=1 RE got=0.83104 exp=-0.33793 e=1.17e+00
+[sb4] n=12 p=1 IM got=0.43129 exp=0.86261 e=4.31e-01
+[sb4] n=13 p=0 RE got=0.13548 exp=0.27098 e=1.35e-01
+[sb4] n=13 p=0 IM got=0.21779 exp=0.43560 e=2.18e-01
+[sb4] n=13 p=1 RE got=0.12256 exp=0.24513 e=1.23e-01
+[sb4] n=13 p=1 IM got=0.17601 exp=0.35205 e=1.76e-01
+[sb4] n=14 p=0 RE got=0.05289 exp=0.10580 e=5.29e-02
+[sb4] n=14 p=0 IM got=0.27292 exp=0.54585 e=2.73e-01
+[sb4] n=14 p=1 RE got=0.04652 exp=0.09305 e=4.65e-02
+[sb4] n=14 p=1 IM got=0.25191 exp=0.50382 e=2.52e-01
+[sb4] n=15 p=0 RE got=0.95517 exp=-0.08968 e=1.04e+00
+[sb4] n=15 p=0 IM got=0.07793 exp=0.15588 e=7.80e-02
+[sb4] n=15 p=1 RE got=0.86494 exp=-0.27014 e=1.14e+00
+[sb4] n=15 p=1 IM got=0.81836 exp=-0.36329 e=1.18e+00
+[sb4] checked, running pass=1 fail=319 maxerr=1.49e+00 (TOL=1.22e-04)
+===== CN TB: PASS=1 FAIL=319 maxerr=1.493e+00 =====
+ 5332526178519497389932764285260
+$finish called at time : 3565 ns : File "E:/CE_128TR/sim_svd/tb_channelnorm.sv" Line 98
+## exit
+INFO: [Common 17-206] Exiting xsim at Tue Jun 23 00:36:29 2026...

@@ -1,0 +1,760 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Jun 23 23:40:27 2026
+# Process ID         : 15684
+# Current directory  : E:/CE_128TR/CE_128TR.runs/CE_128TR_NoiseAverage_6_0_synth_1
+# Command line       : vivado.exe -log CE_128TR_NoiseAverage_6_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CE_128TR_NoiseAverage_6_0.tcl
+# Log file           : E:/CE_128TR/CE_128TR.runs/CE_128TR_NoiseAverage_6_0_synth_1/CE_128TR_NoiseAverage_6_0.vds
+# Journal file       : E:/CE_128TR/CE_128TR.runs/CE_128TR_NoiseAverage_6_0_synth_1\vivado.jou
+# Running On         : LAPTOP-55KNS8Q0
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 17002 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 25592 MB
+# Available Virtual  : 3729 MB
+#-----------------------------------------------------------
+source CE_128TR_NoiseAverage_6_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2024.2/data/ip'.
+Command: synth_design -top CE_128TR_NoiseAverage_6_0 -part xczu19eg-ffvc1760-2-i -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu19eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu19eg'
+INFO: [Device 21-403] Loading part xczu19eg-ffvc1760-2-i
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16340
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1869.070 ; gain = 199.871
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CE_128TR_NoiseAverage_6_0' [e:/CE_128TR/CE_128TR.gen/sources_1/bd/CE_128TR/ip/CE_128TR_NoiseAverage_6_0/synth/CE_128TR_NoiseAverage_6_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'NoiseAverage' [e:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/NoiseAverage.v:16]
+	Parameter PARA bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'NoiseSsubAverage' [e:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/NoiseSsubAverage.v:11]
+	Parameter DATA_W bound to: 32 - type: integer 
+	Parameter DIV_W bound to: 16 - type: integer 
+	Parameter FRAC_BITS bound to: 24 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'NoiseSsubAverage' (0#1) [e:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/NoiseSsubAverage.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'NoiseAverage' (0#1) [e:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/NoiseAverage.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'CE_128TR_NoiseAverage_6_0' (0#1) [e:/CE_128TR/CE_128TR.gen/sources_1/bd/CE_128TR/ip/CE_128TR_NoiseAverage_6_0/synth/CE_128TR_NoiseAverage_6_0.v:53]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1982.324 ; gain = 313.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1982.324 ; gain = 313.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1982.324 ; gain = 313.125
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 1982.324 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2083.223 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.206 . Memory (MB): peak = 2102.324 ; gain = 18.789
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 2102.324 ; gain = 433.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu19eg-ffvc1760-2-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 2102.324 ; gain = 433.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 2102.324 ; gain = 433.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 2102.324 ; gain = 433.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   67 Bit       Adders := 16    
+	   2 Input   41 Bit       Adders := 16    
+	   2 Input   17 Bit       Adders := 16    
+	   2 Input   16 Bit       Adders := 16    
+	   3 Input   16 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
++---Registers : 
+	               66 Bit    Registers := 16    
+	               41 Bit    Registers := 16    
+	               32 Bit    Registers := 16    
+	               25 Bit    Registers := 17    
+	               16 Bit    Registers := 32    
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 64    
++---Multipliers : 
+	              25x41  Multipliers := 16    
++---Muxes : 
+	   2 Input   21 Bit        Muxes := 1     
+	   4 Input   21 Bit        Muxes := 1     
+	   2 Input   20 Bit        Muxes := 1     
+	   4 Input   20 Bit        Muxes := 1     
+	   2 Input   19 Bit        Muxes := 1     
+	   4 Input   19 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	   4 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   4 Input    6 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 66    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1968 (col length:264)
+BRAMs: 1968 (col length: RAMB18 264 RAMB36 132)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP mult_reg, operation Mode is: (A2*B2)'.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: Generating DSP mult0, operation Mode is: A2*B2.
+DSP Report: register mult0 is absorbed into DSP mult0.
+DSP Report: register mult0 is absorbed into DSP mult0.
+DSP Report: operator mult0 is absorbed into DSP mult0.
+DSP Report: operator mult0 is absorbed into DSP mult0.
+DSP Report: Generating DSP mult_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: Generating DSP mult_reg, operation Mode is: (A2*B2)'.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: Generating DSP mult0, operation Mode is: A2*B2.
+DSP Report: register mult0 is absorbed into DSP mult0.
+DSP Report: register mult_reg is absorbed into DSP mult0.
+DSP Report: operator mult0 is absorbed into DSP mult0.
+DSP Report: operator mult0 is absorbed into DSP mult0.
+DSP Report: Generating DSP mult_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: Generating DSP mult_reg, operation Mode is: (A2*B2)'.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: Generating DSP mult0, operation Mode is: A2*B2.
+DSP Report: register mult0 is absorbed into DSP mult0.
+DSP Report: register mult_reg is absorbed into DSP mult0.
+DSP Report: operator mult0 is absorbed into DSP mult0.
+DSP Report: operator mult0 is absorbed into DSP mult0.
+DSP Report: Generating DSP mult_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: Generating DSP mult_reg, operation Mode is: (A2*B2)'.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: Generating DSP mult0, operation Mode is: A2*B2.
+DSP Report: register mult0 is absorbed into DSP mult0.
+DSP Report: register mult_reg is absorbed into DSP mult0.
+DSP Report: operator mult0 is absorbed into DSP mult0.
+DSP Report: operator mult0 is absorbed into DSP mult0.
+DSP Report: Generating DSP mult_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: Generating DSP mult_reg, operation Mode is: (A2*B2)'.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: Generating DSP mult0, operation Mode is: A2*B2.
+DSP Report: register mult0 is absorbed into DSP mult0.
+DSP Report: register mult_reg is absorbed into DSP mult0.
+DSP Report: operator mult0 is absorbed into DSP mult0.
+DSP Report: operator mult0 is absorbed into DSP mult0.
+DSP Report: Generating DSP mult_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: Generating DSP mult_reg, operation Mode is: (A2*B2)'.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: Generating DSP mult0, operation Mode is: A2*B2.
+DSP Report: register mult0 is absorbed into DSP mult0.
+DSP Report: register mult_reg is absorbed into DSP mult0.
+DSP Report: operator mult0 is absorbed into DSP mult0.
+DSP Report: operator mult0 is absorbed into DSP mult0.
+DSP Report: Generating DSP mult_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: Generating DSP mult_reg, operation Mode is: (A2*B2)'.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: Generating DSP mult0, operation Mode is: A2*B2.
+DSP Report: register mult0 is absorbed into DSP mult0.
+DSP Report: register mult_reg is absorbed into DSP mult0.
+DSP Report: operator mult0 is absorbed into DSP mult0.
+DSP Report: operator mult0 is absorbed into DSP mult0.
+DSP Report: Generating DSP mult_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: Generating DSP mult_reg, operation Mode is: (A2*B2)'.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: Generating DSP mult0, operation Mode is: A2*B2.
+DSP Report: register mult0 is absorbed into DSP mult0.
+DSP Report: register mult_reg is absorbed into DSP mult0.
+DSP Report: operator mult0 is absorbed into DSP mult0.
+DSP Report: operator mult0 is absorbed into DSP mult0.
+DSP Report: Generating DSP mult_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: Generating DSP mult_reg, operation Mode is: (A2*B2)'.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: Generating DSP mult0, operation Mode is: A2*B2.
+DSP Report: register mult0 is absorbed into DSP mult0.
+DSP Report: register mult_reg is absorbed into DSP mult0.
+DSP Report: operator mult0 is absorbed into DSP mult0.
+DSP Report: operator mult0 is absorbed into DSP mult0.
+DSP Report: Generating DSP mult_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: Generating DSP mult_reg, operation Mode is: (A2*B2)'.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: Generating DSP mult0, operation Mode is: A2*B2.
+DSP Report: register mult0 is absorbed into DSP mult0.
+DSP Report: register mult_reg is absorbed into DSP mult0.
+DSP Report: operator mult0 is absorbed into DSP mult0.
+DSP Report: operator mult0 is absorbed into DSP mult0.
+DSP Report: Generating DSP mult_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: Generating DSP mult_reg, operation Mode is: (A2*B2)'.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: Generating DSP mult0, operation Mode is: A2*B2.
+DSP Report: register mult0 is absorbed into DSP mult0.
+DSP Report: register mult_reg is absorbed into DSP mult0.
+DSP Report: operator mult0 is absorbed into DSP mult0.
+DSP Report: operator mult0 is absorbed into DSP mult0.
+DSP Report: Generating DSP mult_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: Generating DSP mult_reg, operation Mode is: (A2*B2)'.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: Generating DSP mult0, operation Mode is: A2*B2.
+DSP Report: register mult0 is absorbed into DSP mult0.
+DSP Report: register mult_reg is absorbed into DSP mult0.
+DSP Report: operator mult0 is absorbed into DSP mult0.
+DSP Report: operator mult0 is absorbed into DSP mult0.
+DSP Report: Generating DSP mult_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: Generating DSP mult_reg, operation Mode is: (A2*B2)'.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: Generating DSP mult0, operation Mode is: A2*B2.
+DSP Report: register mult0 is absorbed into DSP mult0.
+DSP Report: register mult_reg is absorbed into DSP mult0.
+DSP Report: operator mult0 is absorbed into DSP mult0.
+DSP Report: operator mult0 is absorbed into DSP mult0.
+DSP Report: Generating DSP mult_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: Generating DSP mult_reg, operation Mode is: (A2*B2)'.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: Generating DSP mult0, operation Mode is: A2*B2.
+DSP Report: register mult0 is absorbed into DSP mult0.
+DSP Report: register mult_reg is absorbed into DSP mult0.
+DSP Report: operator mult0 is absorbed into DSP mult0.
+DSP Report: operator mult0 is absorbed into DSP mult0.
+DSP Report: Generating DSP mult_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: Generating DSP mult_reg, operation Mode is: (A2*B2)'.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: Generating DSP mult0, operation Mode is: A2*B2.
+DSP Report: register mult0 is absorbed into DSP mult0.
+DSP Report: register mult_reg is absorbed into DSP mult0.
+DSP Report: operator mult0 is absorbed into DSP mult0.
+DSP Report: operator mult0 is absorbed into DSP mult0.
+DSP Report: Generating DSP mult_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: Generating DSP mult_reg, operation Mode is: (A2*B2)'.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: Generating DSP mult0, operation Mode is: A2*B2.
+DSP Report: register mult0 is absorbed into DSP mult0.
+DSP Report: register mult_reg is absorbed into DSP mult0.
+DSP Report: operator mult0 is absorbed into DSP mult0.
+DSP Report: operator mult0 is absorbed into DSP mult0.
+DSP Report: Generating DSP mult_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[47]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[46]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[45]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[44]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[43]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[42]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[41]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[40]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[39]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[38]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[37]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[36]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[35]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[34]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[33]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[32]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[31]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[30]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[29]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[28]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[27]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[26]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[25]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[24]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[23]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[22]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[21]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[20]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[19]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[18]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[17]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[16]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[15]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[14]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[13]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[12]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[11]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[10]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[9]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[8]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[7]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[6]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[5]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[4]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[3]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[2]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[1]) is unused and will be removed from module NoiseSsubAverage.
+WARNING: [Synth 8-3332] Sequential element (mult_reg[0]) is unused and will be removed from module NoiseSsubAverage.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 2102.324 ; gain = 433.125
+---------------------------------------------------------------------------------
+ Sort Area is  mult0_0 : 0 0 : 3676 7419 : Used 1 time 0
+ Sort Area is  mult0_0 : 0 1 : 3743 7419 : Used 1 time 0
+ Sort Area is  mult0_11 : 0 0 : 3676 7419 : Used 1 time 0
+ Sort Area is  mult0_11 : 0 1 : 3743 7419 : Used 1 time 0
+ Sort Area is  mult0_13 : 0 0 : 3676 7419 : Used 1 time 0
+ Sort Area is  mult0_13 : 0 1 : 3743 7419 : Used 1 time 0
+ Sort Area is  mult0_15 : 0 0 : 3676 7419 : Used 1 time 0
+ Sort Area is  mult0_15 : 0 1 : 3743 7419 : Used 1 time 0
+ Sort Area is  mult0_17 : 0 0 : 3676 7419 : Used 1 time 0
+ Sort Area is  mult0_17 : 0 1 : 3743 7419 : Used 1 time 0
+ Sort Area is  mult0_19 : 0 0 : 3676 7419 : Used 1 time 0
+ Sort Area is  mult0_19 : 0 1 : 3743 7419 : Used 1 time 0
+ Sort Area is  mult0_1b : 0 0 : 3676 7419 : Used 1 time 0
+ Sort Area is  mult0_1b : 0 1 : 3743 7419 : Used 1 time 0
+ Sort Area is  mult0_1d : 0 0 : 3676 7419 : Used 1 time 0
+ Sort Area is  mult0_1d : 0 1 : 3743 7419 : Used 1 time 0
+ Sort Area is  mult0_1f : 0 0 : 3676 7419 : Used 1 time 0
+ Sort Area is  mult0_1f : 0 1 : 3743 7419 : Used 1 time 0
+ Sort Area is  mult0_21 : 0 0 : 3676 7419 : Used 1 time 0
+ Sort Area is  mult0_21 : 0 1 : 3743 7419 : Used 1 time 0
+ Sort Area is  mult0_5 : 0 0 : 3676 7419 : Used 1 time 0
+ Sort Area is  mult0_5 : 0 1 : 3743 7419 : Used 1 time 0
+ Sort Area is  mult0_7 : 0 0 : 3676 7419 : Used 1 time 0
+ Sort Area is  mult0_7 : 0 1 : 3743 7419 : Used 1 time 0
+ Sort Area is  mult0_9 : 0 0 : 3676 7419 : Used 1 time 0
+ Sort Area is  mult0_9 : 0 1 : 3743 7419 : Used 1 time 0
+ Sort Area is  mult0_b : 0 0 : 3676 7419 : Used 1 time 0
+ Sort Area is  mult0_b : 0 1 : 3743 7419 : Used 1 time 0
+ Sort Area is  mult0_d : 0 0 : 3676 7419 : Used 1 time 0
+ Sort Area is  mult0_d : 0 1 : 3743 7419 : Used 1 time 0
+ Sort Area is  mult0_f : 0 0 : 3676 7419 : Used 1 time 0
+ Sort Area is  mult0_f : 0 1 : 3743 7419 : Used 1 time 0
+ Sort Area is  mult_reg_10 : 0 0 : 1730 1730 : Used 1 time 0
+ Sort Area is  mult_reg_12 : 0 0 : 1730 1730 : Used 1 time 0
+ Sort Area is  mult_reg_14 : 0 0 : 1730 1730 : Used 1 time 0
+ Sort Area is  mult_reg_16 : 0 0 : 1730 1730 : Used 1 time 0
+ Sort Area is  mult_reg_18 : 0 0 : 1730 1730 : Used 1 time 0
+ Sort Area is  mult_reg_1a : 0 0 : 1730 1730 : Used 1 time 0
+ Sort Area is  mult_reg_1c : 0 0 : 1730 1730 : Used 1 time 0
+ Sort Area is  mult_reg_1e : 0 0 : 1730 1730 : Used 1 time 0
+ Sort Area is  mult_reg_20 : 0 0 : 1730 1730 : Used 1 time 0
+ Sort Area is  mult_reg_22 : 0 0 : 1730 1730 : Used 1 time 0
+ Sort Area is  mult_reg_3 : 0 0 : 1730 1730 : Used 1 time 0
+ Sort Area is  mult_reg_6 : 0 0 : 1730 1730 : Used 1 time 0
+ Sort Area is  mult_reg_8 : 0 0 : 1730 1730 : Used 1 time 0
+ Sort Area is  mult_reg_a : 0 0 : 1730 1730 : Used 1 time 0
+ Sort Area is  mult_reg_c : 0 0 : 1730 1730 : Used 1 time 0
+ Sort Area is  mult_reg_e : 0 0 : 1730 1730 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++-----------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name      | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|NoiseSsubAverage | (A2*B2)'         | 26     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|NoiseSsubAverage | A2*B2            | 26     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|NoiseSsubAverage | (PCIN>>17)+A2*B2 | 26     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | (A2*B2)'         | 26     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|NoiseSsubAverage | A2*B2            | 26     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|NoiseSsubAverage | (PCIN>>17)+A2*B2 | 26     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | (A2*B2)'         | 26     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|NoiseSsubAverage | A2*B2            | 26     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|NoiseSsubAverage | (PCIN>>17)+A2*B2 | 26     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | (A2*B2)'         | 26     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|NoiseSsubAverage | A2*B2            | 26     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|NoiseSsubAverage | (PCIN>>17)+A2*B2 | 26     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | (A2*B2)'         | 26     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|NoiseSsubAverage | A2*B2            | 26     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|NoiseSsubAverage | (PCIN>>17)+A2*B2 | 26     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | (A2*B2)'         | 26     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|NoiseSsubAverage | A2*B2            | 26     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|NoiseSsubAverage | (PCIN>>17)+A2*B2 | 26     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | (A2*B2)'         | 26     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|NoiseSsubAverage | A2*B2            | 26     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|NoiseSsubAverage | (PCIN>>17)+A2*B2 | 26     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | (A2*B2)'         | 26     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|NoiseSsubAverage | A2*B2            | 26     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|NoiseSsubAverage | (PCIN>>17)+A2*B2 | 26     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | (A2*B2)'         | 26     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|NoiseSsubAverage | A2*B2            | 26     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|NoiseSsubAverage | (PCIN>>17)+A2*B2 | 26     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | (A2*B2)'         | 26     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|NoiseSsubAverage | A2*B2            | 26     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|NoiseSsubAverage | (PCIN>>17)+A2*B2 | 26     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | (A2*B2)'         | 26     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|NoiseSsubAverage | A2*B2            | 26     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|NoiseSsubAverage | (PCIN>>17)+A2*B2 | 26     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | (A2*B2)'         | 26     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|NoiseSsubAverage | A2*B2            | 26     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|NoiseSsubAverage | (PCIN>>17)+A2*B2 | 26     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | (A2*B2)'         | 26     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|NoiseSsubAverage | A2*B2            | 26     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|NoiseSsubAverage | (PCIN>>17)+A2*B2 | 26     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | (A2*B2)'         | 26     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|NoiseSsubAverage | A2*B2            | 26     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|NoiseSsubAverage | (PCIN>>17)+A2*B2 | 26     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | (A2*B2)'         | 26     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|NoiseSsubAverage | A2*B2            | 26     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|NoiseSsubAverage | (PCIN>>17)+A2*B2 | 26     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | (A2*B2)'         | 26     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|NoiseSsubAverage | A2*B2            | 26     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|NoiseSsubAverage | (PCIN>>17)+A2*B2 | 26     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
++-----------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 2782.906 ; gain = 1113.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 2792.824 ; gain = 1123.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:04 ; elapsed = 00:01:07 . Memory (MB): peak = 2820.402 ; gain = 1151.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:12 ; elapsed = 00:01:15 . Memory (MB): peak = 3013.871 ; gain = 1344.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:12 ; elapsed = 00:01:15 . Memory (MB): peak = 3013.871 ; gain = 1344.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:12 ; elapsed = 00:01:16 . Memory (MB): peak = 3013.871 ; gain = 1344.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:12 ; elapsed = 00:01:16 . Memory (MB): peak = 3013.871 ; gain = 1344.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:13 ; elapsed = 00:01:16 . Memory (MB): peak = 3013.871 ; gain = 1344.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:13 ; elapsed = 00:01:16 . Memory (MB): peak = 3013.871 ; gain = 1344.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-----------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name      | DSP Mapping       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|NoiseSsubAverage | (A'*B')'          | 21     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | A'*B'             | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|NoiseSsubAverage | (PCIN>>17+A'*B')' | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | (A'*B')'          | 21     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | A'*B'             | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|NoiseSsubAverage | (PCIN>>17+A'*B')' | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | (A'*B')'          | 21     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | A'*B'             | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|NoiseSsubAverage | (PCIN>>17+A'*B')' | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | (A'*B')'          | 21     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | A'*B'             | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|NoiseSsubAverage | (PCIN>>17+A'*B')' | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | (A'*B')'          | 21     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | A'*B'             | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|NoiseSsubAverage | (PCIN>>17+A'*B')' | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | (A'*B')'          | 21     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | A'*B'             | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|NoiseSsubAverage | (PCIN>>17+A'*B')' | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | (A'*B')'          | 21     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | A'*B'             | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|NoiseSsubAverage | (PCIN>>17+A'*B')' | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | (A'*B')'          | 21     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | A'*B'             | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|NoiseSsubAverage | (PCIN>>17+A'*B')' | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | (A'*B')'          | 21     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | A'*B'             | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|NoiseSsubAverage | (PCIN>>17+A'*B')' | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | (A'*B')'          | 21     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | A'*B'             | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|NoiseSsubAverage | (PCIN>>17+A'*B')' | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | (A'*B')'          | 21     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | A'*B'             | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|NoiseSsubAverage | (PCIN>>17+A'*B')' | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | (A'*B')'          | 21     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | A'*B'             | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|NoiseSsubAverage | (PCIN>>17+A'*B')' | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | (A'*B')'          | 21     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | A'*B'             | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|NoiseSsubAverage | (PCIN>>17+A'*B')' | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | (A'*B')'          | 21     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | A'*B'             | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|NoiseSsubAverage | (PCIN>>17+A'*B')' | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | (A'*B')'          | 21     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | A'*B'             | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|NoiseSsubAverage | (PCIN>>17+A'*B')' | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | (A'*B')'          | 21     | 7      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|NoiseSsubAverage | A'*B'             | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|NoiseSsubAverage | (PCIN>>17+A'*B')' | 21     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
++-----------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |CARRY8          |   422|
+|2     |DSP_ALU         |    48|
+|3     |DSP_A_B_DATA    |    48|
+|4     |DSP_C_DATA      |    48|
+|6     |DSP_MULTIPLIER  |    48|
+|7     |DSP_M_DATA      |    48|
+|8     |DSP_OUTPUT      |    48|
+|10    |DSP_PREADD      |    48|
+|11    |DSP_PREADD_DATA |    48|
+|12    |LUT1            |    55|
+|13    |LUT2            |  1573|
+|14    |LUT3            |    22|
+|15    |LUT4            |   138|
+|16    |LUT5            |    40|
+|17    |LUT6            |   614|
+|18    |FDRE            |  1521|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:13 ; elapsed = 00:01:16 . Memory (MB): peak = 3013.871 ; gain = 1344.672
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 49 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:56 ; elapsed = 00:01:12 . Memory (MB): peak = 3013.871 ; gain = 1224.672
+Synthesis Optimization Complete : Time (s): cpu = 00:01:13 ; elapsed = 00:01:17 . Memory (MB): peak = 3013.871 ; gain = 1344.672
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.088 . Memory (MB): peak = 3013.871 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 470 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3013.871 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 48 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 48 instances
+
+Synth Design complete | Checksum: f725ee0f
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 49 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:34 ; elapsed = 00:01:44 . Memory (MB): peak = 3013.871 ; gain = 2571.492
+INFO: [Coretcl 2-1174] Renamed 17 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 3013.871 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/CE_128TR/CE_128TR.runs/CE_128TR_NoiseAverage_6_0_synth_1/CE_128TR_NoiseAverage_6_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file CE_128TR_NoiseAverage_6_0_utilization_synth.rpt -pb CE_128TR_NoiseAverage_6_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 23 23:42:26 2026...

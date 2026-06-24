@@ -1,0 +1,19 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:57
+E:/CE_128TR/CE_128TR.gen/sources_1/ip/cordic_rot/sim/cordic_rot.vhd,1781894341,vhdl,,,,cordic_rot,xsim.ini,,,,,,,
+E:/CE_128TR/CE_128TR.gen/sources_1/ip/cordic_sqrt/sim/cordic_sqrt.vhd,1781894340,vhdl,,,,cordic_sqrt,xsim.ini,,,,,,,
+E:/CE_128TR/CE_128TR.gen/sources_1/ip/cordic_vec/sim/cordic_vec.vhd,1781894341,vhdl,,,,cordic_vec,xsim.ini,,,,,,,
+E:/CE_128TR/CE_128TR.gen/sources_1/ip/div_gen_frac/sim/div_gen_frac.vhd,1781894342,vhdl,,,,div_gen_frac,xsim.ini,,,,,,,
+E:/CE_128TR/CE_128TR.gen/sources_1/ip/recip_unit/sim/recip_unit.vhd,1781894343,vhdl,,,,recip_unit,xsim.ini,,,,,,,
+E:/CE_128TR/CE_128TR.srcs/sim_1/imports/new/tb_svd_cmx2.sv,1781894340,systemVerilog,,,E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/svd_defs.vh,tb_svd_cmx2,xsim.ini,,,,,,,
+E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/ChannelNorm.v,1782149299,systemVerilog,,E:/CE_128TR/sim_svd/tb_cn_dir.sv,,ChannelNorm,xsim.ini,,,,,,,
+E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/eig_sym_2x2.v,1781894339,systemVerilog,,E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v,E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/svd_defs.vh,eig_sym_2x2,xsim.ini,,,,,,,
+E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/gram_cmx2.v,1781894339,systemVerilog,,E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/eig_sym_2x2.v,E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/svd_defs.vh,gram_cmx2,xsim.ini,,,,,,,
+E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/svd_128x2.v,1781894339,systemVerilog,,E:/CE_128TR/CE_128TR.srcs/sim_1/imports/new/tb_svd_cmx2.sv,E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/svd_defs.vh,svd_128x2,xsim.ini,,,,,,,
+E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/svd_defs.vh,1781894339,verilog,,,,,,,,,,,,
+E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/umat_calc_cmx2.v,1781894339,systemVerilog,,E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/svd_128x2.v,E:/CE_128TR/CE_128TR.srcs/sources_1/imports/new/svd_defs.vh,umat_calc_cmx2,xsim.ini,,,,,,,
+E:/CE_128TR/sim_svd/tb_channelnorm.sv,1782149738,systemVerilog,,,,tb_channelnorm,xsim.ini,,,,,,,
+E:/CE_128TR/sim_svd/tb_cn_dir.sv,1782149847,systemVerilog,,,,tb_cn_dir,xsim.ini,,,,,,,
+E:/CE_128TR/sim_svd/tb_div.sv,1782150155,systemVerilog,,,,tb_div,xsim.ini,,,,,,,

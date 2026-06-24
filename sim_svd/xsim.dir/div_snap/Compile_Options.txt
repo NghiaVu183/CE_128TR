@@ -1,0 +1,1 @@
+-initfile "xsim.ini" -debug "off" -relax -L "xil_defaultlib" -L "div_gen_v5_1_23" -L "secureip" -L "unisims_ver" -L "xpm" "xil_defaultlib.tb_div" -s "div_snap" 

@@ -1,0 +1,137 @@
+{
+  "schema": "xilinx.com:schema:json_instance:1.0",
+  "ip_inst": {
+    "xci_name": "CE_128TR_ChannelNorm_6_0",
+    "cell_name": "ChannelNorm/ChannelNorm_6",
+    "component_reference": "xilinx.com:module_ref:ChannelNorm:1.0",
+    "ip_revision": "1",
+    "gen_directory": "../../../../../../CE_128TR.gen/sources_1/bd/CE_128TR/ip/CE_128TR_ChannelNorm_6_0",
+    "parameters": {
+      "component_parameters": {
+        "PORT": [ { "value": "2", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "DIN_W": [ { "value": "16", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "NOISE_W": [ { "value": "32", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "FRAC_W": [ { "value": "16", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "Component_Name": [ { "value": "CE_128TR_ChannelNorm_6_0", "resolve_type": "user", "usage": "all" } ]
+      },
+      "model_parameters": {
+        "PORT": [ { "value": "2", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "DIN_W": [ { "value": "16", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "NOISE_W": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "FRAC_W": [ { "value": "16", "resolve_type": "generated", "format": "long", "usage": "all" } ]
+      },
+      "project_parameters": {
+        "ARCHITECTURE": [ { "value": "zynquplus" } ],
+        "BASE_BOARD_PART": [ { "value": "" } ],
+        "BOARD_CONNECTIONS": [ { "value": "" } ],
+        "DEVICE": [ { "value": "xczu19eg" } ],
+        "PACKAGE": [ { "value": "ffvc1760" } ],
+        "PREFHDL": [ { "value": "VERILOG" } ],
+        "SILICON_REVISION": [ { "value": "" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
+        "SPEEDGRADE": [ { "value": "-2" } ],
+        "STATIC_POWER": [ { "value": "" } ],
+        "TEMPERATURE_GRADE": [ { "value": "I" } ]
+      },
+      "runtime_parameters": {
+        "IPCONTEXT": [ { "value": "IP_Integrator" } ],
+        "IPREVISION": [ { "value": "1" } ],
+        "MANAGED": [ { "value": "TRUE" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../CE_128TR.gen/sources_1/bd/CE_128TR/ip/CE_128TR_ChannelNorm_6_0" } ],
+        "SELECTEDSIMMODEL": [ { "value": "" } ],
+        "SHAREDDIR": [ { "value": "../../ipshared" } ],
+        "SWVERSION": [ { "value": "2024.2" } ],
+        "SYNTHESISFLOW": [ { "value": "OOC_HIERARCHICAL" } ]
+      }
+    },
+    "boundary": {
+      "ports": {
+        "clk": [ { "direction": "in" } ],
+        "rst_n": [ { "direction": "in" } ],
+        "aveg_corr_valid": [ { "direction": "in", "size_left": "1", "size_right": "0" } ],
+        "aveg_noise_valid": [ { "direction": "in" } ],
+        "aveg_corr_data_0": [ { "direction": "in", "size_left": "63", "size_right": "0" } ],
+        "aveg_corr_data_1": [ { "direction": "in", "size_left": "63", "size_right": "0" } ],
+        "aveg_corr_data_2": [ { "direction": "in", "size_left": "63", "size_right": "0" } ],
+        "aveg_corr_data_3": [ { "direction": "in", "size_left": "63", "size_right": "0" } ],
+        "aveg_corr_data_4": [ { "direction": "in", "size_left": "63", "size_right": "0" } ],
+        "aveg_corr_data_5": [ { "direction": "in", "size_left": "63", "size_right": "0" } ],
+        "aveg_corr_data_6": [ { "direction": "in", "size_left": "63", "size_right": "0" } ],
+        "aveg_corr_data_7": [ { "direction": "in", "size_left": "63", "size_right": "0" } ],
+        "aveg_corr_data_8": [ { "direction": "in", "size_left": "63", "size_right": "0" } ],
+        "aveg_corr_data_9": [ { "direction": "in", "size_left": "63", "size_right": "0" } ],
+        "aveg_corr_data_10": [ { "direction": "in", "size_left": "63", "size_right": "0" } ],
+        "aveg_corr_data_11": [ { "direction": "in", "size_left": "63", "size_right": "0" } ],
+        "aveg_corr_data_12": [ { "direction": "in", "size_left": "63", "size_right": "0" } ],
+        "aveg_corr_data_13": [ { "direction": "in", "size_left": "63", "size_right": "0" } ],
+        "aveg_corr_data_14": [ { "direction": "in", "size_left": "63", "size_right": "0" } ],
+        "aveg_corr_data_15": [ { "direction": "in", "size_left": "63", "size_right": "0" } ],
+        "aveg_noise_data_0": [ { "direction": "in", "size_left": "31", "size_right": "0" } ],
+        "aveg_noise_data_1": [ { "direction": "in", "size_left": "31", "size_right": "0" } ],
+        "aveg_noise_data_2": [ { "direction": "in", "size_left": "31", "size_right": "0" } ],
+        "aveg_noise_data_3": [ { "direction": "in", "size_left": "31", "size_right": "0" } ],
+        "aveg_noise_data_4": [ { "direction": "in", "size_left": "31", "size_right": "0" } ],
+        "aveg_noise_data_5": [ { "direction": "in", "size_left": "31", "size_right": "0" } ],
+        "aveg_noise_data_6": [ { "direction": "in", "size_left": "31", "size_right": "0" } ],
+        "aveg_noise_data_7": [ { "direction": "in", "size_left": "31", "size_right": "0" } ],
+        "aveg_noise_data_8": [ { "direction": "in", "size_left": "31", "size_right": "0" } ],
+        "aveg_noise_data_9": [ { "direction": "in", "size_left": "31", "size_right": "0" } ],
+        "aveg_noise_data_10": [ { "direction": "in", "size_left": "31", "size_right": "0" } ],
+        "aveg_noise_data_11": [ { "direction": "in", "size_left": "31", "size_right": "0" } ],
+        "aveg_noise_data_12": [ { "direction": "in", "size_left": "31", "size_right": "0" } ],
+        "aveg_noise_data_13": [ { "direction": "in", "size_left": "31", "size_right": "0" } ],
+        "aveg_noise_data_14": [ { "direction": "in", "size_left": "31", "size_right": "0" } ],
+        "aveg_noise_data_15": [ { "direction": "in", "size_left": "31", "size_right": "0" } ],
+        "hnorm_valid": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "hnorm_data_0": [ { "direction": "out", "size_left": "127", "size_right": "0" } ],
+        "hnorm_data_1": [ { "direction": "out", "size_left": "127", "size_right": "0" } ],
+        "hnorm_data_2": [ { "direction": "out", "size_left": "127", "size_right": "0" } ],
+        "hnorm_data_3": [ { "direction": "out", "size_left": "127", "size_right": "0" } ],
+        "hnorm_data_4": [ { "direction": "out", "size_left": "127", "size_right": "0" } ],
+        "hnorm_data_5": [ { "direction": "out", "size_left": "127", "size_right": "0" } ],
+        "hnorm_data_6": [ { "direction": "out", "size_left": "127", "size_right": "0" } ],
+        "hnorm_data_7": [ { "direction": "out", "size_left": "127", "size_right": "0" } ],
+        "hnorm_data_8": [ { "direction": "out", "size_left": "127", "size_right": "0" } ],
+        "hnorm_data_9": [ { "direction": "out", "size_left": "127", "size_right": "0" } ],
+        "hnorm_data_10": [ { "direction": "out", "size_left": "127", "size_right": "0" } ],
+        "hnorm_data_11": [ { "direction": "out", "size_left": "127", "size_right": "0" } ],
+        "hnorm_data_12": [ { "direction": "out", "size_left": "127", "size_right": "0" } ],
+        "hnorm_data_13": [ { "direction": "out", "size_left": "127", "size_right": "0" } ],
+        "hnorm_data_14": [ { "direction": "out", "size_left": "127", "size_right": "0" } ],
+        "hnorm_data_15": [ { "direction": "out", "size_left": "127", "size_right": "0" } ]
+      },
+      "interfaces": {
+        "rst_n": {
+          "vlnv": "xilinx.com:signal:reset:1.0",
+          "abstraction_type": "xilinx.com:signal:reset_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "POLARITY": [ { "value": "ACTIVE_LOW", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "RST": [ { "physical_name": "rst_n" } ]
+          }
+        },
+        "clk": {
+          "vlnv": "xilinx.com:signal:clock:1.0",
+          "abstraction_type": "xilinx.com:signal:clock_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "FREQ_HZ": [ { "value": "100000000", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "FREQ_TOLERANCE_HZ": [ { "value": "0", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "PHASE": [ { "value": "0.0", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "float", "is_ips_inferred": true, "is_static_object": false } ],
+            "CLK_DOMAIN": [ { "value": "CE_128TR_clk", "value_src": "default_prop", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_BUSIF": [ { "value": "", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_PORT": [ { "value": "", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_RESET": [ { "value": "", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "CLK": [ { "physical_name": "clk" } ]
+          }
+        }
+      }
+    }
+  }
+}
