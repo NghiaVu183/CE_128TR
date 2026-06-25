@@ -7,8 +7,7 @@
       "name": "CE_128TR",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2024.2",
-      "validated": "true"
+      "tool_version": "2024.2"
     },
     "design_tree": {
       "LowPAPR1_0": "",
@@ -82,47 +81,11 @@
     "ports": {
       "clk": {
         "type": "clk",
-        "direction": "I",
-        "parameters": {
-          "ASSOCIATED_RESET": {
-            "value": "rstn",
-            "value_src": "default"
-          },
-          "CLK_DOMAIN": {
-            "value": "CE_128TR_clk",
-            "value_src": "default"
-          },
-          "FREQ_HZ": {
-            "value": "100000000",
-            "value_src": "default"
-          },
-          "FREQ_TOLERANCE_HZ": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "PHASE": {
-            "value": "0.0",
-            "value_src": "default"
-          }
-        }
+        "direction": "I"
       },
       "rstn": {
         "type": "rst",
-        "direction": "I",
-        "parameters": {
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "POLARITY": {
-            "value": "ACTIVE_LOW",
-            "value_src": "default"
-          }
-        }
+        "direction": "I"
       },
       "fft_valid": {
         "direction": "I"
@@ -11208,10 +11171,6 @@
                   "ASSOCIATED_RESET": {
                     "value": "rstn",
                     "value_src": "constant"
-                  },
-                  "CLK_DOMAIN": {
-                    "value": "CE_128TR_clk",
-                    "value_src": "default_prop"
                   }
                 }
               },
@@ -11440,10 +11399,6 @@
                   "ASSOCIATED_RESET": {
                     "value": "rstn",
                     "value_src": "constant"
-                  },
-                  "CLK_DOMAIN": {
-                    "value": "CE_128TR_clk",
-                    "value_src": "default_prop"
                   }
                 }
               },
@@ -11672,10 +11627,6 @@
                   "ASSOCIATED_RESET": {
                     "value": "rstn",
                     "value_src": "constant"
-                  },
-                  "CLK_DOMAIN": {
-                    "value": "CE_128TR_clk",
-                    "value_src": "default_prop"
                   }
                 }
               },
@@ -11904,10 +11855,6 @@
                   "ASSOCIATED_RESET": {
                     "value": "rstn",
                     "value_src": "constant"
-                  },
-                  "CLK_DOMAIN": {
-                    "value": "CE_128TR_clk",
-                    "value_src": "default_prop"
                   }
                 }
               },
@@ -12136,10 +12083,6 @@
                   "ASSOCIATED_RESET": {
                     "value": "rstn",
                     "value_src": "constant"
-                  },
-                  "CLK_DOMAIN": {
-                    "value": "CE_128TR_clk",
-                    "value_src": "default_prop"
                   }
                 }
               },
@@ -12368,10 +12311,6 @@
                   "ASSOCIATED_RESET": {
                     "value": "rstn",
                     "value_src": "constant"
-                  },
-                  "CLK_DOMAIN": {
-                    "value": "CE_128TR_clk",
-                    "value_src": "default_prop"
                   }
                 }
               },
@@ -12600,10 +12539,6 @@
                   "ASSOCIATED_RESET": {
                     "value": "rstn",
                     "value_src": "constant"
-                  },
-                  "CLK_DOMAIN": {
-                    "value": "CE_128TR_clk",
-                    "value_src": "default_prop"
                   }
                 }
               },
@@ -12832,10 +12767,6 @@
                   "ASSOCIATED_RESET": {
                     "value": "rstn",
                     "value_src": "constant"
-                  },
-                  "CLK_DOMAIN": {
-                    "value": "CE_128TR_clk",
-                    "value_src": "default_prop"
                   }
                 }
               },

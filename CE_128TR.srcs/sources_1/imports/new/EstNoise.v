@@ -104,7 +104,7 @@ wire                seq_valid_d;
 wire                seq_ready_d = corr_valid[0];    // pop seq khi corr toi
 wire [32*PORT-1:0]  seq_d;
 
-fifo_delay_tdata fifo_delay_seq (
+fifo_delay_seq fifo_delay_seq_i (
     .s_axis_aresetn (rstn),
     .s_axis_aclk    (clk),
     .s_axis_tvalid  (seq_valid[0]),
@@ -185,7 +185,7 @@ always @(posedge clk) begin
     end
 end
 
-fifo_delay_tdata fifo_delay_demap (
+fifo_delay_demap fifo_delay_demap_i (
     .s_axis_aresetn (rstn),
     .s_axis_aclk    (clk),
     .s_axis_tvalid  (demap_valid1),

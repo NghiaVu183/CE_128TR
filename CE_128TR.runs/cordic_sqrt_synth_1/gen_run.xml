@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="cordic_sqrt_synth_1" LaunchPart="xczu19eg-ffvc1760-2-i" LaunchTime="1782230953">
-  <File Type="PA-TCL" Name="cordic_sqrt.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="cordic_sqrt_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="cordic_sqrt_reports.tcl"/>
-  <File Type="RDS-RDS" Name="cordic_sqrt.vds"/>
   <File Type="RDS-UTIL" Name="cordic_sqrt_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="cordic_sqrt_utilization_synth.pb"/>
+  <File Type="PA-TCL" Name="cordic_sqrt.tcl"/>
+  <File Type="RDS-RDS" Name="cordic_sqrt.vds"/>
   <File Type="RDS-DCP" Name="cordic_sqrt.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="cordic_sqrt_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="cordic_sqrt_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/cordic_sqrt" RelGenDir="$PGENDIR/cordic_sqrt">
     <File Path="$PSRCDIR/sources_1/ip/cordic_sqrt/cordic_sqrt.xci">
       <FileInfo>
@@ -46,9 +43,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

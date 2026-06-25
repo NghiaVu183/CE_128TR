@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"CE_128TR": {
+			"proto_instances": {
+			}
+		}
+	}
+}

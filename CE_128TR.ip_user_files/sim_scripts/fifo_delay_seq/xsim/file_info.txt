@@ -1,0 +1,2 @@
+fifo_delay_seq.v,verilog,xil_defaultlib,../../../../CE_128TR.gen/sources_1/ip/fifo_delay_seq/sim/fifo_delay_seq.v,incdir="../../../ipstatic/hdl"incdir="../../../ipstatic/hdl"
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,7 @@
+verilog xil_defaultlib --include "../../../ipstatic/hdl" \
+"../../../../CE_128TR.gen/sources_1/ip/fifo_delay_demap/sim/fifo_delay_demap.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

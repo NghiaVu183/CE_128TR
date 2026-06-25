@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xczu19eg-ffvc1760-2-i" LaunchTime="1782235735" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/svd_128x2.dcp">
-  <File Type="PA-TCL" Name="CE_128TR_wrapper.tcl"/>
+<GenRun Id="synth_1" LaunchPart="xczu19eg-ffvc1760-2-i" LaunchTime="1782235735" LaunchIncrCheckpoint="$PPRDIR/../CE_128TR/CE_128TR.srcs/utils_1/imports/synth_1/svd_128x2.dcp">
   <File Type="REPORTS-TCL" Name="CE_128TR_wrapper_reports.tcl"/>
-  <File Type="RDS-RDS" Name="CE_128TR_wrapper.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="CE_128TR_wrapper_drc_synth.rpt"/>
   <File Type="RDS-UTIL" Name="CE_128TR_wrapper_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="CE_128TR_wrapper_utilization_synth.pb"/>
+  <File Type="PA-TCL" Name="CE_128TR_wrapper.tcl"/>
+  <File Type="RDS-RDS" Name="CE_128TR_wrapper.vds"/>
   <File Type="RDS-DCP" Name="CE_128TR_wrapper.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="CE_128TR_wrapper_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="CE_128TR_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/new/baseSeq.v">
@@ -269,61 +266,61 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
     <Step Id="synth_design"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_ChannelNorm_4_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Average_6_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Correlation_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Demap_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Demap_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Average_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Demap_2_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_ChannelNorm_4_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Average_6_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Correlation_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_ChannelNorm_7_0"/>
   <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Correlation_4_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_svd_fc_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_NoiseAverage_7_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_ChannelNorm_7_0"/>
   <BlockFileSet Type="BlockSrcs" Name="CE_128TR_LowPAPR1_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_ChannelNorm_3_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_MuxPDU_0_3"/>
-  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Average_5_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Demap_7_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_NoiseAverage_7_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_svd_fc_0"/>
   <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Correlation_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Demap_7_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Average_5_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_MuxPDU_0_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_ChannelNorm_3_0"/>
   <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Correlation_5_0"/>
   <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Correlation_6_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_ChannelNorm_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Demap_4_0"/>
   <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Average_2_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Average_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Demap_4_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_ChannelNorm_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Demap_3_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_ChannelNorm_2_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_svd_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Average_4_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Average_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Demap_6_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_ChannelNorm_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Average_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Average_4_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_svd_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_ChannelNorm_2_0"/>
   <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Demap_5_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_ChannelNorm_5_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Average_7_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Average_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_ChannelNorm_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Correlation_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Average_7_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_ChannelNorm_5_0"/>
   <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Correlation_7_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_ChannelNorm_6_0"/>
   <BlockFileSet Type="BlockSrcs" Name="CE_128TR_Correlation_3_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_EstNoise_6_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_ChannelNorm_6_0"/>
   <BlockFileSet Type="BlockSrcs" Name="sin_cos_lp"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_EstNoise_6_0"/>
   <BlockFileSet Type="BlockSrcs" Name="fifo_delay_tdata"/>
-  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_EstNoise_7_0"/>
   <BlockFileSet Type="BlockSrcs" Name="cmpy_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_EstNoise_7_0"/>
   <BlockFileSet Type="BlockSrcs" Name="cordic_sqrt"/>
-  <BlockFileSet Type="BlockSrcs" Name="recip_unit"/>
   <BlockFileSet Type="BlockSrcs" Name="div_31"/>
+  <BlockFileSet Type="BlockSrcs" Name="recip_unit"/>
   <BlockFileSet Type="BlockSrcs" Name="ls_0"/>
   <BlockFileSet Type="BlockSrcs" Name="div_gen_frac"/>
-  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_NoiseAverage_4_0"/>
   <BlockFileSet Type="BlockSrcs" Name="cordic_rot"/>
-  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_NoiseAverage_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_NoiseAverage_4_0"/>
   <BlockFileSet Type="BlockSrcs" Name="cordic_vec"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_NoiseAverage_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="CE_128TR_EstNoise_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="CE_128TR_NoiseAverage_2_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_svd_pack_0"/>
   <BlockFileSet Type="BlockSrcs" Name="CE_128TR_NoiseAverage_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CE_128TR_svd_pack_0"/>
   <BlockFileSet Type="BlockSrcs" Name="CE_128TR_EstNoise_5_0"/>
   <BlockFileSet Type="BlockSrcs" Name="CE_128TR_EstNoise_4_0"/>
   <BlockFileSet Type="BlockSrcs" Name="CE_128TR_EstNoise_3_0"/>
